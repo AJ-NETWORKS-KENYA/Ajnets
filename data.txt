@@ -886,7 +886,130 @@ View Case Study
 
 ---
 
+## 21A. Solutions Page – Structure & Content Specifications
+
+### Purpose of the Solutions Page
+
+The Solutions page translates AJNETWORKS’ **capabilities into packaged, outcome-driven solutions** that clients can easily understand and map to their business needs.
+
+This page answers the question:
+
+> "What kind of problems does AJNETWORKS solve end-to-end?"
+
+### Solutions Page Structure
+
+#### Hero Section
+
+**Headline:**
+Business-focused technology solutions, delivered end-to-end.
+
+**Supporting Copy:**
+Our solutions combine strategic consulting, engineering execution, cybersecurity, and networking to help organizations operate efficiently, securely, and at scale.
+
+**Primary CTA:** Request a Strategy Call
+
+---
+
+#### Solution Categories (Card-Based Grid)
+
+Each solution card links to a dedicated solution detail page.
+
+**Core Solution Areas:**
+
+1. **Digital Transformation & Modernization**
+
+   * Legacy system assessment and modernization
+   * Process automation and system integration
+   * Secure cloud and hybrid deployments
+
+2. **Custom Business Systems**
+
+   * Membership & management platforms
+   * Internal operational systems
+   * Workflow and data management tools
+
+3. **Enterprise Web & Platform Solutions**
+
+   * Corporate and enterprise websites
+   * Secure portals and dashboards
+   * High-performance, SEO-driven platforms
+
+4. **Secure Payments & Integrations**
+
+   * Payment gateway integrations
+   * API-driven systems
+   * Data exchange and third-party integrations
+
+5. **Infrastructure, Networking & Security Solutions**
+
+   * Network architecture and deployment
+   * Secure infrastructure design
+   * Monitoring, hardening, and resilience planning
+
+---
+
+#### Solution Detail Page Template
+
+Each solution page follows this structure:
+
+* Business problem overview
+* Strategic approach
+* Solution components
+* Security & networking considerations
+* Business outcomes
+* CTA: Request a Strategy Call
+
+---
+
 ## 22. Portfolio Case Study Copy (Client-Ready Tone)
+
+Each case study must be written as a **business document**, not a technical blog.
+
+### Example Case Study Opening
+
+"AJNETWORKS was engaged to assess, design, and implement a secure digital platform that improved operational efficiency and data integrity for a membership-based organization."
+
+---
+
+## 22A. Core Value Cards (Mission, Vision, Philosophy, Strategy)
+
+These cards appear consistently on the **Services** and **Solutions** pages to reinforce AJNETWORKS’ consulting identity.
+
+### Card 1: Our Mission
+
+**Title:** Our Mission
+
+**Copy:**
+To help organizations make confident technology decisions and deliver secure, scalable digital systems that create measurable business impact.
+
+---
+
+### Card 2: Our Vision
+
+**Title:** Our Vision
+
+**Copy:**
+To be a trusted technology consulting partner across Africa and globally, recognized for strategic clarity, engineering excellence, and security-first delivery.
+
+---
+
+### Card 3: Our Philosophy
+
+**Title:** Our Philosophy
+
+**Copy:**
+We believe technology should solve real business problems. Every solution must be intentional, secure by design, and built to scale — not just to launch.
+
+---
+
+### Card 4: Our Strategy
+
+**Title:** Our Strategy
+
+**Copy:**
+We lead with consulting and insight, execute through disciplined engineering, and embed cybersecurity and networking at every stage to ensure long-term resilience.
+
+---
 
 Each case study must be written as a **business document**, not a technical blog.
 
