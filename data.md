@@ -72,20 +72,12 @@ AJNETWORKS is positioned as a **technology partner**, not just a service vendor.
 
 ### Main Navigation
 
-1. Home
-2. About AJNETWORKS
-3. Services
-4. Solutions
-5. Portfolio / Case Studies
-6. Insights (Blog & Resources)
-7. Contact / Get a Quote
+the same navigation as index-2.html which servers as the main landing page
 
 ### Footer
 
-* Privacy Policy
-* Terms of Service
-* Careers
-* Social Media Links
+also remains as of the landing page
+also notes some of the different pages have a little bit different footer information i would like to keep that.
 
 ---
 
@@ -162,6 +154,125 @@ Sections:
 * Technical SEO
 * Performance optimization
 * Conversion-focused improvements
+
+####  6. Managed & Outsourced Technology Services (Controlled Offering)
+Positioning Statement
+
+AJNETWORKS offers managed and outsourced technology services as a secondary, optional engagement layer, designed to support business continuity after strategy or delivery engagements.
+
+These services are consulting-governed, security-led, and outcome-driven.
+AJNETWORKS does not operate as a low-level IT support vendor.
+
+Outsourced services are provided either:
+
+Directly by AJNETWORKS, or
+
+Through vetted partners, under AJNETWORKS oversight, standards, and accountability.
+
+Purpose of This Offering
+
+Managed and outsourced services exist to:
+
+Ensure continuity of critical systems
+
+Reduce operational risk
+
+Provide ongoing technical stewardship
+
+Protect long-term technology investments
+
+They are positioned as business enablement services, not ad-hoc technical labor.
+
+Managed & Outsourced Service Categories
+1. Website & Application Maintenance
+
+Post-launch support and system upkeep
+
+Bug fixes, repairs, and incremental improvements
+
+Performance and availability monitoring
+
+Controlled updates aligned to business priorities
+
+2. Hosting & Infrastructure Management
+
+Hosting provider selection and coordination
+
+Environment configuration and monitoring
+
+Backup strategies and uptime assurance
+
+Vendor management on behalf of the client
+
+3. Incident Response & Repairs
+
+System incident diagnosis and resolution
+
+Application and infrastructure recovery
+
+Root-cause analysis and prevention planning
+
+4. Ongoing Security & Patch Management
+
+Periodic security reviews
+
+Patch management and vulnerability mitigation
+
+Configuration hardening and access reviews
+
+5. Third-Party Vendor & Technology Oversight
+
+Coordination with hosting providers, ISPs, and SaaS vendors
+
+Technical validation of third-party solutions
+
+Risk and dependency management
+
+Engagement Rules (NON-NEGOTIABLE)
+
+Managed and outsourced services are never marketed as cheap labor
+
+AJNETWORKS remains accountable for quality, security, and delivery
+
+All engagements operate under:
+
+Defined scope
+
+Service-level expectations (SLAs)
+
+Clear escalation paths
+
+Cybersecurity and networking standards apply to all managed work
+
+Website Presentation Rules
+
+On the website, these services must be presented as:
+
+“Managed Technology & Operations Support”
+
+Integrated within Services and Solutions pages
+
+Positioned as an extension of consulting and delivery
+
+Avoid standalone labels such as:
+
+“IT Support”
+
+“Website Repairs”
+
+“Outsourcing Services”
+
+Strategic Value
+
+This offering enables:
+
+Long-term client relationships
+
+Predictable retainer-based revenue
+
+Scalable delivery without brand dilution
+
+Stronger system reliability and trust
 
 Each service page follows:
 
@@ -319,11 +430,46 @@ The stack reflects **credibility, performance, and scalability**, not trends.
 
 ---
 
-### Frontend
+### Frontend (refactored to match this project's technologies)
 
-* Next.js (React)
-* TypeScript
-* Tailwind CSS
+- Stack: Static HTML5, CSS3 and vanilla JavaScript (no framework). No build tooling required — pages are served as static files.
+- File layout:
+  - Root styling: style.css (imports Google fonts Montserrat / Nunito; brand overrides live here).
+  - Vendor CSS: css/bootstrap.min.css, css/font-awesome.min.css, css/flaticon.css, css/owl.carousel.min.css, css/magnific-popup.css, css/royal-preload.css, plus Revolution CSS under plugins/revolution/revolution/css/.
+  - Vendor JS: js/jquery.min.js, plugin files under js/ and plugins/, and project scripts in js/scripts.js and js/header-mobile.js.
+  - Assets: images/ with slider/, projects/, blog/, background/, client-logos/ subfolders. Keep hero ~1920px wide and update data-thumb for slider images.
+- Header/footer:
+  - Header, mobile header and footer are duplicated per page. Keep navigation links and contact info (+254 758 238 617, jabrahamjohns@gmail.com) synced across pages when editing.
+- Hero slider:
+  - Home uses <div id="rev_slider_one"> and li slides (rs-70..72). Add slides following existing li structure and data-* animation attributes; update data-thumb when swapping images.
+- Script load order (required):
+  1. js/jquery.min.js
+  2. plugin scripts (jquery.magnific-popup.min.js, jquery.isotope.min.js, owl.carousel.min.js, easypiechart.min.js, jquery.countdown.min.js, etc.)
+  3. plugins/revolution/revolution/js/* (Revolution core files)
+  4. js/rev-script-2.js (home slider config) or rev-script-3.js where applicable
+  5. js/scripts.js
+  6. js/header-mobile.js
+  - Initialize royal_preloader inline immediately after loading js/royal_preloader.min.js.
+- Components & classes to preserve:
+  - Use existing utility classes (space-20, space-5, container, row, col-*, video-popup).
+  - Preserve brand-related classes and tokens: main-heading, slider-tag-line, octf-btn and its variants.
+  - Prefer class-based styling; avoid new inline styles except minimal logo color tweaks.
+- Carousels & grids:
+  - Use .owl-carousel markup and mirror existing item/data attributes for spacing and autoplay consistency.
+  - Portfolio grid should be filterable via the existing isotope/js patterns.
+- Forms:
+  - Newsletter, contact and header search remain static (action="#"). Integrations require adding real endpoints and JS.
+- Performance & assets:
+  - Optimize images for web, reuse existing vendor bundles, and avoid adding new libraries.
+- Running locally:
+  - Open HTML files directly in a browser or serve the folder with a simple static server (no npm installs or build steps).
+- Development guidance:
+  - Keep primary custom CSS in style.css and behavior tweaks in js/scripts.js / js/header-mobile.js / rev-script-*.js.
+  - When changing shared layout (header/footer), update all pages.
+- Accessibility & SEO:
+  - Update <title> and meta per page; maintain meaningful alt text on replaced images.
+
+This replaces the previous Next.js/TypeScript/Tailwind frontend recommendation with the project's actual static HTML/CSS/JS architecture and conventions.
 
 ### CMS
 
@@ -1068,6 +1214,328 @@ Objective: Position AJNETWORKS as a technology consulting firm with engineering 
 * Portfolio and Team sections are dynamic
 * Strategy Call CTA functional
 * SEO metadata implemented
+
+---
+
+## 25. Integrated Case Studies (Authoritative Content)
+
+The following case studies are **official, approved content** and must be used consistently across:
+
+* Portfolio Grid
+* Case Study detail pages
+* Proposals and credibility sections
+
+### Case Study A: AJNETWORKS – Technology Consulting & Engineering Delivery
+
+* Role: Founder & Lead Technology Consultant
+* Focus: Consulting-led strategy, engineering execution, security-by-design
+* Outcomes: Improved system reliability, stronger security posture, scalable delivery model
+
+### Case Study B: BADA Global – Digital Platform Revamp & Growth Enablement
+
+* Role: Branch Manager & Website Manager
+* Focus: Digital strategy, UX revamp, workflow optimization
+* Outcomes: 25% faster turnaround, improved brand credibility, regional scalability
+
+### Case Study C: Crossroads Fellowship Ministries – Secure Payments & Infrastructure
+
+* Role: Web Developer & Security Analyst
+* Focus: Secure payment integration (M-Pesa), infrastructure hardening
+* Outcomes: Seamless transactions, reduced risk, improved donor trust
+
+### Case Study D: SGS Kenya – Institutional IT & Security Operations
+
+* Role: IT Specialist (Contract)
+* Focus: Infrastructure reliability, network analysis, cybersecurity
+* Outcomes: Zero-downtime incident resolution, improved compliance posture
+
+---
+
+## 26. CV ↔ Website Authority Mapping (LOCKED)
+
+This website must reflect the positioning defined in the **November 2025 CV**.
+
+### Founder Representation
+
+* Title: Founder & Lead Technology Consultant
+* Profile tone: Consulting authority + engineering execution
+
+### Language Rules (DO NOT VIOLATE)
+
+* Consulting-first, business-led
+* Engineering as execution, not the pitch
+* Cybersecurity and networking embedded everywhere
+
+Avoid:
+
+* Freelance or junior terminology
+* Tool-first descriptions
+
+---
+
+## 27. Copilot / AI-Assisted Development Instructions
+
+This section is explicitly designed for use with **GitHub Copilot or similar AI tools**.
+
+### Development Intent
+
+"Build a consulting-first corporate website for AJNETWORKS, a technology consulting firm with engineering delivery, cybersecurity, and networking as core pillars."
+
+### Global Rules for Copilot
+
+* Always prioritize business outcomes over technical jargon
+* Use the approved copy in this document verbatim unless instructed otherwise
+* Maintain consistency across Services, Solutions, Team, and Portfolio
+
+### Page-Level Instructions
+
+**Homepage**
+
+* Use Section 13.2 Homepage Final Copy
+* Primary CTA: Request a Strategy Call
+
+**Services Pages**
+
+* Frame services as consulting practices
+* Reference Mission, Vision, Philosophy, Strategy cards
+
+**Solutions Pages**
+
+* Use Section 21A structure
+* Link solutions to case studies where applicable
+
+**Team Page**
+
+* Represent a multidisciplinary consulting team
+* Founder positioned as Lead Technology Consultant
+
+**Portfolio & Case Studies**
+
+* Use Section 25 content as authoritative
+* Emphasize outcomes and impact
+
+**Contact Page**
+
+* Display official contact details and working hours
+
+---
+
+## 28. Build Acceptance Checklist (For AI or Human Developers)
+
+* Homepage matches approved wireframe and copy
+* Services and Solutions pages use shared strategic cards
+* Portfolio grid is dynamic and filterable
+* Case studies follow consulting structure
+* Strategy Call CTA functional
+* SEO, performance, and security requirements met
+
+---
+
+## 29. Page-Specific AI (Copilot / Codex) Instructions — STATIC HTML/CSS/JS
+
+The following instructions are **authoritative and mandatory** for AI-assisted development (GitHub Copilot, Codex, Cursor, etc.). These instructions must be applied per page and must not be altered unless the Master Plan is updated.
+
+---
+
+### Global AI System Prompt (Apply Once Per Session)
+
+```
+You are building a static corporate website for AJNETWORKS, a technology consulting firm with engineering delivery.
+
+Core positioning:
+- Business and technology consulting first
+- Engineering as execution
+- Cybersecurity and networking embedded in all services
+
+Rules:
+- Use professional, consulting-grade language
+- Avoid freelance, junior, or tool-first terminology
+- Focus on outcomes, strategy, and trust
+- Primary CTA everywhere: Request a Strategy Call
+
+Stack:
+- HTML5 semantic markup
+- CSS3
+- Vanilla JavaScript only
+
+All content must align strictly with this Master Revamp Plan.
+```
+
+---
+
+## 29.1 Homepage (`index.html`)
+
+Purpose: Establish authority and consulting credibility within the first 10 seconds.
+
+AI Instructions:
+
+* Build a homepage with the following sections in order:
+
+  1. Hero section with headline: "Technology Consulting & Engineering Delivery"
+  2. Subheadline emphasizing strategy-led execution
+  3. Primary CTA: Request a Strategy Call
+  4. Trust statement embedding cybersecurity and networking
+  5. Core Practices (3 cards):
+
+     * Technology & Digital Strategy
+     * Software Engineering & Systems Development
+     * Cybersecurity & IT Infrastructure
+  6. Engagement Process: Assess → Strategize → Engineer → Secure & Scale
+  7. Selected Case Studies grid
+  8. CTA banner
+
+Tone: Executive-readable, confident, restrained
+
+---
+
+## 29.2 Services Page (`services.html`)
+
+Purpose: Define AJNETWORKS consulting practices.
+
+AI Instructions:
+
+* Intro positioning AJNETWORKS as a strategic partner
+* Service sections:
+
+  1. Technology & Digital Strategy
+  2. Software Engineering & Systems Development
+  3. Cybersecurity & Risk Management
+  4. Networking & IT Infrastructure
+* Include Strategic Cards:
+
+  * Our Mission
+  * Our Vision
+  * Our Philosophy
+  * Our Strategy
+* End with Strategy Call CTA
+
+---
+
+## 29.3 Solutions Page (`solutions.html`)
+
+Purpose: Show applied outcomes, not packaged products.
+
+AI Instructions:
+
+* Intro clarifying tailored solutions
+* Solution categories:
+
+  * Digital Platforms & Portals
+  * Secure Payment & API Integrations
+  * IT Infrastructure & Networking
+  * Cybersecurity & Compliance Readiness
+* For each solution include:
+
+  * Business problem
+  * Strategic approach
+  * Delivery capability
+* Include Strategic Cards (Mission, Vision, Philosophy, Strategy)
+* Reference case studies contextually
+
+---
+
+## 29.4 Portfolio Page (`portfolio.html`)
+
+Purpose: Demonstrate credibility through real engagements.
+
+AI Instructions:
+
+* Build a filterable portfolio grid
+* Portfolio items:
+
+  * AJNETWORKS
+  * BADA Global
+  * Crossroads Fellowship Ministries
+  * SGS Kenya
+* Each card must include client, engagement type, and industry
+* Focus on outcomes, not tools
+
+---
+
+## 29.5 Case Study Template (`case-study.html`)
+
+Purpose: Provide structured, consulting-grade documentation.
+
+AI Instructions:
+
+* Mandatory sections:
+
+  1. Overview
+  2. Business Context
+  3. Challenge
+  4. Strategic Approach
+  5. Solution Delivered
+  6. Security & Infrastructure Considerations
+  7. Business Impact
+
+Tone: Formal, objective, outcome-oriented
+
+---
+
+## 29.6 Team Page (`team.html`)
+
+Purpose: Build trust through leadership and capability.
+
+AI Instructions:
+
+* Founder profile:
+
+  * Name: Abraham John
+  * Title: Founder & Lead Technology Consultant
+* Describe multidisciplinary team structure:
+
+  * Consulting & Strategy
+  * Engineering & Delivery
+  * Security & Infrastructure
+* Avoid junior or freelance role titles
+
+---
+
+## 29.7 Contact Page (`contact.html`)
+
+Purpose: Enable qualified inquiries.
+
+AI Instructions:
+
+* Display contact details:
+
+  * Phone: +254 758 238 617
+  * Email: [jabrahamjohns@gmail.com](mailto:jabrahamjohns@gmail.com)
+* Working hours:
+
+  * Monday–Friday, 8:00 AM – 5:00 PM (EAT)
+* Include contact form:
+
+  * Name
+  * Organization
+  * Email
+  * Description of challenge
+* CTA: Request a Strategy Call
+
+---
+
+## 29.8 Engagement Roadmap Page (`roadmap.html`)
+
+Purpose: Reduce sales friction and set expectations.
+
+AI Instructions:
+
+* Phases:
+
+  1. Discovery & Assessment
+  2. Strategy & Planning
+  3. Engineering & Implementation
+  4. Security, Monitoring & Scale
+* Present roadmap visually and descriptively
+
+---
+
+## 30. AI Output Acceptance Rules
+
+* Language must match consulting-grade tone
+* No invented services or positioning
+* Cybersecurity and networking must appear contextually
+* Strategy Call CTA present where appropriate
 
 ---
 

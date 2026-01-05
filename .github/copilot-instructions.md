@@ -1,43 +1,21 @@
-## Quick orientation for AI coding agents
+# Copilot instructions for Ajnets
 
-This repo is a static frontend site (HTML/CSS/JS) built from a theme. It is not a server-side app.
-Keep changes minimal and targeted: most behavior is implemented in `index.html`, other top-level HTML pages (e.g. `about-us.html`, `services.html`, `portfolio.html`) and `js/` + `css/` folders.
-
-Key things to know (why files are where they are):
-
-- `index.html` is the homepage and contains the primary layout and the Revolution Slider config. Edit slides, copy or image references here. Example: homepage slider images are under `images/slider/` and configured inside `#rev_slider_one` in `index.html`.
-- `js/scripts.js` contains theme-specific front-end logic (sticky header, search toggle, counters, Isotope filters). Prefer modifying this file or adding a small new file under `js/` rather than editing minified vendor files.
-- `plugins/revolution/...` and `css/*.css` contain third-party vendor assets. Avoid editing vendor files in-place unless you must — prefer overrides in `style.css` or new stylesheet files (e.g. `css/home15.css`, `css/home16.css`).
-- `images/`, `fonts/` and `css/` contain static assets; use existing folder structure and relative links.
-
-Conventions and patterns discovered:
-
-- Pages are simple static HTML (e.g., `about-us.html`, `contact.html`, `blog.html`). Navigation uses relative links. Keep file names and relative paths when changing links.
-- UI uses jQuery plugins (Owl Carousel, Magnific Popup, Isotope, easyPieChart) and Revolution Slider. Scripts are initialized in `js/scripts.js` and `plugins/revolution/revolution/js/*.js`.
-- Visual customizations are typically applied in `style.css`. Small behavior changes go into `js/scripts.js`.
-
-Developer workflows (how to preview / quick dev commands):
-
-- Preferred quick preview: use VS Code Live Server extension (recommended).
-- Quick local server (PowerShell):
-
-```powershell
-python -m http.server 8000 --bind 127.0.0.1
-```
-
-Integration points & what to avoid:
-
-- No backend code or build system present—this is a static site. There are no Node/npm or Python build files in the repo root.
-- Do NOT modify files under `plugins/revolution/` unless fixing a critical bug; those are vendored plugin files. Prefer overriding CSS in `style.css` or extending behavior in `js/scripts.js`.
-
-Examples to reference when making changes:
-
-- To change header behavior (sticky header), edit `js/scripts.js` — search for "Sticky Header" and update scroll thresholds.
-- To change the slider images or slide text, edit `index.html` inside the `#rev_slider_one` slides and put images in `images/slider/`.
-- To add a new page, copy an existing page (e.g. `about-us.html`) and update navigation links in the header (`index.html` and other pages). Keep relative paths.
-
-Commit guidelines for AI agents:
-
-- Make one focused change per branch/PR. Keep vendor files untouched unless necessary. Include a short summary explaining why a change is safe (e.g., "override CSS to adjust hero padding" or "fix sticky header threshold for small screens").
-
-If anything here is unclear or you need examples for another file (e.g., specific CSS overrides or how to reinitialize a Revolution slider), tell me which area to expand and I will iterate.
+- Purpose: static marketing site for AJNETWORKS, mirrored from ThemeModern’s Engitech template via HTTrack; no build tooling or backend.
+- Stack: plain HTML/CSS/JS served statically; vendor CSS/JS lives under `css/`, `js/`, and `plugins/revolution/`.
+- Key pages: `index.html` (home + hero slider), `services.html` (anchor IDs: strategy, engineering, cybersecurity, networking), `solutions.html`, `portfolio.html`, `blog.html`, `about-us.html`, `contact.html`, plus mission/vision/strategy/portfolio detail pages.
+- Layout is duplicated per page: header + mobile header + footer; navigation links and contact info (`+254 758 238 617`, `jabrahamjohns@gmail.com`) are hard-coded in each file—update all pages when changing.
+- Styling: main overrides in root `style.css` (imports Google fonts Montserrat/Nunito, sets brand look); vendor styles in `css/bootstrap.min.css`, `css/font-awesome.min.css`, `css/flaticon.css`, `css/owl.carousel.min.css`, `css/magnific-popup.css`, `css/royal-preload.css`, and Revolution Slider CSS under `plugins/revolution/revolution/css/`.
+- Brand cues: logo text uses inline spans with brand blue (hex 003366); keep typography classes like `main-heading`, `slider-tag-line`, and `octf-btn` variants for consistent styling.
+- JavaScript: load order matters—`js/jquery.min.js` first, then plugins (`jquery.magnific-popup.min.js`, `jquery.isotope.min.js`, `owl.carousel.min.js`, `easypiechart.min.js`, `jquery.countdown.min.js`), then `js/scripts.js` and `js/header-mobile.js`; Revolution Slider scripts live in `plugins/revolution/revolution/js/` with page configs in `js/rev-script-2.js` (home) and `rev-script-3.js` (other sliders if used); preloader initialized inline after including `js/royal_preloader.min.js`.
+- Hero slider: `index.html` uses `<div id="rev_slider_one">` with slides `rs-70..72`; when adding a slide, follow existing `li` structure and `data-` attributes for animations and thumbs.
+- Carousels: testimonials/portfolio sliders use `.owl-carousel` markup—mirror the existing item structure and data attributes for consistent spacing and autoplay.
+- Assets: images live under `images/` with subfolders (`slider/`, `projects/`, `blog/`, `background/`, `client-logos/`); keep similar dimensions to neighboring assets (hero ~1920px wide) and update `data-thumb` when swapping slider images.
+- Content sections: reuse utility classes (`space-20`, `space-5`, `container`, `row`, `col-*`, `video-popup`) instead of introducing new ones unless necessary.
+- Anchors & menus: service dropdown points to anchors in `services.html`; keep IDs stable if sections move to avoid broken navigation.
+- Forms: newsletter subscribe and header search forms are static; form action currently points to # with no backend, so integrations need real endpoints and JS handling.
+- Typography: prefer class-based styling; avoid new inline styles except for small logo color tweaks already present.
+- SEO/accessibility: update `<title>` and `meta` per page when content shifts; ensure `<img>` tags keep meaningful `alt` text when replacing assets.
+- Performance: optimize new images (web-friendly sizes/format), reuse existing vendor bundles instead of adding more libraries, and keep script inclusion minimal.
+- Running locally: open any HTML file directly in a browser or serve the folder with a simple static server; no npm/pip installs or build steps required.
+- Editing workflow: adjust shared header/footer blocks across all pages; primary custom styling goes in `style.css`, behavior tweaks in `js/scripts.js`/`header-mobile.js`/`rev-script-*.js`.
+- New content checklist: update nav links in both desktop and mobile menus, keep CTAs consistent (`octf-btn` variants), refresh copyright year in footers when appropriate.
