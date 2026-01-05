@@ -1538,5 +1538,498 @@ AI Instructions:
 * Strategy Call CTA present where appropriate
 
 ---
+AJNETWORKS — OFFICIAL PRICING STANDARD (MASTER)
+Currency Strategy (NON-NEGOTIABLE)
+
+Website: USD pricing only
+
+Proposals (Kenya & East Africa): USD primary + KES equivalent
+
+Invoices: Currency agreed contractually
+
+Reference Exchange: 1 USD ≈ 150 KES
+
+Final billing may adjust to prevailing exchange rates
+
+This standard positions AJNETWORKS as an international technology consulting firm while remaining operationally flexible.
+
+1. Strategy & Consulting Engagements
+Strategy Call
+
+USD: Complimentary
+KES: Complimentary
+Duration: 30–45 minutes
+
+Purpose:
+
+Business and technical alignment
+
+Risk and opportunity identification
+
+Engagement qualification
+
+Primary CTA: Request a Strategy Call
+
+Technology Assessment & Advisory
+Currency	Price Range
+USD	350 – 1,000
+KES	50,000 – 150,000
+
+Includes:
+
+Business and technology review
+
+System and risk assessment
+
+Strategic recommendations
+
+Written advisory summary
+
+Technology Strategy & Roadmap
+Currency	Price Range
+USD	1,000 – 2,700
+KES	150,000 – 400,000
+
+Includes:
+
+Architecture and system analysis
+
+Cybersecurity and infrastructure considerations
+
+Prioritized implementation roadmap
+
+Budget and delivery guidance
+
+2. Engineering & Delivery Services
+Web & Platform Engineering
+Currency	Price Range
+USD	1,700 – 10,000+
+KES	250,000 – 1,500,000+
+
+Examples:
+
+Corporate websites
+
+Enterprise portals
+
+Dashboards and platforms
+
+Custom Business Systems
+Currency	Price Range
+USD	3,300 – 20,000+
+KES	500,000 – 3,000,000+
+
+Examples:
+
+Internal systems
+
+Workflow automation
+
+Secure business platforms
+
+Secure Payments & Integrations
+Currency	Price Range
+USD	1,000 – 4,000
+KES	150,000 – 600,000
+
+Examples:
+
+Payment gateways
+
+API integrations
+
+Secure data exchanges
+
+Cybersecurity & Networking Projects
+Currency	Price Range
+USD	1,300 – 5,300
+KES	200,000 – 800,000
+
+Examples:
+
+Security assessments
+
+Infrastructure hardening
+
+Network architecture and optimization
+
+3. Managed & Outsourced Services (Retainers)
+
+Offered only after strategy or delivery engagements.
+
+Managed Website & Application Support
+Currency	Monthly Retainer
+USD	200 – 800
+KES	30,000 – 120,000
+Hosting & Infrastructure Oversight
+Currency	Monthly Retainer
+USD	170 – 670
+KES	25,000 – 100,000
+Security & Patch Management
+Currency	Monthly Retainer
+USD	270 – 1,000
+KES	40,000 – 150,000
+4. Ongoing Advisory & Leadership
+Fractional Technology Consulting (CTO-Level)
+Currency	Monthly Retainer
+USD	1,000 – 2,700
+KES	150,000 – 400,000
+
+Includes:
+
+Strategic oversight
+
+Architecture and security governance
+
+Vendor and delivery supervision
+
+Pricing Rules (GLOBAL)
+
+No hourly billing for core services
+
+No fixed pricing without defined scope
+
+Pricing reflects risk, responsibility, and impact
+
+Discounts apply only to:
+
+Long-term retainers
+
+Approved mission-aligned organizations
+
+Website Pricing Disclaimer (MANDATORY)
+
+All prices are shown in USD for international reference. Local billing may be converted to KES or other currencies at prevailing exchange rates.
+
+CTA placement:
+Request a Strategy Call
+
+Non-Profit & Mission-Aligned Pricing (Dual Currency)
+Eligibility
+
+Registered NGOs
+
+Faith-based organizations
+
+Mission-driven institutions
+
+Adjustments
+
+Reduced consulting fees (case-by-case)
+
+Flexible payment structures
+
+Controlled scope prioritization
+
+No free services. No ad-hoc discounts.
+
+Strategic Outcome (Internal)
+
+This pricing model:
+
+Filters unserious clients
+
+Enables regional and global growth
+
+Protects AJNETWORKS’ consulting identity
+
+Aligns with founder CV positioning
+
+Supports retainers and long-term value
+
+FINAL NOTE
+
+This pricing framework is now LOCKED and should be treated as:
+
+Canonical for Copilot / Codex
+
+Canonical for proposals
+
+Canonical for website content
+
+---
+
+AJNETWORKS — PRICING, COMMERCIAL MODEL & CLIENT QUALIFICATION (MASTER)
+31. Pricing Philosophy (Authoritative)
+
+AJNETWORKS pricing reflects strategic responsibility, delivery risk, and business impact, not hours worked or tools used.
+
+We do not sell development time.
+We deliver outcomes, systems, and accountability.
+
+All pricing is:
+
+Consulting-led
+
+Scope-defined
+
+Risk-adjusted
+
+Security-inclusive by default
+
+This pricing framework supports regional and international engagements without repositioning or renegotiation.
+
+32. Website Pricing FAQs (Client-Facing, Approved Copy)
+FAQ 1: Why are prices listed in USD?
+
+AJNETWORKS works with clients across multiple regions. USD pricing provides a consistent international reference and reflects our positioning as a technology consulting firm. Local billing may be converted where required.
+
+FAQ 2: Do you offer fixed pricing?
+
+Yes — after scope definition.
+
+All fixed prices are based on:
+
+Business objectives
+
+Technical complexity
+
+Security and infrastructure considerations
+
+Delivery risk and accountability
+
+We do not quote blindly.
+
+FAQ 3: Do you charge hourly?
+
+No.
+
+Hourly billing misaligns incentives and undervalues strategic responsibility. AJNETWORKS prices engagements based on value delivered, not time consumed.
+
+FAQ 4: Can pricing be adjusted for startups or NGOs?
+
+Yes — selectively.
+
+We support mission-aligned and early-stage organizations through:
+
+Reduced consulting scope
+
+Phased delivery
+
+Flexible payment structures
+
+We do not provide free services or informal discounts.
+
+FAQ 5: What does pricing include?
+
+Unless explicitly excluded, pricing includes:
+
+Strategic input
+
+Engineering execution
+
+Security-by-design
+
+Deployment readiness
+
+Knowledge transfer where appropriate
+
+FAQ 6: Is cybersecurity priced separately?
+
+No.
+
+Cybersecurity and infrastructure considerations are embedded into every engagement. Standalone security projects are priced only when security is the primary scope.
+
+FAQ 7: What happens after delivery?
+
+Clients may opt into:
+
+Managed support retainers
+
+Infrastructure oversight
+
+Security and patch management
+
+Fractional technology leadership
+
+These are offered only after successful delivery.
+
+33. Pricing Objection Handling (Internal & Sales Use)
+Objection: “You are more expensive than other developers.”
+
+Response:
+We are not competing with developers. AJNETWORKS operates as a consulting-led engineering firm. Our pricing reflects strategic accountability, security responsibility, and long-term system reliability.
+
+Objection: “Another firm quoted less.”
+
+Response:
+That may be appropriate for their delivery model. Our engagements include consulting oversight, architecture responsibility, and security-by-design. We encourage clients to compare scope, not price.
+
+Objection: “Can you reduce the price?”
+
+Response:
+We can reduce scope or phase delivery. We do not reduce responsibility without adjusting engagement terms.
+
+Objection: “Can we start small?”
+
+Response:
+Yes. We recommend beginning with a strategy or assessment engagement to define a focused, lower-risk starting point.
+
+Objection: “Why not hourly?”
+
+Response:
+Hourly billing incentivizes inefficiency and removes accountability. We price for outcomes and delivery ownership.
+
+34. Enterprise, US & EU Client Positioning (Approved Language)
+
+Use the following language for:
+
+Enterprise proposals
+
+International decks
+
+Advanced client conversations
+
+Positioning Statement
+
+AJNETWORKS operates as a boutique technology consulting and engineering firm, providing strategy-led digital delivery with embedded cybersecurity and infrastructure assurance.
+
+Commercial Model Explanation
+
+Our commercial model aligns with international consulting standards:
+
+Engagement-based pricing
+
+Clear deliverables
+
+Defined accountability
+
+Risk-adjusted fees
+
+This ensures predictable outcomes and executive-level ownership.
+
+Compliance & Professionalism Signals
+
+Contract-based engagements
+
+Defined scopes and acceptance criteria
+
+Security and data protection awareness
+
+Professional documentation and reporting
+
+35. Client Qualification Rules (NON-NEGOTIABLE)
+
+AJNETWORKS does not engage clients who:
+
+Seek only the cheapest option
+
+Refuse discovery or strategy phases
+
+Undervalue security or reliability
+
+Expect unpaid work or speculative delivery
+
+Require constant price renegotiation
+
+Ideal Clients
+
+Organizations seeking long-term solutions
+
+Decision-makers with budget authority
+
+Clients who value strategy and clarity
+
+Institutions requiring reliability and security
+
+36. Sales Flow with Pricing (Standardized)
+
+Strategy Call (Free)
+
+Assessment or Discovery (Paid)
+
+Defined Proposal with USD pricing
+
+Contract & scope confirmation
+
+Delivery
+
+Optional retainer or advisory engagement
+
+No step is skipped.
+
+37. Pricing Display Rules (Website & Proposals)
+Website
+
+USD pricing ranges only
+
+Clear disclaimer
+
+Strategy Call CTA
+
+Proposals
+
+USD primary
+
+Local currency secondary (where applicable)
+
+Scope-based breakdown
+
+Invoices
+
+Currency agreed contractually
+
+Milestone-based billing preferred
+
+38. Payment Structure Standards
+
+50–70% upfront for project engagements
+
+Milestone-based releases
+
+Retainers billed monthly in advance
+
+No delivery without contract and initial payment
+
+39. AI / Copilot Pricing Instructions (MANDATORY)
+
+When generating pricing-related content:
+
+Rules:
+
+Never invent prices outside approved ranges
+
+Always frame pricing as value-based
+
+Always include Strategy Call CTA
+
+Never describe pricing as “cheap”, “affordable”, or “budget”
+
+Approved descriptors:
+
+“Investment”
+
+“Engagement fee”
+
+“Consulting engagement”
+
+“Delivery scope”
+
+40. Strategic Outcome (Executive Summary)
+
+This pricing framework:
+
+Protects AJNETWORKS’ positioning
+
+Enables cross-border scalability
+
+Aligns with enterprise consulting norms
+
+Filters unqualified clients early
+
+Supports long-term advisory relationships
+
+FINAL LOCK STATEMENT
+
+This pricing, commercial, and qualification framework is FINAL.
+
+Any future changes must be:
+
+Strategic
+
+Documented
+
+Approved at master-plan level
+
 
 END OF MASTER BLUEPRINT
