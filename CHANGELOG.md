@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Planned
+
 - Enhanced blog functionality with categories
 - Client testimonials video section
 - Interactive portfolio filtering
@@ -21,7 +22,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🎉 Major Release - Complete Website Revamp
 
 #### Added
+
 - **New Documentation**
+
   - Comprehensive README.md with setup instructions
   - Proprietary LICENSE agreement
   - CONTRIBUTING.md guidelines for team members
@@ -29,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - CHANGELOG.md for version tracking
 
 - **New Service Pages**
+
   - Technology & Digital Strategy (`technology-strategy.html`)
   - Software Engineering (`software-engineering.html`)
   - Cybersecurity & Assurance (`cybersecurity.html`)
@@ -45,22 +49,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Improved mobile responsiveness
 
 #### Changed
+
 - **Brand Positioning**
+
   - Repositioned from service vendor to consulting-first firm
   - Updated tagline and core messaging
   - Emphasis on business outcomes over technical features
 
 - **Contact Information**
+
   - Email: contact@mail.net → jabrahamjohns@gmail.com
   - Phone: +1-800-456-478-23 → +254 758 238 617
   - Location: Seattle, USA → Nairobi & Mombasa, Kenya
 
 - **Service Structure**
+
   - From 3 generic services to 5 core practices
   - Consulting-led approach throughout
   - Security embedded in all offerings
 
 - **Team Section**
+
   - Updated team member names to reflect Kenyan team
   - Professional role titles (Principal Consultant, CTO, etc.)
   - Fixed duplicate name issues
@@ -71,12 +80,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Consistent across all pages
 
 #### Updated
+
 - **Content Alignment**
+
   - All pages aligned with master blueprint (`data.md`)
   - Consistent branding across 15+ pages
   - Professional business-focused copy
 
 - **Social Media Links**
+
   - Twitter: https://twitter.com/ajnetworks
   - Facebook: https://facebook.com/ajnetworks
   - LinkedIn: https://linkedin.com/company/ajnetworks
@@ -88,6 +100,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Updated copyright to 2026
 
 #### Fixed
+
 - Broken links (it-services.html, it.html references)
 - Portfolio detail page links (htportfolio-details-1.html typo)
 - Duplicate team member names
@@ -97,6 +110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Mobile menu functionality
 
 #### Removed
+
 - Generic template content
 - Outdated PHP Development references
 - Seattle location references
@@ -106,6 +120,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🛠️ Technical Improvements
 
 #### Scripts Added
+
 - `update-dev-pages.ps1` - Bulk branding updates
 - `update-web-dev-content.ps1` - Web development page updates
 - `update-mobile-dev-content.ps1` - Mobile development page updates
@@ -115,6 +130,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `verify-updates.ps1` - Verification utility
 
 #### Pages Updated
+
 - ✅ index-2.html (main landing page)
 - ✅ about-us.html
 - ✅ services.html
@@ -128,6 +144,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ✅ portfolio-grid.html
 
 ### 📊 Metrics
+
 - **Pages Refactored**: 15+
 - **Lines of Code Changed**: 5,000+
 - **Brand Touchpoints Updated**: 50+
@@ -138,10 +155,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.5.0] - 2024-12-15
 
 ### Added
+
 - Initial about-us page enhancements
 - Basic portfolio structure
 
 ### Changed
+
 - Minor styling improvements
 - Updated some service descriptions
 
@@ -152,6 +171,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🎉 Initial Release
 
 #### Added
+
 - Basic HTML website structure
 - Home page with hero section
 - About page
@@ -164,6 +184,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Revolution Slider integration
 
 #### Features
+
 - Responsive layout
 - Client logo carousel
 - Service boxes
@@ -181,6 +202,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **PATCH** (x.x.1): Bug fixes, small content updates, performance improvements
 
 ### Examples
+
 - `2.0.0` - Complete revamp (current)
 - `2.1.0` - Add new service page or major feature
 - `2.1.1` - Fix typo or broken link
@@ -204,6 +226,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to contribute to t
 ## Support
 
 For issues, questions, or suggestions:
+
 - **Email**: jabrahamjohns@gmail.com
 - **Phone**: +254 758 238 617
 
