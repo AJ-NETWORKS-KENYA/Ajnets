@@ -1,0 +1,127 @@
+/**
+ * Contact Form Styles
+ * Enhanced styling for contact form validation and feedback
+ */
+
+/* Success Message */
+#ajaxsuccess {
+  display: none;
+  background: #28a745;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(40, 167, 69, 0.3);
+  animation: slideInDown 0.5s ease-out;
+}
+
+#ajaxsuccess i {
+  font-size: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Error Messages */
+.error {
+  color: #dc3545;
+  font-size: 13px;
+  display: none;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+#err-form,
+#err-timedout,
+#err-state {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border-left: 4px solid #dc3545;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Form Input States */
+.wpcf7 input.error-input,
+.wpcf7 textarea.error-input {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.wpcf7 input.success-input,
+.wpcf7 textarea.success-input {
+  border-color: #28a745 !important;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Submit Button Loading State */
+#send:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  position: relative;
+}
+
+#send:disabled::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spinner 0.6s linear infinite;
+}
+
+/* Animations */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Required Field Indicator */
+.wpcf7 input[required]::placeholder,
+.wpcf7 textarea[required]::placeholder {
+  opacity: 0.7;
+}
+
+/* Focus States */
+.wpcf7 input:focus,
+.wpcf7 textarea:focus {
+  border-color: #0066cc;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #ajaxsuccess {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  #err-form,
+  #err-timedout,
+  #err-state {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/contact-form.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
   </head>
 
@@ -116,11 +117,31 @@
                         <li class="menu-item-has-children">
                           <a href="services.html">Services</a>
                           <ul class="sub-menu">
-                            <li><a href="technology-strategy.html">Technology & Digital Strategy</a></li>
-                            <li><a href="software-engineering.html">Software Engineering</a></li>
-                            <li><a href="cybersecurity.html">Cybersecurity & Assurance</a></li>
-                            <li><a href="networking.html">Networking & Infrastructure</a></li>
-                            <li><a href="performance-seo.html">Performance & SEO</a></li>
+                            <li>
+                              <a href="technology-strategy.html"
+                                >Technology & Digital Strategy</a
+                              >
+                            </li>
+                            <li>
+                              <a href="software-engineering.html"
+                                >Software Engineering</a
+                              >
+                            </li>
+                            <li>
+                              <a href="cybersecurity.html"
+                                >Cybersecurity & Assurance</a
+                              >
+                            </li>
+                            <li>
+                              <a href="networking.html"
+                                >Networking & Infrastructure</a
+                              >
+                            </li>
+                            <li>
+                              <a href="performance-seo.html"
+                                >Performance & SEO</a
+                              >
+                            </li>
                           </ul>
                         </li>
                         <li><a href="solutions.html">Solutions</a></li>
@@ -224,7 +245,7 @@
             </div>
             <div class="mmenu_wrapper">
               <div class="mobile_nav collapse">
-                                <ul id="menu-main-menu" class="mobile_mainmenu">
+                <ul id="menu-main-menu" class="mobile_mainmenu">
                   <li><a href="index-2.html">Home</a></li>
                   <li class="menu-item-has-children">
                     <a href="about-us.html">Company</a>
@@ -235,11 +256,29 @@
                   <li class="menu-item-has-children">
                     <a href="services.html">Services</a>
                     <ul class="sub-menu">
-                      <li><a href="technology-strategy.html">Technology & Digital Strategy</a></li>
-                      <li><a href="software-engineering.html">Software Engineering</a></li>
-                      <li><a href="cybersecurity.html">Cybersecurity & Assurance</a></li>
-                      <li><a href="networking.html">Networking & Infrastructure</a></li>
-                      <li><a href="performance-seo.html">Performance & SEO</a></li>
+                      <li>
+                        <a href="technology-strategy.html"
+                          >Technology & Digital Strategy</a
+                        >
+                      </li>
+                      <li>
+                        <a href="software-engineering.html"
+                          >Software Engineering</a
+                        >
+                      </li>
+                      <li>
+                        <a href="cybersecurity.html"
+                          >Cybersecurity & Assurance</a
+                        >
+                      </li>
+                      <li>
+                        <a href="networking.html"
+                          >Networking & Infrastructure</a
+                        >
+                      </li>
+                      <li>
+                        <a href="performance-seo.html">Performance & SEO</a>
+                      </li>
                     </ul>
                   </li>
                   <li><a href="solutions.html">Solutions</a></li>
@@ -316,7 +355,7 @@
                 <form
                   id="ajax-form"
                   name="ajax-form"
-                  action="http://templates.thememodern.com/AJNETWORKS/contact.php"
+                  action="https://formspree.io/f/mwpevvja"
                   method="post"
                   class="wpcf7"
                 >
@@ -381,6 +420,25 @@
                         aria-required="true"
                         aria-invalid="false"
                         placeholder="Your Email *"
+                        required=""
+                      />
+                    </p>
+                    <p>
+                      <label for="phone">
+                        <span class="error" id="err-phone"
+                          >please enter phone number</span
+                        >
+                      </label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        value=""
+                        size="40"
+                        class=""
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Your Phone Number *"
                         required=""
                       />
                     </p>
@@ -450,7 +508,7 @@
             <div class="col-md-4 col-sm-6">
               <div class="contact-info box-style2 ft-contact-info">
                 <div class="box-icon"><i class="flaticon-world-globe"></i></div>
-                <p>Nairobi, Kenya</p>
+                <p>Nairobi & Mombasa, Kenya</p>
                 <h6>Our Address</h6>
               </div>
             </div>
@@ -483,7 +541,12 @@
               </div>
               <div class="space-20"></div>
               <p class="copyright-text v2">
-                Copyright © 2025 AJNETWORKS. All Rights Reserved.
+                Copyright © <span id="currentYear"></span> AJNETWORKS. All
+                Rights Reserved.
+                <script>
+                  document.getElementById("currentYear").textContent =
+                    new Date().getFullYear();
+                </script>
               </p>
               <div class="space-26"></div>
               <div class="ft-list-icon">
@@ -534,6 +597,7 @@
     <script src="js/easypiechart.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/contact-form.js"></script>
     <script src="js/header-mobile.js"></script>
     <script src="js/royal_preloader.min.js"></script>
     <script>
