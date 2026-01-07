@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/owl.theme.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/logo-ajnetworks.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
   </head>
   <body class="royal_preloader">
@@ -145,7 +146,7 @@
                                 <input
                                   type="search"
                                   class="search-field"
-                                  placeholder="Search …"
+                                  placeholder="Search ï¿½"
                                   value=""
                                   name="s"
                                 />
@@ -299,7 +300,7 @@
                 <p>
                   We believe technology should solve real business problems.
                   Every solution must be intentional, secure by design, and
-                  built to scale — not just to launch.
+                  built to scale ï¿½ not just to launch.
                 </p>
               </div>
             </div>
@@ -396,7 +397,7 @@
                 <div class="content-box">
                   <h3>Custom Business Systems</h3>
                   <p>
-                    Tailored systems built to match your business processes — not generic off-the-shelf tools. We design and develop membership platforms, management systems, and internal operational tools.
+                    Tailored systems built to match your business processes ï¿½ not generic off-the-shelf tools. We design and develop membership platforms, management systems, and internal operational tools.
                   </p>
                   <ul class="list-unstyled mt-3">
                     <li>
@@ -472,7 +473,7 @@
                 <h5>Business Problem:</h5>
                 <p>Organizations need digital presence that reflects their professionalism, performs well under load, and ranks in search engines.</p>
                 <h5 class="mt-3">Strategic Approach:</h5>
-                <p>We design for user experience, build for performance, and optimize for search visibility — with security and infrastructure best practices embedded.</p>
+                <p>We design for user experience, build for performance, and optimize for search visibility ï¿½ with security and infrastructure best practices embedded.</p>
               </div>
             </div>
           </div>
@@ -644,7 +645,7 @@
               >
                 <h5>Infrastructure as Foundation:</h5>
                 <p>
-                  Networking and infrastructure are not afterthoughts — they are
+                  Networking and infrastructure are not afterthoughts ï¿½ they are
                   the foundation for secure, scalable, and performant systems.
                 </p>
               </div>
@@ -697,7 +698,7 @@
               >
                 <h5>Growth Through Technology:</h5>
                 <p>
-                  Performance and SEO are not standalone services — they are
+                  Performance and SEO are not standalone services ï¿½ they are
                   integrated into our engineering and consulting practices to
                   ensure systems deliver business value.
                 </p>
@@ -745,7 +746,7 @@
             </div>
             <div class="col-md-6 text-left text-md-right align-self-center">
               <p class="copyright-text">
-                Copyright © 2026 AJNETWORKS. All Rights Reserved.
+                Copyright &copy; 2026 AJNETWORKS. All Rights Reserved.
               </p>
             </div>
           </div>
@@ -767,7 +768,18 @@
     <script src="js/header-mobile.js"></script>
     <script src="js/royal_preloader.min.js"></script>
     <script>
-      Royal_Preloader.config({ mode: "progress", showProgress: true });
+      jQuery(document).ready(function($) {
+        "use strict";
+        Royal_Preloader.config({
+          mode: "logo",
+          logo: "images/logo.svg",
+          logo_size: [160, 75],
+          showProgress: true,
+          showPercentage: true,
+          text_colour: "#000000",
+          background: "#ffffff",
+        });
+      });
     </script>
   </body>
 </html>

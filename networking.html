@@ -17,10 +17,19 @@
     />
     <meta name="author" content="AJNETWORKS" />
     <title>Networking &amp; IT Infrastructure | AJNETWORKS</title>
-        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon-96x96.png"
+    />
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
     <link rel="manifest" href="images/site.webmanifest" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -29,9 +38,10 @@
     <link rel="stylesheet" href="css/owl.theme.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="style.css?v=20260105083514" />
+    <link rel="stylesheet" href="css/logo-ajnetworks.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
   </head>
-  <body>
+  <body class="royal_preloader">
     <div id="page" class="site">
       <header id="site-header" class="site-header sticky-header header-static">
         <div class="header-topbar style-2">
@@ -174,7 +184,7 @@
                                 <input
                                   type="search"
                                   class="search-field"
-                                  placeholder="Search …"
+                                  placeholder="Search ï¿½"
                                   value=""
                                   name="s"
                               /></label>
@@ -293,7 +303,7 @@
                 <h2 class="main-heading">Infrastructure as Foundation</h2>
               </div>
               <p class="mb-4">
-                Networking and infrastructure are not afterthoughts — they are
+                Networking and infrastructure are not afterthoughts ï¿½ they are
                 the foundation for secure, scalable, and performant systems.
               </p>
               <p>
@@ -304,22 +314,22 @@
               <ul class="list-unstyled mt-4">
                 <li class="mb-2">
                   <i class="fas fa-check-circle text-primary mr-2"></i>
-                  <strong>Performance</strong> – Low latency, high throughput,
+                  <strong>Performance</strong> ï¿½ Low latency, high throughput,
                   optimized connectivity
                 </li>
                 <li class="mb-2">
                   <i class="fas fa-check-circle text-primary mr-2"></i>
-                  <strong>Reliability</strong> – Redundancy, failover, monitored
+                  <strong>Reliability</strong> ï¿½ Redundancy, failover, monitored
                   uptime
                 </li>
                 <li class="mb-2">
                   <i class="fas fa-check-circle text-primary mr-2"></i>
-                  <strong>Security</strong> – Segmentation, firewall rules,
+                  <strong>Security</strong> ï¿½ Segmentation, firewall rules,
                   secure configurations
                 </li>
                 <li class="mb-2">
                   <i class="fas fa-check-circle text-primary mr-2"></i>
-                  <strong>Scalability</strong> – Designed to grow with your
+                  <strong>Scalability</strong> ï¿½ Designed to grow with your
                   business needs
                 </li>
               </ul>
@@ -790,14 +800,28 @@
       </footer>
     </div>
 
-    <script src="js/royal_preloader.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/easypiechart.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/scripts.js?v=20260105083514"></script>
+    <script src="js/scripts.js"></script>
     <script src="js/header-mobile.js"></script>
+    <script src="js/royal_preloader.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        "use strict";
+        Royal_Preloader.config({
+          mode: "logo",
+          logo: "images/logo.svg",
+          logo_size: [160, 75],
+          showProgress: true,
+          showPercentage: true,
+          text_colour: "#000000",
+          background: "#ffffff",
+        });
+      });
+    </script>
   </body>
 </html>

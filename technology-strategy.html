@@ -17,10 +17,19 @@
     />
     <meta name="author" content="AJNETWORKS" />
     <title>Technology &amp; Digital Strategy | AJNETWORKS</title>
-        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon-96x96.png"
+    />
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
     <link rel="manifest" href="images/site.webmanifest" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -29,9 +38,10 @@
     <link rel="stylesheet" href="css/owl.theme.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="style.css?v=20260105083514" />
+    <link rel="stylesheet" href="css/logo-ajnetworks.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
   </head>
-  <body>
+  <body class="royal_preloader">
     <div id="page" class="site">
       <header id="site-header" class="site-header sticky-header header-static">
         <div class="header-topbar style-2">
@@ -174,7 +184,7 @@
                                 <input
                                   type="search"
                                   class="search-field"
-                                  placeholder="Search …"
+                                  placeholder="Search ï¿½"
                                   value=""
                                   name="s"
                               /></label>
@@ -413,7 +423,7 @@
                 <span>// our methodology</span>
                 <h2 class="main-heading">Our Strategic Approach</h2>
                 <p class="lead">
-                  From strategy to execution — without handoffs.
+                  From strategy to execution ï¿½ without handoffs.
                 </p>
               </div>
             </div>
@@ -482,28 +492,28 @@
               <ul class="list-unstyled">
                 <li class="mb-3">
                   <i class="fas fa-check-circle text-primary mr-2"></i>
-                  <strong>Technology Audit Reports</strong> – Comprehensive
+                  <strong>Technology Audit Reports</strong> ï¿½ Comprehensive
                   assessment of current systems, risks, and opportunities
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-check-circle text-primary mr-2"></i>
-                  <strong>Architecture Diagrams</strong> – Visual representation
+                  <strong>Architecture Diagrams</strong> ï¿½ Visual representation
                   of recommended system architecture and integration patterns
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-check-circle text-primary mr-2"></i>
-                  <strong>Implementation Roadmap</strong> – Phased approach with
+                  <strong>Implementation Roadmap</strong> ï¿½ Phased approach with
                   timelines, resource requirements, and cost projections
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-check-circle text-primary mr-2"></i>
-                  <strong>Security & Risk Assessment Summary</strong> –
+                  <strong>Security & Risk Assessment Summary</strong> ï¿½
                   Identified vulnerabilities, compliance gaps, and mitigation
                   strategies
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-check-circle text-primary mr-2"></i>
-                  <strong>Vendor & Technology Recommendations</strong> –
+                  <strong>Vendor & Technology Recommendations</strong> ï¿½
                   Objective analysis of platforms, tools, and service providers
                 </li>
               </ul>
@@ -529,7 +539,7 @@
                 </div>
                 <p>
                   Every strategic recommendation includes cybersecurity and
-                  infrastructure considerations — not as separate workstreams,
+                  infrastructure considerations ï¿½ not as separate workstreams,
                   but as foundational requirements.
                 </p>
               </div>
@@ -614,14 +624,28 @@
       </footer>
     </div>
 
-    <script src="js/royal_preloader.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/easypiechart.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/scripts.js?v=20260105083514"></script>
+    <script src="js/scripts.js"></script>
     <script src="js/header-mobile.js"></script>
+    <script src="js/royal_preloader.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        "use strict";
+        Royal_Preloader.config({
+          mode: "logo",
+          logo: "images/logo.svg",
+          logo_size: [160, 75],
+          showProgress: true,
+          showPercentage: true,
+          text_colour: "#000000",
+          background: "#ffffff",
+        });
+      });
+    </script>
   </body>
 </html>
