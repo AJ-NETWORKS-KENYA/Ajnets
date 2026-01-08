@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.ajnetworkskenya.it.com/sitemap.xml
