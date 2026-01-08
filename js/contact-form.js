@@ -117,11 +117,15 @@
         method: 'POST',
         data: $form.serialize(),
         dataType: "json",
+        headers: {
+            'Accept': 'application/json'
+        },
         success: function() {
            // Redirect to Thank You page
-           window.location.href = "thank-you";
+           window.location.href = "thank-you.html";
         },
-        error: function() {
+        error: function(xhr, status, error) {
+           console.error("Form submission failed:", status, error, xhr.responseText);
            $errorContainer.text("There was an error sending your message. Please try again.").show();
            $submitBtn.prop("disabled", false).text("Request Strategy Call");
         }
