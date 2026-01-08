@@ -111,9 +111,25 @@
       // Disable submit button and show loading
       $submitBtn.prop("disabled", true).text("Sending...");
 
-      // Let the form submit naturally to Formspree
-      // Formspree will handle the submission and show their confirmation page
-      return true;
+      // AJAX Submission
+      $.ajax({
+        url: $form.attr('action'),
+        method: 'POST',
+        data: $form.serialize(),
+        dataType: "json",
+        success: function() {
+           // Redirect to Thank You page
+           window.location.href = "thank-you";
+        },
+        error: function() {
+           $errorContainer.text("There was an error sending your message. Please try again.").show();
+           $submitBtn.prop("disabled", false).text("Request Strategy Call");
+        }
+      });
+      
+      // Prevent default form submission
+      e.preventDefault();
+      return false;
     });
 
     // Clear error messages on input
