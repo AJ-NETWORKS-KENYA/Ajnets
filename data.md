@@ -4,9 +4,9 @@
 
 This blueprint defines the **full strategic, technical, and content direction** for the AJNETWORKS website revamp. It is designed to:
 
-* Reposition AJNETWORKS as a **serious technology and digital solutions company**.
-* Act as a **business development engine** (lead generation, credibility, scalability).
-* Serve as a foundation before the **personal developer brand revamp**.
+- Reposition AJNETWORKS as a **serious technology and digital solutions company**.
+- Act as a **business development engine** (lead generation, credibility, scalability).
+- Serve as a foundation before the **personal developer brand revamp**.
 
 ---
 
@@ -28,9 +28,9 @@ Engineering is not sold in isolation — it is the execution layer of a consulti
 
 Cybersecurity and networking are **core capabilities**, not side services:
 
-* Embedded into every solution
-* Explicitly communicated as risk mitigation and resilience
-* Positioned as business enablers, not fear-driven services
+- Embedded into every solution
+- Explicitly communicated as risk mitigation and resilience
+- Positioned as business enablers, not fear-driven services
 
 ---
 
@@ -44,11 +44,11 @@ AJNETWORKS is positioned as a **technology partner**, not just a service vendor.
 
 ### Brand Pillars
 
-* Technical Excellence
-* Security & Reliability
-* Scalability & Performance
-* Business-Centered Solutions
-* Transparency & Trust
+- Technical Excellence
+- Security & Reliability
+- Scalability & Performance
+- Business-Centered Solutions
+- Transparency & Trust
 
 ---
 
@@ -56,15 +56,15 @@ AJNETWORKS is positioned as a **technology partner**, not just a service vendor.
 
 ### Primary
 
-* SMEs & Startups (Kenya & Global)
-* NGOs, Institutions, and Churches
-* Founders needing MVPs and platforms
+- SMEs & Startups (Kenya & Global)
+- NGOs, Institutions, and Churches
+- Founders needing MVPs and platforms
 
 ### Secondary
 
-* Enterprise partners
-* Developers & collaborators
-* Talent & interns
+- Enterprise partners
+- Developers & collaborators
+- Talent & interns
 
 ---
 
@@ -72,7 +72,7 @@ AJNETWORKS is positioned as a **technology partner**, not just a service vendor.
 
 ### Main Navigation
 
-the same navigation as index-2.html which servers as the main landing page
+the same navigation as index.html which servers as the main landing page
 
 ### Footer
 
@@ -92,18 +92,18 @@ This section now reflects a **consulting-first, business-led structure**.
 **Hero Message (Draft Direction):**
 "Technology decisions that move your business forward — designed, engineered, and secured end-to-end."
 
-Primary CTA: *Request a Strategy Call*
-Secondary CTA: *View Our Work*
+Primary CTA: _Request a Strategy Call_
+Secondary CTA: _View Our Work_
 
 Sections:
 
-* Consulting-Led Hero
-* Business Problems We Solve
-* Our Consulting-to-Delivery Model
-* Core Capabilities (Consulting → Engineering → Security)
-* Featured Case Studies
-* Trust & Credentials
-* Conversion CTA
+- Consulting-Led Hero
+- Business Problems We Solve
+- Our Consulting-to-Delivery Model
+- Core Capabilities (Consulting → Engineering → Security)
+- Featured Case Studies
+- Trust & Credentials
+- Conversion CTA
 
 ---
 
@@ -113,11 +113,11 @@ Sections:
 
 Sections:
 
-* Why AJNETWORKS Exists (Problem-driven)
-* Consulting Philosophy
-* Execution Capability (Engineering, Networking, Security)
-* Leadership & Credentials
-* Strategic Partnerships
+- Why AJNETWORKS Exists (Problem-driven)
+- Consulting Philosophy
+- Execution Capability (Engineering, Networking, Security)
+- Leadership & Credentials
+- Strategic Partnerships
 
 ---
 
@@ -125,37 +125,38 @@ Sections:
 
 #### 1. Technology & Digital Strategy Consulting
 
-* Business analysis
-* System audits
-* Technology roadmapping
-* Vendor & architecture advisory
+- Business analysis
+- System audits
+- Technology roadmapping
+- Vendor & architecture advisory
 
 #### 2. Software Engineering & Systems Development
 
-* Web & platform engineering
-* Mobile applications
-* Custom internal systems
+- Web & platform engineering
+- Mobile applications
+- Custom internal systems
 
 #### 3. Cybersecurity & Infrastructure Assurance
 
-* Secure system design
-* Application security
-* Network security & hardening
-* Risk assessments
+- Secure system design
+- Application security
+- Network security & hardening
+- Risk assessments
 
 #### 4. Networking & IT Infrastructure
 
-* Network design & deployment
-* Monitoring & optimization
-* Hybrid & cloud networking
+- Network design & deployment
+- Monitoring & optimization
+- Hybrid & cloud networking
 
 #### 5. Performance, SEO & Growth Enablement
 
-* Technical SEO
-* Performance optimization
-* Conversion-focused improvements
+- Technical SEO
+- Performance optimization
+- Conversion-focused improvements
 
-####  6. Managed & Outsourced Technology Services (Controlled Offering)
+#### 6. Managed & Outsourced Technology Services (Controlled Offering)
+
 Positioning Statement
 
 AJNETWORKS offers managed and outsourced technology services as a secondary, optional engagement layer, designed to support business continuity after strategy or delivery engagements.
@@ -184,6 +185,7 @@ Protect long-term technology investments
 They are positioned as business enablement services, not ad-hoc technical labor.
 
 Managed & Outsourced Service Categories
+
 1. Website & Application Maintenance
 
 Post-launch support and system upkeep
@@ -276,10 +278,10 @@ Stronger system reliability and trust
 
 Each service page follows:
 
-* Business problem
-* Strategic approach
-* Engineering execution
-* Security & reliability considerations
+- Business problem
+- Strategic approach
+- Engineering execution
+- Security & reliability considerations
 
 ---
 
@@ -289,12 +291,12 @@ Each service page follows:
 
 Sections:
 
-* Hero (Strong headline + CTA)
-* What We Do (3–5 core services)
-* Why AJNETWORKS (Differentiators)
-* Featured Projects
-* Trust Signals (Clients, testimonials)
-* Call-to-Action (Consultation)
+- Hero (Strong headline + CTA)
+- What We Do (3–5 core services)
+- Why AJNETWORKS (Differentiators)
+- Featured Projects
+- Trust Signals (Clients, testimonials)
+- Call-to-Action (Consultation)
 
 ---
 
@@ -304,11 +306,11 @@ Sections:
 
 Sections:
 
-* Company Story
-* Mission, Vision, Values
-* Leadership / Team Overview
-* Certifications & Achievements
-* Why Work With Us
+- Company Story
+- Mission, Vision, Values
+- Leadership / Team Overview
+- Certifications & Achievements
+- Why Work With Us
 
 ---
 
@@ -316,20 +318,20 @@ Sections:
 
 Each service page includes:
 
-* Business problem
-* AJNETWORKS solution
-* Process (Discovery → Build → Deploy → Support)
-* Tools & technologies
-* Deliverables
+- Business problem
+- AJNETWORKS solution
+- Process (Discovery → Build → Deploy → Support)
+- Tools & technologies
+- Deliverables
 
 Core Services:
 
-* Web Application Development
-* Mobile App Development
-* Cybersecurity & Hardening
-* IT Consulting & Digital Strategy
-* SEO & Performance Optimization
-* Cloud & DevOps Solutions
+- Web Application Development
+- Mobile App Development
+- Cybersecurity & Hardening
+- IT Consulting & Digital Strategy
+- SEO & Performance Optimization
+- Cloud & DevOps Solutions
 
 ---
 
@@ -337,11 +339,11 @@ Core Services:
 
 **Goal:** Speak to outcomes, not tools
 
-* SaaS Platforms
-* E-commerce Systems
-* Membership & Management Systems
-* Custom Enterprise Portals
-* API Integrations
+- SaaS Platforms
+- E-commerce Systems
+- Membership & Management Systems
+- Custom Enterprise Portals
+- API Integrations
 
 ---
 
@@ -349,11 +351,11 @@ Core Services:
 
 Each case study structure:
 
-* Client background
-* Problem
-* Solution architecture
-* Tech stack
-* Results & metrics
+- Client background
+- Problem
+- Solution architecture
+- Tech stack
+- Results & metrics
 
 ---
 
@@ -361,11 +363,11 @@ Each case study structure:
 
 Content themes:
 
-* Software engineering insights
-* Cybersecurity awareness
-* Business automation
-* Case breakdowns
-* Technical tutorials
+- Software engineering insights
+- Cybersecurity awareness
+- Business automation
+- Case breakdowns
+- Technical tutorials
 
 SEO-first structure.
 
@@ -373,11 +375,11 @@ SEO-first structure.
 
 ### 5.7 Contact / Get a Quote
 
-* Smart contact form
-* Project type selector
-* Budget range selector
-* Calendar booking
-* Direct contact details
+- Smart contact form
+- Project type selector
+- Budget range selector
+- Calendar booking
+- Direct contact details
 
 ---
 
@@ -385,15 +387,15 @@ SEO-first structure.
 
 ### Design Style
 
-* Minimal, professional, enterprise-grade
-* Dark + neutral palette with accent color
-* Clear typography hierarchy
+- Minimal, professional, enterprise-grade
+- Dark + neutral palette with accent color
+- Clear typography hierarchy
 
 ### UI Elements
 
-* Sticky navigation
-* Card-based service layout
-* Motion (subtle, performance-safe)
+- Sticky navigation
+- Card-based service layout
+- Motion (subtle, performance-safe)
 
 ---
 
@@ -403,30 +405,30 @@ The stack reflects **credibility, performance, and scalability**, not trends.
 
 ### Frontend
 
-* Next.js (React)
-* TypeScript
-* Tailwind CSS
+- Next.js (React)
+- TypeScript
+- Tailwind CSS
 
 ### CMS
 
-* Headless CMS (Sanity or Strapi)
+- Headless CMS (Sanity or Strapi)
 
 ### Backend & Engineering Layer
 
-* Node.js (API & integrations)
-* Python (automation, data, tooling where required)
+- Node.js (API & integrations)
+- Python (automation, data, tooling where required)
 
 ### Infrastructure & Networking
 
-* Vercel (frontend)
-* Cloud providers (AWS / GCP depending on client)
-* Secure networking practices (firewalls, VPNs, segmentation)
+- Vercel (frontend)
+- Cloud providers (AWS / GCP depending on client)
+- Secure networking practices (firewalls, VPNs, segmentation)
 
 ### Security
 
-* HTTPS, CSP, secure headers
-* OWASP-aligned application security
-* Secure authentication patterns
+- HTTPS, CSP, secure headers
+- OWASP-aligned application security
+- Secure authentication patterns
 
 ---
 
@@ -441,17 +443,17 @@ The stack reflects **credibility, performance, and scalability**, not trends.
 - Header/footer:
   - Header, mobile header and footer are duplicated per page. Keep navigation links and contact info (+254 758 238 617, jabrahamjohns@gmail.com) synced across pages when editing.
 - Hero slider:
-  - Home uses <div id="rev_slider_one"> and li slides (rs-70..72). Add slides following existing li structure and data-* animation attributes; update data-thumb when swapping images.
+  - Home uses <div id="rev_slider_one"> and li slides (rs-70..72). Add slides following existing li structure and data-\* animation attributes; update data-thumb when swapping images.
 - Script load order (required):
   1. js/jquery.min.js
   2. plugin scripts (jquery.magnific-popup.min.js, jquery.isotope.min.js, owl.carousel.min.js, easypiechart.min.js, jquery.countdown.min.js, etc.)
-  3. plugins/revolution/revolution/js/* (Revolution core files)
+  3. plugins/revolution/revolution/js/\* (Revolution core files)
   4. js/rev-script-2.js (home slider config) or rev-script-3.js where applicable
   5. js/scripts.js
   6. js/header-mobile.js
   - Initialize royal_preloader inline immediately after loading js/royal_preloader.min.js.
 - Components & classes to preserve:
-  - Use existing utility classes (space-20, space-5, container, row, col-*, video-popup).
+  - Use existing utility classes (space-20, space-5, container, row, col-\*, video-popup).
   - Preserve brand-related classes and tokens: main-heading, slider-tag-line, octf-btn and its variants.
   - Prefer class-based styling; avoid new inline styles except minimal logo color tweaks.
 - Carousels & grids:
@@ -464,7 +466,7 @@ The stack reflects **credibility, performance, and scalability**, not trends.
 - Running locally:
   - Open HTML files directly in a browser or serve the folder with a simple static server (no npm installs or build steps).
 - Development guidance:
-  - Keep primary custom CSS in style.css and behavior tweaks in js/scripts.js / js/header-mobile.js / rev-script-*.js.
+  - Keep primary custom CSS in style.css and behavior tweaks in js/scripts.js / js/header-mobile.js / rev-script-\*.js.
   - When changing shared layout (header/footer), update all pages.
 - Accessibility & SEO:
   - Update <title> and meta per page; maintain meaningful alt text on replaced images.
@@ -473,42 +475,42 @@ This replaces the previous Next.js/TypeScript/Tailwind frontend recommendation w
 
 ### CMS
 
-* Headless CMS (Strapi or Sanity)
+- Headless CMS (Strapi or Sanity)
 
 ### Backend (Optional)
 
-* Node.js (API extensions)
-* Serverless Functions
+- Node.js (API extensions)
+- Serverless Functions
 
 ### Hosting & DevOps
 
-* Vercel
-* GitHub Actions (CI/CD)
+- Vercel
+- GitHub Actions (CI/CD)
 
 ### Analytics & SEO
 
-* Google Analytics 4
-* Google Search Console
-* OpenGraph & Schema Markup
+- Google Analytics 4
+- Google Search Console
+- OpenGraph & Schema Markup
 
 ---
 
 ## 8. Performance, SEO & Security
 
-* Core Web Vitals optimized
-* Image & font optimization
-* HTTPS, CSP headers
-* SEO-friendly routing
-* Accessibility compliance (WCAG basics)
+- Core Web Vitals optimized
+- Image & font optimization
+- HTTPS, CSP headers
+- SEO-friendly routing
+- Accessibility compliance (WCAG basics)
 
 ---
 
 ## 9. Conversion & Growth Features
 
-* Lead capture forms
-* CRM-ready integrations
-* Newsletter signup
-* Downloadable resources
+- Lead capture forms
+- CRM-ready integrations
+- Newsletter signup
+- Downloadable resources
 
 ---
 
@@ -516,52 +518,52 @@ This replaces the previous Next.js/TypeScript/Tailwind frontend recommendation w
 
 ### Phase 1: Strategy & Content Finalization (Week 1)
 
-* Lock consulting narrative and brand tone
-* Finalize all page copy (Home, Services, Team, Portfolio)
-* Define content models for CMS (Team, Case Studies, Portfolio Grid)
+- Lock consulting narrative and brand tone
+- Finalize all page copy (Home, Services, Team, Portfolio)
+- Define content models for CMS (Team, Case Studies, Portfolio Grid)
 
 ### Phase 2: UX, Wireframes & Information Design (Weeks 2–3)
 
-* Homepage wireframe
-* Services & Consulting Practice layouts
-* **Team Page layout (roles, credibility, leadership focus)**
-* **Portfolio Grid layout (filterable, outcome-driven)**
-* Conversion optimization and CTA placement
+- Homepage wireframe
+- Services & Consulting Practice layouts
+- **Team Page layout (roles, credibility, leadership focus)**
+- **Portfolio Grid layout (filterable, outcome-driven)**
+- Conversion optimization and CTA placement
 
 ### Phase 3: Engineering & CMS Integration (Weeks 4–7)
 
-* Frontend build (Next.js)
-* CMS integration (Sanity / Strapi)
-* Portfolio & Team dynamic rendering
-* Security hardening and performance optimization
+- Frontend build (Next.js)
+- CMS integration (Sanity / Strapi)
+- Portfolio & Team dynamic rendering
+- Security hardening and performance optimization
 
 ### Phase 4: QA, SEO & Launch (Week 8)
 
-* Cross-device testing
-* SEO & accessibility validation
-* Production deployment
+- Cross-device testing
+- SEO & accessibility validation
+- Production deployment
 
 ---
 
 ### Phase 1: Strategy & Content (Week 1)
 
-* Finalize copy
-* Competitor benchmark
+- Finalize copy
+- Competitor benchmark
 
 ### Phase 2: UI/UX Design (Weeks 2–3)
 
-* Wireframes
-* High-fidelity designs
+- Wireframes
+- High-fidelity designs
 
 ### Phase 3: Development (Weeks 4–7)
 
-* Frontend + CMS
-* Content integration
+- Frontend + CMS
+- Content integration
 
 ### Phase 4: Testing & Launch (Week 8)
 
-* QA testing
-* SEO validation
+- QA testing
+- SEO validation
 
 ---
 
@@ -569,24 +571,24 @@ This replaces the previous Next.js/TypeScript/Tailwind frontend recommendation w
 
 AJNETWORKS website becomes:
 
-* Proof of capability
-* Source of case studies
-* Authority foundation
+- Proof of capability
+- Source of case studies
+- Authority foundation
 
 Your personal site will later:
 
-* Focus on YOU as an engineer
-* Link back to AJNETWORKS
-* Showcase deep technical mastery
+- Focus on YOU as an engineer
+- Link back to AJNETWORKS
+- Showcase deep technical mastery
 
 ---
 
 ## 12. Success Metrics
 
-* Lead conversions
-* Organic traffic growth
-* Engagement time
-* Client acquisition quality
+- Lead conversions
+- Organic traffic growth
+- Engagement time
+- Client acquisition quality
 
 ---
 
@@ -606,10 +608,10 @@ Your personal site will later:
 
 Elements:
 
-* Headline
-* Supporting sub-headline
-* Primary CTA button
-* Secondary CTA (View Our Work)
+- Headline
+- Supporting sub-headline
+- Primary CTA button
+- Secondary CTA (View Our Work)
 
 ---
 
@@ -619,8 +621,8 @@ Elements:
 
 Elements:
 
-* 4–5 problem statements
-* Short outcome-oriented descriptions
+- 4–5 problem statements
+- Short outcome-oriented descriptions
 
 ---
 
@@ -630,8 +632,8 @@ Elements:
 
 Elements:
 
-* 4-step model
-* Consulting → Engineering → Security → Scale
+- 4-step model
+- Consulting → Engineering → Security → Scale
 
 ---
 
@@ -641,10 +643,10 @@ Elements:
 
 Elements:
 
-* Consulting
-* Engineering
-* Cybersecurity
-* Networking & Infrastructure
+- Consulting
+- Engineering
+- Cybersecurity
+- Networking & Infrastructure
 
 ---
 
@@ -654,8 +656,8 @@ Elements:
 
 Elements:
 
-* 2–3 highlighted projects
-* Outcome-focused summaries
+- 2–3 highlighted projects
+- Outcome-focused summaries
 
 ---
 
@@ -665,9 +667,9 @@ Elements:
 
 Elements:
 
-* Certifications
-* Partnerships
-* Client logos (when available)
+- Certifications
+- Partnerships
+- Client logos (when available)
 
 ---
 
@@ -677,8 +679,8 @@ Elements:
 
 Elements:
 
-* Clear invitation
-* Strategy call CTA
+- Clear invitation
+- Strategy call CTA
 
 ---
 
@@ -704,11 +706,11 @@ We help organizations solve complex technology challenges.
 
 **Problems Addressed:**
 
-* Disconnected systems slowing operations
-* Insecure applications and infrastructure
-* Poor technology decisions leading to wasted investment
-* Platforms that cannot scale with growth
-* Lack of technical leadership and direction
+- Disconnected systems slowing operations
+- Insecure applications and infrastructure
+- Poor technology decisions leading to wasted investment
+- Platforms that cannot scale with growth
+- Lack of technical leadership and direction
 
 ---
 
@@ -731,10 +733,10 @@ From strategy to execution — without handoffs.
 **Headline:**
 Integrated capabilities under one roof.
 
-* **Technology & Digital Strategy** – Advisory, audits, roadmaps
-* **Software Engineering** – Web, mobile, and custom systems
-* **Cybersecurity** – Secure design, application and network security
-* **Networking & Infrastructure** – Reliable, monitored, scalable networks
+- **Technology & Digital Strategy** – Advisory, audits, roadmaps
+- **Software Engineering** – Web, mobile, and custom systems
+- **Cybersecurity** – Secure design, application and network security
+- **Networking & Infrastructure** – Reliable, monitored, scalable networks
 
 ---
 
@@ -745,9 +747,9 @@ Proven delivery across industries.
 
 Sample placeholders:
 
-* Membership Management & Claims Platform (Healthcare)
-* Enterprise Website & Systems Optimization
-* Secure Payment & Integration Systems
+- Membership Management & Claims Platform (Healthcare)
+- Enterprise Website & Systems Optimization
+- Secure Payment & Integration Systems
 
 Each case highlights business problem, solution, and outcome.
 
@@ -758,9 +760,9 @@ Each case highlights business problem, solution, and outcome.
 **Headline:**
 Trusted to deliver secure and reliable systems.
 
-* Industry certifications
-* Proven delivery record
-* Security-first engineering practices
+- Industry certifications
+- Proven delivery record
+- Security-first engineering practices
 
 ---
 
@@ -787,11 +789,11 @@ AJNETWORKS partners with organizations to evaluate their current technology land
 
 **Business Problems We Address:**
 
-* Technology decisions made without long-term vision
-* Inefficient or duplicated systems
-* Growing cybersecurity and infrastructure risks
-* Poor ROI on digital investments
-* Lack of internal technical leadership
+- Technology decisions made without long-term vision
+- Inefficient or duplicated systems
+- Growing cybersecurity and infrastructure risks
+- Poor ROI on digital investments
+- Lack of internal technical leadership
 
 **Our Strategic Approach:**
 
@@ -802,10 +804,10 @@ AJNETWORKS partners with organizations to evaluate their current technology land
 
 **Deliverables:**
 
-* Technology audit reports
-* Architecture diagrams
-* Implementation roadmap
-* Security & risk assessment summary
+- Technology audit reports
+- Architecture diagrams
+- Implementation roadmap
+- Security & risk assessment summary
 
 **CTA:** Request a Strategy Call
 
@@ -821,10 +823,10 @@ We design and build web platforms, internal systems, and applications that are s
 
 **Capabilities:**
 
-* Web & platform engineering
-* Mobile applications
-* Custom internal tools
-* API & system integrations
+- Web & platform engineering
+- Mobile applications
+- Custom internal tools
+- API & system integrations
 
 **Embedded Security & Networking:**
 All systems are built with secure architecture, authentication best practices, and infrastructure awareness from day one.
@@ -841,10 +843,10 @@ AJNETWORKS embeds cybersecurity into design, development, and infrastructure to 
 
 **Services:**
 
-* Secure system architecture
-* Application security reviews
-* Network security & hardening
-* Risk assessments & compliance readiness
+- Secure system architecture
+- Application security reviews
+- Network security & hardening
+- Risk assessments & compliance readiness
 
 ---
 
@@ -858,10 +860,10 @@ We design, deploy, and maintain networking infrastructure that supports performa
 
 **Services:**
 
-* Network design & deployment
-* Monitoring & optimization
-* Hybrid & cloud networking
-* Firewall & segmentation design
+- Network design & deployment
+- Monitoring & optimization
+- Hybrid & cloud networking
+- Firewall & segmentation design
 
 ---
 
@@ -879,13 +881,13 @@ We improve system performance, discoverability, and user experience through tech
 
 ### Case Study Structure
 
-* Client Overview
-* Business Challenge
-* Strategic Approach
-* Solution Architecture
-* Technology Stack
-* Security & Networking Considerations
-* Results & Business Impact
+- Client Overview
+- Business Challenge
+- Strategic Approach
+- Solution Architecture
+- Technology Stack
+- Security & Networking Considerations
+- Results & Business Impact
 
 ---
 
@@ -899,10 +901,10 @@ AJNETWORKS was established to help organizations make confident technology decis
 
 **Our Philosophy:**
 
-* Business-first thinking
-* Engineering excellence
-* Security by design
-* Long-term partnerships
+- Business-first thinking
+- Engineering excellence
+- Security by design
+- Long-term partnerships
 
 ---
 
@@ -916,22 +918,22 @@ Every successful technology initiative begins with clarity. Our strategy call is
 
 **Official Contact Details (Current):**
 
-* **Phone:** +254 758 238 617
-* **Email:** [jabrahamjohns@gmail.com](mailto:jabrahamjohns@gmail.com) *(temporary – corporate email to be added)*
+- **Phone:** +254 758 238 617
+- **Email:** [jabrahamjohns@gmail.com](mailto:jabrahamjohns@gmail.com) _(temporary – corporate email to be added)_
 
 **Working Hours:**
 
-* **Monday – Friday:** 8:00 AM – 5:00 PM (EAT)
-* **Saturday:** By appointment only
-* **Sunday & Public Holidays:** Closed
+- **Monday – Friday:** 8:00 AM – 5:00 PM (EAT)
+- **Saturday:** By appointment only
+- **Sunday & Public Holidays:** Closed
 
 **Form Fields:**
 
-* Name & Organization
-* Email & Phone
-* Business challenge summary
-* Desired outcome
-* Budget range (optional)
+- Name & Organization
+- Email & Phone
+- Business challenge summary
+- Desired outcome
+- Budget range (optional)
 
 **CTA:** Request a Strategy Call
 
@@ -941,22 +943,22 @@ Every successful technology initiative begins with clarity. Our strategy call is
 
 ### Repository Structure
 
-* /apps/web (Next.js frontend)
-* /apps/cms (Headless CMS)
-* /packages/shared
+- /apps/web (Next.js frontend)
+- /apps/cms (Headless CMS)
+- /packages/shared
 
 ### Content Modeling
 
-* Pages
-* Services
-* Case Studies
-* Blog Posts
+- Pages
+- Services
+- Case Studies
+- Blog Posts
 
 ### Deployment
 
-* GitHub + CI/CD
-* Vercel hosting
-* Environment separation (dev/staging/prod)
+- GitHub + CI/CD
+- Vercel hosting
+- Environment separation (dev/staging/prod)
 
 ---
 
@@ -964,14 +966,14 @@ Every successful technology initiative begins with clarity. Our strategy call is
 
 This website will:
 
-* Act as proof of consulting maturity
-* Provide case studies for your personal site
-* Position you as a technology leader, not just a developer
+- Act as proof of consulting maturity
+- Provide case studies for your personal site
+- Position you as a technology leader, not just a developer
 
 Your personal brand will:
 
-* Reference AJNETWORKS as the firm you lead
-* Go deeper into engineering, architecture, and leadership
+- Reference AJNETWORKS as the firm you lead
+- Go deeper into engineering, architecture, and leadership
 
 ---
 
@@ -991,17 +993,17 @@ AJNETWORKS brings together consultants, engineers, and infrastructure specialist
 
 ### Team Structure (Suggested)
 
-* Founder & Lead Technology Consultant
-* Software Engineering Lead
-* Cybersecurity & Infrastructure Lead
-* Network & Systems Specialist
-* Project & Delivery Coordination
+- Founder & Lead Technology Consultant
+- Software Engineering Lead
+- Cybersecurity & Infrastructure Lead
+- Network & Systems Specialist
+- Project & Delivery Coordination
 
 Each profile should include:
 
-* Role & responsibility
-* Short credibility-driven bio
-* Certifications or key expertise
+- Role & responsibility
+- Short credibility-driven bio
+- Certifications or key expertise
 
 ---
 
@@ -1015,16 +1017,16 @@ The portfolio grid provides **visual proof of execution** while directing users 
 
 Each portfolio item displays:
 
-* Project title
-* Industry
-* Core outcome (e.g. "Reduced processing time by 40%")
-* Technology category (Web, Platform, Infrastructure)
+- Project title
+- Industry
+- Core outcome (e.g. "Reduced processing time by 40%")
+- Technology category (Web, Platform, Infrastructure)
 
 ### Filters
 
-* Industry
-* Solution Type
-* Technology
+- Industry
+- Solution Type
+- Technology
 
 ### Portfolio Item CTA
 
@@ -1064,33 +1066,33 @@ Each solution card links to a dedicated solution detail page.
 
 1. **Digital Transformation & Modernization**
 
-   * Legacy system assessment and modernization
-   * Process automation and system integration
-   * Secure cloud and hybrid deployments
+   - Legacy system assessment and modernization
+   - Process automation and system integration
+   - Secure cloud and hybrid deployments
 
 2. **Custom Business Systems**
 
-   * Membership & management platforms
-   * Internal operational systems
-   * Workflow and data management tools
+   - Membership & management platforms
+   - Internal operational systems
+   - Workflow and data management tools
 
 3. **Enterprise Web & Platform Solutions**
 
-   * Corporate and enterprise websites
-   * Secure portals and dashboards
-   * High-performance, SEO-driven platforms
+   - Corporate and enterprise websites
+   - Secure portals and dashboards
+   - High-performance, SEO-driven platforms
 
 4. **Secure Payments & Integrations**
 
-   * Payment gateway integrations
-   * API-driven systems
-   * Data exchange and third-party integrations
+   - Payment gateway integrations
+   - API-driven systems
+   - Data exchange and third-party integrations
 
 5. **Infrastructure, Networking & Security Solutions**
 
-   * Network architecture and deployment
-   * Secure infrastructure design
-   * Monitoring, hardening, and resilience planning
+   - Network architecture and deployment
+   - Secure infrastructure design
+   - Monitoring, hardening, and resilience planning
 
 ---
 
@@ -1098,12 +1100,12 @@ Each solution card links to a dedicated solution detail page.
 
 Each solution page follows this structure:
 
-* Business problem overview
-* Strategic approach
-* Solution components
-* Security & networking considerations
-* Business outcomes
-* CTA: Request a Strategy Call
+- Business problem overview
+- Strategic approach
+- Solution components
+- Security & networking considerations
+- Business outcomes
+- CTA: Request a Strategy Call
 
 ---
 
@@ -1179,41 +1181,41 @@ Objective: Position AJNETWORKS as a technology consulting firm with engineering 
 
 ### Functional Requirements
 
-* Responsive, mobile-first frontend
-* CMS-driven content (Pages, Services, Team, Portfolio, Case Studies)
-* Strategy Call CTA with form integration
-* Portfolio grid with filters
-* SEO-optimized routing
+- Responsive, mobile-first frontend
+- CMS-driven content (Pages, Services, Team, Portfolio, Case Studies)
+- Strategy Call CTA with form integration
+- Portfolio grid with filters
+- SEO-optimized routing
 
 ### Non-Functional Requirements
 
-* Performance: Lighthouse score 90+
-* Security: HTTPS, secure headers
-* Accessibility: WCAG AA basics
-* Scalability: Modular component architecture
+- Performance: Lighthouse score 90+
+- Security: HTTPS, secure headers
+- Accessibility: WCAG AA basics
+- Scalability: Modular component architecture
 
 ### Recommended Stack
 
-* Frontend: Next.js + TypeScript + Tailwind CSS
-* CMS: Sanity or Strapi
-* Hosting: Vercel
-* Analytics: GA4
+- Frontend: Next.js + TypeScript + Tailwind CSS
+- CMS: Sanity or Strapi
+- Hosting: Vercel
+- Analytics: GA4
 
 ### Deliverables
 
-* Fully deployed website
-* CMS documentation
-* Source code repository
-* Deployment pipeline
+- Fully deployed website
+- CMS documentation
+- Source code repository
+- Deployment pipeline
 
 ---
 
 ## 24. Acceptance Criteria
 
-* All pages match approved copy
-* Portfolio and Team sections are dynamic
-* Strategy Call CTA functional
-* SEO metadata implemented
+- All pages match approved copy
+- Portfolio and Team sections are dynamic
+- Strategy Call CTA functional
+- SEO metadata implemented
 
 ---
 
@@ -1221,33 +1223,33 @@ Objective: Position AJNETWORKS as a technology consulting firm with engineering 
 
 The following case studies are **official, approved content** and must be used consistently across:
 
-* Portfolio Grid
-* Case Study detail pages
-* Proposals and credibility sections
+- Portfolio Grid
+- Case Study detail pages
+- Proposals and credibility sections
 
 ### Case Study A: AJNETWORKS – Technology Consulting & Engineering Delivery
 
-* Role: Founder & Lead Technology Consultant
-* Focus: Consulting-led strategy, engineering execution, security-by-design
-* Outcomes: Improved system reliability, stronger security posture, scalable delivery model
+- Role: Founder & Lead Technology Consultant
+- Focus: Consulting-led strategy, engineering execution, security-by-design
+- Outcomes: Improved system reliability, stronger security posture, scalable delivery model
 
 ### Case Study B: BADA Global – Digital Platform Revamp & Growth Enablement
 
-* Role: Branch Manager & Website Manager
-* Focus: Digital strategy, UX revamp, workflow optimization
-* Outcomes: 25% faster turnaround, improved brand credibility, regional scalability
+- Role: Branch Manager & Website Manager
+- Focus: Digital strategy, UX revamp, workflow optimization
+- Outcomes: 25% faster turnaround, improved brand credibility, regional scalability
 
 ### Case Study C: Crossroads Fellowship Ministries – Secure Payments & Infrastructure
 
-* Role: Web Developer & Security Analyst
-* Focus: Secure payment integration (M-Pesa), infrastructure hardening
-* Outcomes: Seamless transactions, reduced risk, improved donor trust
+- Role: Web Developer & Security Analyst
+- Focus: Secure payment integration (M-Pesa), infrastructure hardening
+- Outcomes: Seamless transactions, reduced risk, improved donor trust
 
 ### Case Study D: SGS Kenya – Institutional IT & Security Operations
 
-* Role: IT Specialist (Contract)
-* Focus: Infrastructure reliability, network analysis, cybersecurity
-* Outcomes: Zero-downtime incident resolution, improved compliance posture
+- Role: IT Specialist (Contract)
+- Focus: Infrastructure reliability, network analysis, cybersecurity
+- Outcomes: Zero-downtime incident resolution, improved compliance posture
 
 ---
 
@@ -1257,19 +1259,19 @@ This website must reflect the positioning defined in the **November 2025 CV**.
 
 ### Founder Representation
 
-* Title: Founder & Lead Technology Consultant
-* Profile tone: Consulting authority + engineering execution
+- Title: Founder & Lead Technology Consultant
+- Profile tone: Consulting authority + engineering execution
 
 ### Language Rules (DO NOT VIOLATE)
 
-* Consulting-first, business-led
-* Engineering as execution, not the pitch
-* Cybersecurity and networking embedded everywhere
+- Consulting-first, business-led
+- Engineering as execution, not the pitch
+- Cybersecurity and networking embedded everywhere
 
 Avoid:
 
-* Freelance or junior terminology
-* Tool-first descriptions
+- Freelance or junior terminology
+- Tool-first descriptions
 
 ---
 
@@ -1283,51 +1285,51 @@ This section is explicitly designed for use with **GitHub Copilot or similar AI 
 
 ### Global Rules for Copilot
 
-* Always prioritize business outcomes over technical jargon
-* Use the approved copy in this document verbatim unless instructed otherwise
-* Maintain consistency across Services, Solutions, Team, and Portfolio
+- Always prioritize business outcomes over technical jargon
+- Use the approved copy in this document verbatim unless instructed otherwise
+- Maintain consistency across Services, Solutions, Team, and Portfolio
 
 ### Page-Level Instructions
 
 **Homepage**
 
-* Use Section 13.2 Homepage Final Copy
-* Primary CTA: Request a Strategy Call
+- Use Section 13.2 Homepage Final Copy
+- Primary CTA: Request a Strategy Call
 
 **Services Pages**
 
-* Frame services as consulting practices
-* Reference Mission, Vision, Philosophy, Strategy cards
+- Frame services as consulting practices
+- Reference Mission, Vision, Philosophy, Strategy cards
 
 **Solutions Pages**
 
-* Use Section 21A structure
-* Link solutions to case studies where applicable
+- Use Section 21A structure
+- Link solutions to case studies where applicable
 
 **Team Page**
 
-* Represent a multidisciplinary consulting team
-* Founder positioned as Lead Technology Consultant
+- Represent a multidisciplinary consulting team
+- Founder positioned as Lead Technology Consultant
 
 **Portfolio & Case Studies**
 
-* Use Section 25 content as authoritative
-* Emphasize outcomes and impact
+- Use Section 25 content as authoritative
+- Emphasize outcomes and impact
 
 **Contact Page**
 
-* Display official contact details and working hours
+- Display official contact details and working hours
 
 ---
 
 ## 28. Build Acceptance Checklist (For AI or Human Developers)
 
-* Homepage matches approved wireframe and copy
-* Services and Solutions pages use shared strategic cards
-* Portfolio grid is dynamic and filterable
-* Case studies follow consulting structure
-* Strategy Call CTA functional
-* SEO, performance, and security requirements met
+- Homepage matches approved wireframe and copy
+- Services and Solutions pages use shared strategic cards
+- Portfolio grid is dynamic and filterable
+- Case studies follow consulting structure
+- Strategy Call CTA functional
+- SEO, performance, and security requirements met
 
 ---
 
@@ -1369,7 +1371,7 @@ Purpose: Establish authority and consulting credibility within the first 10 seco
 
 AI Instructions:
 
-* Build a homepage with the following sections in order:
+- Build a homepage with the following sections in order:
 
   1. Hero section with headline: "Technology Consulting & Engineering Delivery"
   2. Subheadline emphasizing strategy-led execution
@@ -1377,9 +1379,10 @@ AI Instructions:
   4. Trust statement embedding cybersecurity and networking
   5. Core Practices (3 cards):
 
-     * Technology & Digital Strategy
-     * Software Engineering & Systems Development
-     * Cybersecurity & IT Infrastructure
+     - Technology & Digital Strategy
+     - Software Engineering & Systems Development
+     - Cybersecurity & IT Infrastructure
+
   6. Engagement Process: Assess → Strategize → Engineer → Secure & Scale
   7. Selected Case Studies grid
   8. CTA banner
@@ -1394,20 +1397,22 @@ Purpose: Define AJNETWORKS consulting practices.
 
 AI Instructions:
 
-* Intro positioning AJNETWORKS as a strategic partner
-* Service sections:
+- Intro positioning AJNETWORKS as a strategic partner
+- Service sections:
 
   1. Technology & Digital Strategy
   2. Software Engineering & Systems Development
   3. Cybersecurity & Risk Management
   4. Networking & IT Infrastructure
-* Include Strategic Cards:
 
-  * Our Mission
-  * Our Vision
-  * Our Philosophy
-  * Our Strategy
-* End with Strategy Call CTA
+- Include Strategic Cards:
+
+  - Our Mission
+  - Our Vision
+  - Our Philosophy
+  - Our Strategy
+
+- End with Strategy Call CTA
 
 ---
 
@@ -1417,20 +1422,22 @@ Purpose: Show applied outcomes, not packaged products.
 
 AI Instructions:
 
-* Intro clarifying tailored solutions
-* Solution categories:
+- Intro clarifying tailored solutions
+- Solution categories:
 
-  * Digital Platforms & Portals
-  * Secure Payment & API Integrations
-  * IT Infrastructure & Networking
-  * Cybersecurity & Compliance Readiness
-* For each solution include:
+  - Digital Platforms & Portals
+  - Secure Payment & API Integrations
+  - IT Infrastructure & Networking
+  - Cybersecurity & Compliance Readiness
 
-  * Business problem
-  * Strategic approach
-  * Delivery capability
-* Include Strategic Cards (Mission, Vision, Philosophy, Strategy)
-* Reference case studies contextually
+- For each solution include:
+
+  - Business problem
+  - Strategic approach
+  - Delivery capability
+
+- Include Strategic Cards (Mission, Vision, Philosophy, Strategy)
+- Reference case studies contextually
 
 ---
 
@@ -1440,15 +1447,16 @@ Purpose: Demonstrate credibility through real engagements.
 
 AI Instructions:
 
-* Build a filterable portfolio grid
-* Portfolio items:
+- Build a filterable portfolio grid
+- Portfolio items:
 
-  * AJNETWORKS
-  * BADA Global
-  * Crossroads Fellowship Ministries
-  * SGS Kenya
-* Each card must include client, engagement type, and industry
-* Focus on outcomes, not tools
+  - AJNETWORKS
+  - BADA Global
+  - Crossroads Fellowship Ministries
+  - SGS Kenya
+
+- Each card must include client, engagement type, and industry
+- Focus on outcomes, not tools
 
 ---
 
@@ -1458,7 +1466,7 @@ Purpose: Provide structured, consulting-grade documentation.
 
 AI Instructions:
 
-* Mandatory sections:
+- Mandatory sections:
 
   1. Overview
   2. Business Context
@@ -1478,16 +1486,18 @@ Purpose: Build trust through leadership and capability.
 
 AI Instructions:
 
-* Founder profile:
+- Founder profile:
 
-  * Name: Abraham John
-  * Title: Founder & Lead Technology Consultant
-* Describe multidisciplinary team structure:
+  - Name: Abraham John
+  - Title: Founder & Lead Technology Consultant
 
-  * Consulting & Strategy
-  * Engineering & Delivery
-  * Security & Infrastructure
-* Avoid junior or freelance role titles
+- Describe multidisciplinary team structure:
+
+  - Consulting & Strategy
+  - Engineering & Delivery
+  - Security & Infrastructure
+
+- Avoid junior or freelance role titles
 
 ---
 
@@ -1497,20 +1507,23 @@ Purpose: Enable qualified inquiries.
 
 AI Instructions:
 
-* Display contact details:
+- Display contact details:
 
-  * Phone: +254 758 238 617
-  * Email: [jabrahamjohns@gmail.com](mailto:jabrahamjohns@gmail.com)
-* Working hours:
+  - Phone: +254 758 238 617
+  - Email: [jabrahamjohns@gmail.com](mailto:jabrahamjohns@gmail.com)
 
-  * Monday–Friday, 8:00 AM – 5:00 PM (EAT)
-* Include contact form:
+- Working hours:
 
-  * Name
-  * Organization
-  * Email
-  * Description of challenge
-* CTA: Request a Strategy Call
+  - Monday–Friday, 8:00 AM – 5:00 PM (EAT)
+
+- Include contact form:
+
+  - Name
+  - Organization
+  - Email
+  - Description of challenge
+
+- CTA: Request a Strategy Call
 
 ---
 
@@ -1520,24 +1533,26 @@ Purpose: Reduce sales friction and set expectations.
 
 AI Instructions:
 
-* Phases:
+- Phases:
 
   1. Discovery & Assessment
   2. Strategy & Planning
   3. Engineering & Implementation
   4. Security, Monitoring & Scale
-* Present roadmap visually and descriptively
+
+- Present roadmap visually and descriptively
 
 ---
 
 ## 30. AI Output Acceptance Rules
 
-* Language must match consulting-grade tone
-* No invented services or positioning
-* Cybersecurity and networking must appear contextually
-* Strategy Call CTA present where appropriate
+- Language must match consulting-grade tone
+- No invented services or positioning
+- Cybersecurity and networking must appear contextually
+- Strategy Call CTA present where appropriate
 
 ---
+
 AJNETWORKS — OFFICIAL PRICING STANDARD (MASTER)
 Currency Strategy (NON-NEGOTIABLE)
 
@@ -1554,7 +1569,7 @@ Final billing may adjust to prevailing exchange rates
 This standard positions AJNETWORKS as an international technology consulting firm while remaining operationally flexible.
 
 1. Strategy & Consulting Engagements
-Strategy Call
+   Strategy Call
 
 USD: Complimentary
 KES: Complimentary
@@ -1571,9 +1586,9 @@ Engagement qualification
 Primary CTA: Request a Strategy Call
 
 Technology Assessment & Advisory
-Currency	Price Range
-USD	350 – 1,000
-KES	50,000 – 150,000
+Currency Price Range
+USD 350 – 1,000
+KES 50,000 – 150,000
 
 Includes:
 
@@ -1586,9 +1601,9 @@ Strategic recommendations
 Written advisory summary
 
 Technology Strategy & Roadmap
-Currency	Price Range
-USD	1,000 – 2,700
-KES	150,000 – 400,000
+Currency Price Range
+USD 1,000 – 2,700
+KES 150,000 – 400,000
 
 Includes:
 
@@ -1601,10 +1616,10 @@ Prioritized implementation roadmap
 Budget and delivery guidance
 
 2. Engineering & Delivery Services
-Web & Platform Engineering
-Currency	Price Range
-USD	1,700 – 10,000+
-KES	250,000 – 1,500,000+
+   Web & Platform Engineering
+   Currency Price Range
+   USD 1,700 – 10,000+
+   KES 250,000 – 1,500,000+
 
 Examples:
 
@@ -1615,9 +1630,9 @@ Enterprise portals
 Dashboards and platforms
 
 Custom Business Systems
-Currency	Price Range
-USD	3,300 – 20,000+
-KES	500,000 – 3,000,000+
+Currency Price Range
+USD 3,300 – 20,000+
+KES 500,000 – 3,000,000+
 
 Examples:
 
@@ -1628,9 +1643,9 @@ Workflow automation
 Secure business platforms
 
 Secure Payments & Integrations
-Currency	Price Range
-USD	1,000 – 4,000
-KES	150,000 – 600,000
+Currency Price Range
+USD 1,000 – 4,000
+KES 150,000 – 600,000
 
 Examples:
 
@@ -1641,9 +1656,9 @@ API integrations
 Secure data exchanges
 
 Cybersecurity & Networking Projects
-Currency	Price Range
-USD	1,300 – 5,300
-KES	200,000 – 800,000
+Currency Price Range
+USD 1,300 – 5,300
+KES 200,000 – 800,000
 
 Examples:
 
@@ -1658,22 +1673,21 @@ Network architecture and optimization
 Offered only after strategy or delivery engagements.
 
 Managed Website & Application Support
-Currency	Monthly Retainer
-USD	200 – 800
-KES	30,000 – 120,000
+Currency Monthly Retainer
+USD 200 – 800
+KES 30,000 – 120,000
 Hosting & Infrastructure Oversight
-Currency	Monthly Retainer
-USD	170 – 670
-KES	25,000 – 100,000
+Currency Monthly Retainer
+USD 170 – 670
+KES 25,000 – 100,000
 Security & Patch Management
-Currency	Monthly Retainer
-USD	270 – 1,000
-KES	40,000 – 150,000
-4. Ongoing Advisory & Leadership
+Currency Monthly Retainer
+USD 270 – 1,000
+KES 40,000 – 150,000 4. Ongoing Advisory & Leadership
 Fractional Technology Consulting (CTO-Level)
-Currency	Monthly Retainer
-USD	1,000 – 2,700
-KES	150,000 – 400,000
+Currency Monthly Retainer
+USD 1,000 – 2,700
+KES 150,000 – 400,000
 
 Includes:
 
@@ -1749,8 +1763,7 @@ Canonical for website content
 
 ---
 
-AJNETWORKS — PRICING, COMMERCIAL MODEL & CLIENT QUALIFICATION (MASTER)
-31. Pricing Philosophy (Authoritative)
+AJNETWORKS — PRICING, COMMERCIAL MODEL & CLIENT QUALIFICATION (MASTER) 31. Pricing Philosophy (Authoritative)
 
 AJNETWORKS pricing reflects strategic responsibility, delivery risk, and business impact, not hours worked or tools used.
 
@@ -1770,7 +1783,7 @@ Security-inclusive by default
 This pricing framework supports regional and international engagements without repositioning or renegotiation.
 
 32. Website Pricing FAQs (Client-Facing, Approved Copy)
-FAQ 1: Why are prices listed in USD?
+    FAQ 1: Why are prices listed in USD?
 
 AJNETWORKS works with clients across multiple regions. USD pricing provides a consistent international reference and reflects our positioning as a technology consulting firm. Local billing may be converted where required.
 
@@ -1845,7 +1858,7 @@ Fractional technology leadership
 These are offered only after successful delivery.
 
 33. Pricing Objection Handling (Internal & Sales Use)
-Objection: “You are more expensive than other developers.”
+    Objection: “You are more expensive than other developers.”
 
 Response:
 We are not competing with developers. AJNETWORKS operates as a consulting-led engineering firm. Our pricing reflects strategic accountability, security responsibility, and long-term system reliability.
@@ -1949,7 +1962,7 @@ Optional retainer or advisory engagement
 No step is skipped.
 
 37. Pricing Display Rules (Website & Proposals)
-Website
+    Website
 
 USD pricing ranges only
 
@@ -2030,6 +2043,5 @@ Strategic
 Documented
 
 Approved at master-plan level
-
 
 END OF MASTER BLUEPRINT

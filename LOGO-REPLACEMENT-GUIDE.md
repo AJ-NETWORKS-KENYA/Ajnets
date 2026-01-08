@@ -40,7 +40,7 @@ The new CSS file needs to be included in every HTML page.
 **Pages that need updating:**
 
 - index.html
-- index-2.html
+- index.html
 - contact.html
 - about-us.html
 - blog.html
@@ -94,7 +94,7 @@ cd "c:\My Web Sites\ajnets"
 # List of main pages to update
 $pages = @(
     "index.html",
-    "index-2.html",
+    "index.html",
     "contact.html",
     "about-us.html",
     "blog.html",

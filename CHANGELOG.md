@@ -131,7 +131,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Pages Updated
 
-- ✅ index-2.html (main landing page)
+- ✅ index.html (main landing page)
 - ✅ about-us.html
 - ✅ services.html
 - ✅ contact.html

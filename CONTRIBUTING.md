@@ -43,7 +43,7 @@ php -S localhost:8000
 npx http-server -p 8000
 ```
 
-Visit `http://localhost:8000/index-2.html`
+Visit `http://localhost:8000/index.html`
 
 ## 📝 Contribution Guidelines
 

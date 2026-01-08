@@ -19,7 +19,7 @@ php -S localhost:8000
 npx http-server -p 8000
 
 # 3. Open in browser
-# Visit: http://localhost:8000/index-2.html
+# Visit: http://localhost:8000/index.html
 ```
 
 **That's it! You're running!** 🎉
@@ -30,7 +30,7 @@ npx http-server -p 8000
 
 ```
 AJNETWORKS Website
-├── 🏠 Homepage: index-2.html
+├── 🏠 Homepage: index.html
 ├── 📖 About: about-us.html
 ├── 💼 Services: services.html
 ├── 📞 Contact: contact.html
@@ -45,7 +45,7 @@ AJNETWORKS Website
 
 ### Main Pages
 
-- **`index-2.html`** - Landing page (start here!)
+- **`index.html`** - Landing page (start here!)
 - **`about-us.html`** - Company information
 - **`services.html`** - Service overview
 - **`contact.html`** - Contact form

@@ -55,7 +55,7 @@ Performance optimization, technical SEO, scalability engineering, and monitoring
 
 ```
 ajnets/
-├── index-2.html              # Main landing page
+├── index.html              # Main landing page
 ├── about-us.html              # Company information
 ├── services.html              # Services overview
 ├── contact.html               # Contact form
@@ -152,7 +152,7 @@ ajnets/
 
 3. **Open in browser**
    ```
-   http://localhost:8000/index-2.html
+   http://localhost:8000/index.html
    ```
 
 ---
