@@ -1,3 +1,16 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteBase /
+
+# 1. Redirect index.html to the root / (Clean Home URL)
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 2. Externally Redirect .html requests to extensionless URL (Browser Bar Change)
+# This changes browser URL from "page.html" to "page"
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [L,R=301]
+
+# 3. Internally Rewrite extensionless URL back to .html file (Server Handling)
+# This creates the link between "page" and the actual "page.html" file
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
