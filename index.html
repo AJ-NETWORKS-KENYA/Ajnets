@@ -55,15 +55,28 @@
       href="plugins/revolution/revolution/css/navigation.css"
     />
   
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E6LLT0TT7"></script>
+    <!-- Google Consent Mode v2 -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      // Default: Deny everything
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+      });
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E6LLT0TT7"></script>
+    <script>
       gtag('js', new Date());
-
       gtag('config', 'G-2E6LLT0TT7');
     </script>
+    
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <script src="js/cookie-consent.js" defer></script>
   </head>
 
   <body class="royal_preloader">
@@ -1798,7 +1811,22 @@
         });
       })(jQuery);
     </script>
-  </body>
+  
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>We value your privacy</h3>
+                <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="btn-reject-cookies" class="cookie-btn reject">Decline</button>
+                <button id="btn-accept-cookies" class="cookie-btn accept">Accept</button>
+            </div>
+        </div>
+    </div>
+
+</body>
 
   <!-- Mirrored from templates.thememodern.com/AJNETWORKS/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Jan 2026 02:59:23 GMT -->
 </html>
