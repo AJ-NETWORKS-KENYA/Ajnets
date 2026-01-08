@@ -792,7 +792,8 @@
     <script src="js/header-mobile.js"></script>
     <script src="js/royal_preloader.min.js"></script>
     <script>
-      jQuery(document).ready(function ($) {
+      window.jQuery = window.$ = jQuery;
+      (function ($) {
         "use strict";
         Royal_Preloader.config({
           mode: "logo",
@@ -803,7 +804,7 @@
           text_colour: "#000000",
           background: "#ffffff",
         });
-      });
+      })(jQuery);
     </script>
   </body>
 </html>

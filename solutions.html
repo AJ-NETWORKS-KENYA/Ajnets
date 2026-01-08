@@ -569,35 +569,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-                      <i class="fas fa-check-circle text-primary mr-2"></i>
-                      Network Security & Hardening
-                    </li>
-                    <li>
-                      <i class="fas fa-check-circle text-primary mr-2"></i> Risk
-                      Assessments & Compliance
-                    </li>
-                  </ul>
-                  <a href="cybersecurity.html" class="btn-details"
-                    ><i class="flaticon-right-arrow-1"></i> LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div
-                style="padding: 30px; background: #f8f9fa; border-radius: 8px"
-              >
-                <h5>Security is a Business Enabler:</h5>
-                <p>
-                  We position cybersecurity as risk mitigation and resilience,
-                  not fear-driven services. Security considerations are embedded
-                  into every engagement.
-                </p>
-              </div>
-            </div>
-          </div>
+
+
 
           <!-- Service 4 -->
           <div class="row align-items-center mb-5 pb-5 border-bottom">
@@ -768,7 +741,8 @@
     <script src="js/header-mobile.js"></script>
     <script src="js/royal_preloader.min.js"></script>
     <script>
-      jQuery(document).ready(function($) {
+      window.jQuery = window.$ = jQuery;
+      (function ($) {
         "use strict";
         Royal_Preloader.config({
           mode: "logo",
@@ -779,7 +753,7 @@
           text_colour: "#000000",
           background: "#ffffff",
         });
-      });
+      })(jQuery);
     </script>
   </body>
 </html>
