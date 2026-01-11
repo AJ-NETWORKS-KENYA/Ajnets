@@ -5947,6 +5947,35 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     filter: none;
     opacity: 1;
 }
+.partners-slide-inner {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+}
+
+.partners-slide-image {
+    max-height: 50px;
+    width: auto !important;
+    object-fit: contain;
+    transition: all 0.3s linear;
+    filter: contrast(0%);
+    opacity: 0.7;
+}
+
+.partners-slide-image:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.partners-slide-image.rotaract-logo {
+    max-height: 70px;
+    transform: scale(1.4);
+    transform-origin: center;
+    filter: none;
+    opacity: 1;
+}
 .owl-carousel .owl-item img {
     width: auto;
 }
