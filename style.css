@@ -5973,8 +5973,6 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     max-height: 70px;
     transform: scale(1.4);
     transform-origin: center;
-    filter: none;
-    opacity: 1;
 }
 .owl-carousel .owl-item img {
     width: auto;
