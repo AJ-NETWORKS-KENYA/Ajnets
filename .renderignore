@@ -1,0 +1,9 @@
+.github/
+.vscode/
+*.py
+*.pyc
+*.ps1
+node_modules/
+__pycache__/
+*.log
+.DS_Store
