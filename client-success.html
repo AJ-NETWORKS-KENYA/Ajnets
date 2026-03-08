@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore AJ Networks client projects and solutions across cybersecurity, web development, and IT systems. Real solutions, measurable impact." />
+  <meta name="keywords" content="AJ Networks portfolio, cybersecurity projects Kenya, web development case studies, IT solutions Nairobi" />
+  <meta name="author" content="AJNETWORKS" />
+  <title>Our Work & Solutions | AJ Networks</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cyber-blue':  '#00d4ff',
+            'cyber-green': '#00ff88',
+            'cyber-dark':  '#0a0e1a',
+            'cyber-card':  '#0f1628',
+            'cyber-border':'#1e2d4a',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'glow':  'glow 2s ease-in-out infinite alternate',
+            'fade-up': 'fadeUp 0.6s ease forwards',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%':       { transform: 'translateY(-10px)' },
+            },
+            glow: {
+              '0%':   { textShadow: '0 0 5px #00d4ff, 0 0 10px #00d4ff' },
+              '100%': { textShadow: '0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff' },
+            },
+            fadeUp: {
+              '0%':   { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Consent / Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent','default',{'analytics_storage':'denied'});
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E6LLT0TT7"></script>
+  <script>gtag('js',new Date());gtag('config','G-2E6LLT0TT7');</script>
+
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background-color: #0a0e1a; color: #e2e8f0; font-family: 'Inter', sans-serif; }
+    :root { scroll-behavior: smooth; }
+
+    /* Grid scanline overlay */
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    /* Glowing border on cards */
+    .card-glow {
+      transition: all 0.3s ease;
+      border: 1px solid #1e2d4a;
+    }
+    .card-glow:hover {
+      border-color: #00d4ff;
+      box-shadow: 0 0 20px rgba(0,212,255,0.15), 0 8px 32px rgba(0,0,0,0.4);
+      transform: translateY(-4px);
+    }
+
+    /* Tag pill */
+    .tag-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 10px;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* Animated underline nav link */
+    .nav-link {
+      position: relative;
+      transition: color 0.2s;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -4px;
+      width: 0; height: 2px;
+      background: #00d4ff;
+      transition: width 0.3s;
+    }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+    /* Glitch effect on hero title */
+    @keyframes glitch {
+      0%   { text-shadow: 2px 2px #00d4ff, -2px -2px #00ff88; }
+      25%  { text-shadow: -2px 2px #00d4ff, 2px -2px #00ff88; }
+      50%  { text-shadow: 2px -2px #00d4ff, -2px 2px #00ff88; }
+      75%  { text-shadow: -2px -2px #00d4ff, 2px 2px #00ff88; }
+      100% { text-shadow: 2px 2px #00d4ff, -2px -2px #00ff88; }
+    }
+    .glitch-text:hover { animation: glitch 0.4s linear infinite; }
+
+    /* Section fade-in on scroll */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* Gradient text */
+    .gradient-text {
+      background: linear-gradient(135deg, #00d4ff 0%, #00ff88 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Tech badge */
+    .tech-badge {
+      background: rgba(0,212,255,0.08);
+      border: 1px solid rgba(0,212,255,0.2);
+      color: #00d4ff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .tech-badge:hover {
+      background: rgba(0,212,255,0.18);
+      border-color: #00d4ff;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0e1a; }
+    ::-webkit-scrollbar-thumb { background: #1e2d4a; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00d4ff; }
+
+    /* Mobile menu */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+  </style>
+</head>
+
+<body class="grid-bg">
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300" style="background: rgba(10,14,26,0.85); backdrop-filter: blur(16px); border-bottom: 1px solid #1e2d4a;">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="./" class="flex items-center gap-3 group">
+        <img src="images/logo.svg" alt="AJ Networks" class="h-9" onerror="this.style.display='none'" />
+        <span class="font-mono text-lg font-bold gradient-text hidden sm:block">AJ<span class="text-slate-300">NETWORKS</span></span>
+      </a>
+
+      <!-- Desktop nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="./" class="nav-link text-sm text-slate-300 hover:text-cyber-blue">Home</a>
+        <a href="about-us.html" class="nav-link text-sm text-slate-300 hover:text-cyber-blue">Who We Are</a>
+        <a href="services.html" class="nav-link text-sm text-slate-300 hover:text-cyber-blue">Services</a>
+        <a href="client-success.html" class="nav-link active text-sm text-cyber-blue font-semibold">Client Success</a>
+        <a href="insights.html" class="nav-link text-sm text-slate-300 hover:text-cyber-blue">Insights</a>
+      </div>
+
+      <!-- CTA -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="book-consultation.html" class="px-5 py-2 text-sm font-semibold rounded-lg text-cyber-dark" style="background: linear-gradient(135deg, #00d4ff, #00ff88);">
+          Book Consultation
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="hamburger" class="md:hidden text-slate-300 hover:text-cyber-blue transition" aria-label="Open menu">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden px-6 pb-4 pt-2 border-t border-cyber-border">
+      <div class="flex flex-col gap-4">
+        <a href="./" class="text-sm text-slate-300 hover:text-cyber-blue">Home</a>
+        <a href="about-us.html" class="text-sm text-slate-300 hover:text-cyber-blue">Who We Are</a>
+        <a href="services.html" class="text-sm text-slate-300 hover:text-cyber-blue">Services</a>
+        <a href="client-success.html" class="text-sm text-cyber-blue font-semibold">Client Success</a>
+        <a href="insights.html" class="text-sm text-slate-300 hover:text-cyber-blue">Insights</a>
+        <a href="book-consultation.html" class="mt-2 px-4 py-2 text-sm font-semibold text-center text-cyber-dark rounded-lg" style="background: linear-gradient(135deg,#00d4ff,#00ff88);">Book Consultation</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════ HERO ══════════════════════════════════ -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="padding-top: 80px;">
+
+    <!-- Animated background orbs -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute w-96 h-96 rounded-full opacity-10 animate-float" style="background: radial-gradient(circle, #00d4ff, transparent); top: 10%; left: -5%;"></div>
+      <div class="absolute w-80 h-80 rounded-full opacity-10 animate-float" style="background: radial-gradient(circle, #00ff88, transparent); bottom: 15%; right: -5%; animation-delay: 3s;"></div>
+      <div class="absolute w-64 h-64 rounded-full opacity-5" style="background: radial-gradient(circle, #7c3aed, transparent); top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+    </div>
+
+    <!-- Breadcrumb trail -->
+    <div class="absolute top-24 left-6 md:left-12">
+      <nav class="flex items-center gap-2 text-xs font-mono text-slate-500">
+        <a href="./" class="hover:text-cyber-blue transition">~/home</a>
+        <span class="text-cyber-blue">/</span>
+        <span class="text-cyber-blue">work</span>
+      </nav>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10" style="padding-top: 60px; padding-bottom: 80px;">
+
+      <!-- Status tag -->
+      <div class="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full text-xs font-mono" style="background: rgba(0,212,255,0.08); border: 1px solid rgba(0,212,255,0.25); color: #00d4ff;">
+        <span class="w-2 h-2 rounded-full bg-cyber-green animate-pulse"></span>
+        Systems Online — 8 Deployments Active
+      </div>
+
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 glitch-text">
+        <span class="gradient-text">Our Work &</span><br/>
+        <span class="text-white">Solutions</span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Real solutions delivered by AJ Networks across cybersecurity, web development, and IT systems. Every project is built to <span class="text-cyber-blue font-semibold">scale</span>, <span class="text-cyber-green font-semibold">secure</span>, and <span class="text-white font-semibold">perform</span>.
+      </p>
+
+      <!-- Stats row -->
+      <div class="grid grid-cols-3 gap-6 max-w-xl mx-auto mb-12">
+        <div class="text-center">
+          <div class="text-3xl font-bold gradient-text">8+</div>
+          <div class="text-xs text-slate-500 font-mono mt-1">Projects Shipped</div>
+        </div>
+        <div class="text-center" style="border-left: 1px solid #1e2d4a; border-right: 1px solid #1e2d4a;">
+          <div class="text-3xl font-bold gradient-text">4</div>
+          <div class="text-xs text-slate-500 font-mono mt-1">Industries Served</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold gradient-text">100%</div>
+          <div class="text-xs text-slate-500 font-mono mt-1">Delivered On-Time</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#featured" class="px-8 py-3 rounded-lg font-semibold text-sm text-cyber-dark" style="background: linear-gradient(135deg,#00d4ff,#00ff88);">
+          View Projects <i class="fas fa-arrow-down ml-2"></i>
+        </a>
+        <a href="book-consultation.html" class="px-8 py-3 rounded-lg font-semibold text-sm text-slate-200" style="border: 1px solid #1e2d4a; background: rgba(255,255,255,0.04);">
+          Start Your Project <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-slate-600">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FEATURED ENGINEERING PROJECTS ═══════════ -->
+  <section id="featured" class="py-24 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section header -->
+      <div class="flex items-center gap-4 mb-3">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-cyber-border"></div>
+        <span class="font-mono text-xs text-cyber-blue tracking-widest">// internal_engineering</span>
+        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-cyber-border"></div>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">Internal Engineering Projects</h2>
+      <p class="text-center text-slate-400 mb-14 max-w-xl mx-auto text-sm">Proof-of-concept builds and engineering benchmarks that demonstrate our full development capabilities.</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Green Remedies -->
+        <div class="card-glow rounded-xl overflow-hidden" style="background: #0f1628;">
+          <div class="h-2" style="background: linear-gradient(90deg,#00d4ff,#00ff88);"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg" style="background: rgba(0,255,136,0.12); color: #00ff88;">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <span class="tag-pill" style="background: rgba(0,255,136,0.1); color: #00ff88;">E-Commerce</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Green Remedies</h3>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">Open-source team project — a fully authenticated e-commerce web application for herbal products, with Kinde Auth, secure checkout, and real-time inventory.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+              <span class="tech-badge">Kinde Auth</span>
+              <span class="tech-badge">TailwindCSS</span>
+            </div>
+            <div class="flex items-center justify-between pt-4" style="border-top: 1px solid #1e2d4a;">
+              <span class="text-xs font-mono text-slate-500">Internal Engineering Project</span>
+              <a href="https://thegreenremedies.com" target="_blank" rel="noopener" class="flex items-center gap-1 text-xs font-semibold text-cyber-blue hover:text-white transition">
+                View Live <i class="fas fa-external-link-alt text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transit Flow -->
+        <div class="card-glow rounded-xl overflow-hidden" style="background: #0f1628;">
+          <div class="h-2" style="background: linear-gradient(90deg,#00d4ff,#7c3aed);"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg" style="background: rgba(0,212,255,0.12); color: #00d4ff;">
+                <i class="fas fa-truck"></i>
+              </div>
+              <span class="tag-pill" style="background: rgba(0,212,255,0.1); color: #00d4ff;">Logistics</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Transit Flow Logistics</h3>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">A high-performance, fully responsive business landing page for a modern logistics provider. Designed in Figma and converted to production-quality React components.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+              <span class="tech-badge">TailwindCSS</span>
+              <span class="tech-badge">Figma</span>
+            </div>
+            <div class="flex items-center justify-between pt-4" style="border-top: 1px solid #1e2d4a;">
+              <span class="text-xs font-mono text-slate-500">Internal Engineering Project</span>
+              <a href="https://transit-flow-logistics.netlify.app" target="_blank" rel="noopener" class="flex items-center gap-1 text-xs font-semibold text-cyber-blue hover:text-white transition">
+                View Live <i class="fas fa-external-link-alt text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Audiophile -->
+        <div class="card-glow rounded-xl overflow-hidden" style="background: #0f1628;">
+          <div class="h-2" style="background: linear-gradient(90deg,#7c3aed,#ec4899);"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg" style="background: rgba(124,58,237,0.12); color: #a78bfa;">
+                <i class="fas fa-headphones"></i>
+              </div>
+              <span class="tag-pill" style="background: rgba(124,58,237,0.1); color: #a78bfa;">Retail Platform</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Audiophile E-Commerce</h3>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">A premium online retail platform for headphones and audio equipment. Advanced state management, dynamic routing, and fluid animations using Framer Motion.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+              <span class="tech-badge">Framer Motion</span>
+              <span class="tech-badge">TailwindCSS</span>
+            </div>
+            <div class="flex items-center justify-between pt-4" style="border-top: 1px solid #1e2d4a;">
+              <span class="text-xs font-mono text-slate-500">Internal Engineering Project</span>
+              <a href="https://audiophile-estore.netlify.app" target="_blank" rel="noopener" class="flex items-center gap-1 text-xs font-semibold text-cyber-blue hover:text-white transition">
+                View Live <i class="fas fa-external-link-alt text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CLIENT PROJECTS ═══════════════════════  -->
+  <section id="clients" class="py-24 reveal" style="background: rgba(15,22,40,0.6);">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex items-center gap-4 mb-3">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-cyber-border"></div>
+        <span class="font-mono text-xs text-cyber-green tracking-widest">// client_deployments</span>
+        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-cyber-border"></div>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">Client Success Stories</h2>
+      <p class="text-center text-slate-400 mb-14 max-w-xl mx-auto text-sm">Real organizations. Real problems. Engineered solutions built for the long term.</p>
+
+      <!-- Featured / wide card: Bada -->
+      <div class="card-glow rounded-xl overflow-hidden mb-6" style="background: #0f1628;">
+        <div class="grid md:grid-cols-2">
+          <div class="p-8 flex flex-col justify-center">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: rgba(0,212,255,0.1);">
+                <i class="fas fa-graduation-cap text-cyber-blue"></i>
+              </div>
+              <span class="tag-pill" style="background: rgba(0,212,255,0.1); color: #00d4ff;">Education / E-Learning</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">Bada Language Institute</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">LMS and corporate website delivering structured course catalogues, event management, and student enrolment flows for a growing language education provider.</p>
+            <div class="flex items-center gap-2 mb-6">
+              <i class="fas fa-check-circle text-cyber-green text-xs"></i>
+              <span class="text-sm text-slate-300">Streamlined course registrations</span>
+            </div>
+            <div class="flex items-center gap-2 mb-6">
+              <i class="fas fa-check-circle text-cyber-green text-xs"></i>
+              <span class="text-sm text-slate-300">Increased student engagement</span>
+            </div>
+            <div class="flex items-center gap-2 mb-8">
+              <i class="fas fa-check-circle text-cyber-green text-xs"></i>
+              <span class="text-sm text-slate-300">Enhanced brand presence in regional education</span>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="tech-badge">Wix Studio</span>
+              <span class="tech-badge">CMS</span>
+              <span class="tech-badge">SEO</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="case-study-bada.html" class="px-5 py-2 text-sm font-semibold rounded-lg text-cyber-dark" style="background: linear-gradient(135deg,#00d4ff,#00ff88);">
+                Full Case Study
+              </a>
+              <a href="https://www.badaglobal-bli.com/" target="_blank" rel="noopener" class="px-5 py-2 text-sm font-semibold rounded-lg text-slate-300" style="border: 1px solid #1e2d4a;">
+                View Live <i class="fas fa-external-link-alt text-xs ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center justify-center p-10" style="background: linear-gradient(135deg, rgba(0,212,255,0.04), rgba(0,255,136,0.04));">
+            <div class="text-center">
+              <div class="w-24 h-24 rounded-2xl flex items-center justify-center mx-auto mb-4 text-5xl" style="background: rgba(0,212,255,0.1);">🎓</div>
+              <div class="font-mono text-xs text-slate-500 mt-4">// status: deployed</div>
+              <div class="font-mono text-xs text-cyber-green mt-1">▮ online</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2-column cards row  -->
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- SGSS -->
+        <div class="card-glow rounded-xl overflow-hidden" style="background: #0f1628;">
+          <div class="h-2" style="background: linear-gradient(90deg,#f59e0b,#ef4444);"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg" style="background: rgba(245,158,11,0.12); color: #fbbf24;">
+                <i class="fas fa-place-of-worship"></i>
+              </div>
+              <span class="tag-pill" style="background: rgba(245,158,11,0.1); color: #fbbf24;">Community</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Gurdwara Siri Guru Singh Sabha</h3>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">Community portal for a Sikh temple with real-time event listings, services information, and congregation management, built on a modern TypeScript React stack.</p>
+            <div class="grid grid-cols-2 gap-3 mb-5">
+              <div class="p-3 rounded-lg text-center" style="background: rgba(0,212,255,0.05); border: 1px solid #1e2d4a;">
+                <div class="text-xs font-mono text-cyber-green">✓</div>
+                <div class="text-xs text-slate-400 mt-1">Secure Auth</div>
+              </div>
+              <div class="p-3 rounded-lg text-center" style="background: rgba(0,212,255,0.05); border: 1px solid #1e2d4a;">
+                <div class="text-xs font-mono text-cyber-green">✓</div>
+                <div class="text-xs text-slate-400 mt-1">Mobile First</div>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">TailwindCSS</span>
+            </div>
+            <div class="flex items-center justify-between pt-4" style="border-top: 1px solid #1e2d4a;">
+              <a href="case-study-sgss.html" class="text-xs font-semibold text-cyber-blue hover:text-white transition">Read Case Study →</a>
+              <a href="https://sirigurusinghsabha.vercel.app/" target="_blank" rel="noopener" class="text-xs font-semibold text-slate-500 hover:text-white transition">View Live <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rotaract Nyali -->
+        <div class="card-glow rounded-xl overflow-hidden" style="background: #0f1628;">
+          <div class="h-2" style="background: linear-gradient(90deg,#00ff88,#00d4ff);"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg" style="background: rgba(0,255,136,0.12); color: #00ff88;">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <span class="tag-pill" style="background: rgba(0,255,136,0.1); color: #00ff88;">Non-Profit</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Rotaract Club of Nyali</h3>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">A high-performance web presence for the Rotaract Nyali chapter. Showcases community projects, events, and organizational information with perfect Core Web Vitals scores.</p>
+            <div class="grid grid-cols-2 gap-3 mb-5">
+              <div class="p-3 rounded-lg text-center" style="background: rgba(0,212,255,0.05); border: 1px solid #1e2d4a;">
+                <div class="text-xs font-mono text-cyber-green">100</div>
+                <div class="text-xs text-slate-400 mt-1">Performance</div>
+              </div>
+              <div class="p-3 rounded-lg text-center" style="background: rgba(0,212,255,0.05); border: 1px solid #1e2d4a;">
+                <div class="text-xs font-mono text-cyber-green">100</div>
+                <div class="text-xs text-slate-400 mt-1">Accessibility</div>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">TailwindCSS</span>
+            </div>
+            <div class="flex items-center justify-between pt-4" style="border-top: 1px solid #1e2d4a;">
+              <a href="case-study-racnyali.html" class="text-xs font-semibold text-cyber-blue hover:text-white transition">Read Case Study →</a>
+              <a href="https://rotaractnyali.org/" target="_blank" rel="noopener" class="text-xs font-semibold text-slate-500 hover:text-white transition">View Live <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ TECHNOLOGY EXPERTISE ════════════════════ -->
+  <section id="tech" class="py-24 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center gap-4 mb-3">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-cyber-border"></div>
+        <span class="font-mono text-xs text-cyber-blue tracking-widest">// tech_stack</span>
+        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-cyber-border"></div>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">Technology Expertise</h2>
+      <p class="text-center text-slate-400 mb-12 max-w-xl mx-auto text-sm">The engineering stack powering every project we ship.</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Frontend -->
+        <div class="p-6 rounded-xl card-glow" style="background: #0f1628;">
+          <div class="flex items-center gap-2 mb-5">
+            <i class="fas fa-laptop-code text-cyber-blue"></i>
+            <h4 class="font-semibold text-white text-sm">Frontend</h4>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="tech-badge justify-start"><i class="fab fa-react w-4"></i> React</span>
+            <span class="tech-badge justify-start"><i class="fab fa-js-square w-4"></i> Next.js</span>
+            <span class="tech-badge justify-start"><i class="fas fa-code w-4"></i> TypeScript</span>
+            <span class="tech-badge justify-start"><i class="fas fa-wind w-4"></i> TailwindCSS</span>
+            <span class="tech-badge justify-start"><i class="fas fa-palette w-4"></i> Framer Motion</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="p-6 rounded-xl card-glow" style="background: #0f1628;">
+          <div class="flex items-center gap-2 mb-5">
+            <i class="fas fa-server text-cyber-green"></i>
+            <h4 class="font-semibold text-white text-sm">Backend</h4>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="tech-badge justify-start" style="color: #00ff88; border-color:rgba(0,255,136,0.2); background:rgba(0,255,136,0.07);"><i class="fab fa-python w-4"></i> Python</span>
+            <span class="tech-badge justify-start" style="color: #00ff88; border-color:rgba(0,255,136,0.2); background:rgba(0,255,136,0.07);"><i class="fas fa-flask w-4"></i> Flask</span>
+            <span class="tech-badge justify-start" style="color: #00ff88; border-color:rgba(0,255,136,0.2); background:rgba(0,255,136,0.07);"><i class="fas fa-database w-4"></i> PostgreSQL</span>
+            <span class="tech-badge justify-start" style="color: #00ff88; border-color:rgba(0,255,136,0.2); background:rgba(0,255,136,0.07);"><i class="fas fa-plug w-4"></i> REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div class="p-6 rounded-xl card-glow" style="background: #0f1628;">
+          <div class="flex items-center gap-2 mb-5">
+            <i class="fas fa-shield-halved" style="color: #ef4444;"></i>
+            <h4 class="font-semibold text-white text-sm">Cybersecurity</h4>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="tech-badge justify-start" style="color: #f87171; border-color:rgba(239,68,68,0.2); background:rgba(239,68,68,0.07);"><i class="fas fa-shield-alt w-4"></i> Network Security</span>
+            <span class="tech-badge justify-start" style="color: #f87171; border-color:rgba(239,68,68,0.2); background:rgba(239,68,68,0.07);"><i class="fas fa-lock w-4"></i> RBAC / Auth</span>
+            <span class="tech-badge justify-start" style="color: #f87171; border-color:rgba(239,68,68,0.2); background:rgba(239,68,68,0.07);"><i class="fas fa-search w-4"></i> Pen Testing</span>
+            <span class="tech-badge justify-start" style="color: #f87171; border-color:rgba(239,68,68,0.2); background:rgba(239,68,68,0.07);"><i class="fas fa-certificate w-4"></i> Compliance</span>
+          </div>
+        </div>
+
+        <!-- DevOps / CMS -->
+        <div class="p-6 rounded-xl card-glow" style="background: #0f1628;">
+          <div class="flex items-center gap-2 mb-5">
+            <i class="fas fa-cloud" style="color: #a78bfa;"></i>
+            <h4 class="font-semibold text-white text-sm">DevOps & CMS</h4>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="tech-badge justify-start" style="color: #c4b5fd; border-color:rgba(167,139,250,0.2); background:rgba(167,139,250,0.07);"><i class="fab fa-github w-4"></i> Git / GitHub</span>
+            <span class="tech-badge justify-start" style="color: #c4b5fd; border-color:rgba(167,139,250,0.2); background:rgba(167,139,250,0.07);"><i class="fab fa-docker w-4"></i> Docker</span>
+            <span class="tech-badge justify-start" style="color: #c4b5fd; border-color:rgba(167,139,250,0.2); background:rgba(167,139,250,0.07);"><i class="fas fa-sitemap w-4"></i> Wix Studio</span>
+            <span class="tech-badge justify-start" style="color: #c4b5fd; border-color:rgba(167,139,250,0.2); background:rgba(167,139,250,0.07);"><i class="fab fa-wordpress w-4"></i> WordPress</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ UPCOMING PROJECTS ════════════════════════ -->
+  <section id="upcoming" class="py-24 reveal" style="background: rgba(15,22,40,0.6);">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center gap-4 mb-3">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-cyber-border"></div>
+        <span class="font-mono text-xs text-cyber-blue tracking-widest">// upcoming_deployments</span>
+        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-cyber-border"></div>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">Coming Soon</h2>
+      <p class="text-center text-slate-400 mb-12 max-w-xl mx-auto text-sm">Products currently in active development at AJ Networks.</p>
+
+      <!-- Client Portal Card -->
+      <div class="max-w-2xl mx-auto rounded-2xl overflow-hidden card-glow" style="background: #0f1628;">
+        <div class="p-8">
+          <!-- Status bar -->
+          <div class="flex items-center gap-2 mb-6">
+            <span class="w-2 h-2 rounded-full animate-pulse" style="background: #f59e0b;"></span>
+            <span class="font-mono text-xs text-yellow-400">IN DEVELOPMENT</span>
+            <div class="ml-auto text-xs font-mono text-slate-500">Q3 2026</div>
+          </div>
+
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center text-2xl flex-shrink-0" style="background: rgba(0,212,255,0.1);">
+              🛡️
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-1">AJ Networks Client Portal</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">A secure, encrypted dashboard for enterprise clients to manage services, review monthly cybersecurity reports, submit support tickets, and track ongoing project milestones.</p>
+            </div>
+          </div>
+
+          <!-- Planned features -->
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <div class="flex items-center gap-2 p-3 rounded-lg" style="background: rgba(0,212,255,0.05); border: 1px solid #1e2d4a;">
+              <i class="fas fa-lock text-cyber-blue text-xs"></i>
+              <span class="text-xs text-slate-300">End-to-end encryption</span>
+            </div>
+            <div class="flex items-center gap-2 p-3 rounded-lg" style="background: rgba(0,212,255,0.05); border: 1px solid #1e2d4a;">
+              <i class="fas fa-chart-bar text-cyber-green text-xs"></i>
+              <span class="text-xs text-slate-300">Security reporting</span>
+            </div>
+            <div class="flex items-center gap-2 p-3 rounded-lg" style="background: rgba(0,212,255,0.05); border: 1px solid #1e2d4a;">
+              <i class="fas fa-ticket-alt text-cyber-blue text-xs"></i>
+              <span class="text-xs text-slate-300">Ticket system</span>
+            </div>
+            <div class="flex items-center gap-2 p-3 rounded-lg" style="background: rgba(0,212,255,0.05); border: 1px solid #1e2d4a;">
+              <i class="fas fa-tasks text-cyber-green text-xs"></i>
+              <span class="text-xs text-slate-300">Project tracker</span>
+            </div>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="mb-2">
+            <div class="flex justify-between text-xs font-mono text-slate-500 mb-2">
+              <span>Development progress</span>
+              <span class="text-cyber-blue">32%</span>
+            </div>
+            <div class="w-full h-1.5 rounded-full" style="background: #1e2d4a;">
+              <div class="h-1.5 rounded-full" style="width: 32%; background: linear-gradient(90deg,#00d4ff,#00ff88);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CALL TO ACTION ════════════════════════════ -->
+  <section id="cta" class="py-28 reveal relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute w-96 h-96 rounded-full opacity-10" style="background: radial-gradient(circle, #00d4ff, transparent); bottom: -50%; right: -10%;"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full text-xs font-mono" style="background: rgba(0,212,255,0.08); border: 1px solid rgba(0,212,255,0.25); color: #00d4ff;">
+        <i class="fas fa-bolt text-cyber-green"></i>
+        Ready to Start
+      </div>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+        Need a secure website or<br/>
+        <span class="gradient-text">cybersecurity solution?</span>
+      </h2>
+      <p class="text-lg text-slate-400 mb-10 max-w-2xl mx-auto">
+        Start your project with AJ Networks. We combine technology consulting, engineering delivery, and cybersecurity expertise in a single, integrated team.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="book-consultation.html" class="px-10 py-4 rounded-lg font-semibold text-cyber-dark" style="background: linear-gradient(135deg,#00d4ff,#00ff88); font-size: 1rem;">
+          Start Your Project <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+        <a href="mailto:hello@ajnetworkskenya.it.com" class="px-10 py-4 rounded-lg font-semibold text-slate-200" style="border: 1px solid #1e2d4a; background: rgba(255,255,255,0.04); font-size: 1rem;">
+          <i class="fas fa-envelope mr-2"></i> Email Us
+        </a>
+      </div>
+      <p class="mt-8 text-xs font-mono text-slate-600">
+        hello&#64;ajnetworkskenya.it.com &nbsp;|&nbsp; +254 758 238 617 &nbsp;|&nbsp; Nairobi & Mombasa, Kenya
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ════════════════════════════════════ -->
+  <footer style="background: #080c18; border-top: 1px solid #1e2d4a;" class="py-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="images/logo.svg" alt="AJ Networks" class="h-8" onerror="this.style.display='none'" />
+          <span class="font-mono text-sm text-slate-400">© 2026 AJNETWORKS. All Rights Reserved.</span>
+        </div>
+        <nav class="flex flex-wrap justify-center gap-6 text-sm">
+          <a href="./" class="text-slate-500 hover:text-cyber-blue transition">Home</a>
+          <a href="about-us.html" class="text-slate-500 hover:text-cyber-blue transition">Who We Are</a>
+          <a href="services.html" class="text-slate-500 hover:text-cyber-blue transition">Services</a>
+          <a href="client-success.html" class="text-cyber-blue">Client Success</a>
+          <a href="insights.html" class="text-slate-500 hover:text-cyber-blue transition">Insights</a>
+          <a href="book-consultation.html" class="text-slate-500 hover:text-cyber-blue transition">Book Consultation</a>
+        </nav>
+        <div class="flex gap-4">
+          <a href="https://linkedin.com/company/ajnetworks" target="_blank" rel="noopener" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:text-cyber-blue hover:border-cyber-blue transition" style="border: 1px solid #1e2d4a;"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://twitter.com/ajnetworks" target="_blank" rel="noopener" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:text-cyber-blue transition" style="border: 1px solid #1e2d4a;"><i class="fab fa-twitter text-sm"></i></a>
+          <a href="https://instagram.com/ajnetworks" target="_blank" rel="noopener" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:text-cyber-blue transition" style="border: 1px solid #1e2d4a;"><i class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════ SCRIPTS ══════════════════════════════════ -->
+  <script>
+    // Mobile hamburger toggle
+    document.getElementById('hamburger').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('open');
+      const icon = this.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    });
+
+    // Sticky navbar shadow on scroll
+    window.addEventListener('scroll', function () {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 20) {
+        nav.style.boxShadow = '0 4px 32px rgba(0,0,0,0.5)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }),
+      { threshold: 0.12 }
+    );
+    reveals.forEach(el => io.observe(el));
+
+    // Staggered card animation inside revealed sections
+    document.querySelectorAll('.card-glow').forEach((card, i) => {
+      card.style.transitionDelay = `${i * 80}ms`;
+    });
+  </script>
+
+  <!-- Cookie Consent -->
+  <link rel="stylesheet" href="css/cookie-consent.css" />
+  <script src="js/cookie-consent.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+{
+  "broken_links": [
+    {
+      "source": "about-us.html",
+      "target": "cart-page"
+    },
+    {
+      "source": "book-consultation.html",
+      "target": "cart-page"
+    },
+    {
+      "source": "elements.html",
+      "target": "cart-page"
+    },
+    {
+      "source": "elements.html",
+      "target": "it-services"
+    },
+    {
+      "source": "elements.html",
+      "target": "it-services"
+    },
+    {
+      "source": "elements.html",
+      "target": "it-services"
+    },
+    {
+      "source": "elements.html",
+      "target": "it-services"
+    },
+    {
+      "source": "elements.html",
+      "target": "it-services"
+    },
+    {
+      "source": "elements.html",
+      "target": "it-services"
+    },
+    {
+      "source": "elements.html",
+      "target": "twitter"
+    },
+    {
+      "source": "elements.html",
+      "target": "facebook"
+    },
+    {
+      "source": "elements.html",
+      "target": "linkedin"
+    },
+    {
+      "source": "elements.html",
+      "target": "instagram"
+    },
+    {
+      "source": "faq.html",
+      "target": "cart-page"
+    },
+    {
+      "source": "index.html",
+      "target": "cart-page"
+    },
+    {
+      "source": "mobile-development.html",
+      "target": "cart-page"
+    },
+    {
+      "source": "mobile-development.html",
+      "target": "portfolio-details-3"
+    },
+    {
+      "source": "mobile-development.html",
+      "target": "portfolio-details-3"
+    },
+    {
+      "source": "mobile-development.html",
+      "target": "portfolio-details-3"
+    },
+    {
+      "source": "portfolio-details-1.html",
+      "target": "cart-page"
+    },
+    {
+      "source": "portfolio-details-1.html",
+      "target": "facebook"
+    },
+    {
+      "source": "portfolio-details-1.html",
+      "target": "twitter"
+    },
+    {
+      "source": "portfolio-details-1.html",
+      "target": "pinterest"
+    },
+    {
+      "source": "portfolio-details-1.html",
+      "target": "linkedin"
+    },
+    {
+      "source": "portfolio-details-2.html",
+      "target": "cart-page"
+    },
+    {
+      "source": "portfolio-details-2.html",
+      "target": "facebook"
+    },
+    {
+      "source": "portfolio-details-2.html",
+      "target": "twitter"
+    },
+    {
+      "source": "portfolio-details-2.html",
+      "target": "pinterest"
+    },
+    {
+      "source": "portfolio-details-2.html",
+      "target": "linkedin"
+    },
+    {
+      "source": "portfolio-details-2.html",
+      "target": "portfolio-details-3"
+    },
+    {
+      "source": "portfolio-details-2.html",
+      "target": "portfolio-details-3"
+    },
+    {
+      "source": "portfolio-details-2.html",
+      "target": "portfolio-details-3"
+    },
+    {
+      "source": "post.html",
+      "target": "cart-page"
+    },
+    {
+      "source": "post.html",
+      "target": "twitter"
+    },
+    {
+      "source": "post.html",
+      "target": "facebook"
+    },
+    {
+      "source": "post.html",
+      "target": "pinterest"
+    },
+    {
+      "source": "post.html",
+      "target": "linkedin"
+    },
+    {
+      "source": "post.html",
+      "target": "reddit"
+    },
+    {
+      "source": "post.html",
+      "target": "twitter"
+    },
+    {
+      "source": "post.html",
+      "target": "facebook"
+    },
+    {
+      "source": "post.html",
+      "target": "linkedin"
+    },
+    {
+      "source": "post.html",
+      "target": "instagram"
+    },
+    {
+      "source": "post.html",
+      "target": "twitter"
+    },
+    {
+      "source": "post.html",
+      "target": "facebook"
+    },
+    {
+      "source": "post.html",
+      "target": "linkedin"
+    },
+    {
+      "source": "post.html",
+      "target": "instagram"
+    },
+    {
+      "source": "web-development.html",
+      "target": "cart-page"
+    }
+  ],
+  "seo_issues": [
+    {
+      "page": "index.html",
+      "issue": "Meta desc length 171 chars (ideal: 50-160)"
+    },
+    {
+      "page": "about-us.html",
+      "issue": "Meta desc length 172 chars (ideal: 50-160)"
+    },
+    {
+      "page": "services.html",
+      "issue": "Meta desc length 18 chars (ideal: 50-160)"
+    },
+    {
+      "page": "case-study-racnyali.html",
+      "issue": "Meta desc length 48 chars (ideal: 50-160)"
+    },
+    {
+      "page": "case-study-transitflow.html",
+      "issue": "Meta desc length 48 chars (ideal: 50-160)"
+    }
+  ],
+  "tracking_issues": [],
+  "asset_issues": [
+    {
+      "source": "index.html",
+      "asset": "images/clients/client1.png"
+    }
+  ],
+  "ok_pages": [],
+  "seo_ok": [
+    "client-success.html",
+    "book-consultation.html",
+    "insights.html",
+    "software-engineering.html",
+    "cybersecurity.html",
+    "technology-strategy.html",
+    "networking.html",
+    "performance-seo.html",
+    "case-study-bada.html",
+    "case-study-sgss.html",
+    "case-study-audiophile.html",
+    "case-study-greenremedies.html"
+  ],
+  "tracking_ok": [
+    "index.html",
+    "about-us.html",
+    "services.html",
+    "client-success.html",
+    "book-consultation.html",
+    "insights.html",
+    "software-engineering.html",
+    "cybersecurity.html",
+    "technology-strategy.html",
+    "networking.html",
+    "performance-seo.html",
+    "case-study-bada.html",
+    "case-study-sgss.html",
+    "case-study-racnyali.html",
+    "case-study-transitflow.html",
+    "case-study-audiophile.html",
+    "case-study-greenremedies.html"
+  ]
+}
