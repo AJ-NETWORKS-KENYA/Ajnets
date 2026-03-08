@@ -1,18 +1,6 @@
 {
   "broken_links": [
     {
-      "source": "about-us.html",
-      "target": "cart-page"
-    },
-    {
-      "source": "book-consultation.html",
-      "target": "cart-page"
-    },
-    {
-      "source": "elements.html",
-      "target": "cart-page"
-    },
-    {
       "source": "elements.html",
       "target": "it-services"
     },
@@ -53,34 +41,6 @@
       "target": "instagram"
     },
     {
-      "source": "faq.html",
-      "target": "cart-page"
-    },
-    {
-      "source": "index.html",
-      "target": "cart-page"
-    },
-    {
-      "source": "mobile-development.html",
-      "target": "cart-page"
-    },
-    {
-      "source": "mobile-development.html",
-      "target": "portfolio-details-3"
-    },
-    {
-      "source": "mobile-development.html",
-      "target": "portfolio-details-3"
-    },
-    {
-      "source": "mobile-development.html",
-      "target": "portfolio-details-3"
-    },
-    {
-      "source": "portfolio-details-1.html",
-      "target": "cart-page"
-    },
-    {
       "source": "portfolio-details-1.html",
       "target": "facebook"
     },
@@ -98,10 +58,6 @@
     },
     {
       "source": "portfolio-details-2.html",
-      "target": "cart-page"
-    },
-    {
-      "source": "portfolio-details-2.html",
       "target": "facebook"
     },
     {
@@ -115,22 +71,6 @@
     {
       "source": "portfolio-details-2.html",
       "target": "linkedin"
-    },
-    {
-      "source": "portfolio-details-2.html",
-      "target": "portfolio-details-3"
-    },
-    {
-      "source": "portfolio-details-2.html",
-      "target": "portfolio-details-3"
-    },
-    {
-      "source": "portfolio-details-2.html",
-      "target": "portfolio-details-3"
-    },
-    {
-      "source": "post.html",
-      "target": "cart-page"
     },
     {
       "source": "post.html",
@@ -183,10 +123,6 @@
     {
       "source": "post.html",
       "target": "instagram"
-    },
-    {
-      "source": "web-development.html",
-      "target": "cart-page"
     }
   ],
   "seo_issues": [
@@ -212,12 +148,7 @@
     }
   ],
   "tracking_issues": [],
-  "asset_issues": [
-    {
-      "source": "index.html",
-      "asset": "images/clients/client1.png"
-    }
-  ],
+  "asset_issues": [],
   "ok_pages": [],
   "seo_ok": [
     "client-success.html",
