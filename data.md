@@ -441,7 +441,7 @@ The stack reflects **credibility, performance, and scalability**, not trends.
   - Vendor JS: js/jquery.min.js, plugin files under js/ and plugins/, and project scripts in js/scripts.js and js/header-mobile.js.
   - Assets: images/ with slider/, projects/, blog/, background/, client-logos/ subfolders. Keep hero ~1920px wide and update data-thumb for slider images.
 - Header/footer:
-  - Header, mobile header and footer are duplicated per page. Keep navigation links and contact info (+254 758 238 617, jabrahamjohns@gmail.com) synced across pages when editing.
+  - Header, mobile header and footer are duplicated per page. Keep navigation links and contact info (+254 758 238 617, hello&#64;ajnetworkskenya.it.com) synced across pages when editing.
 - Hero slider:
   - Home uses <div id="rev_slider_one"> and li slides (rs-70..72). Add slides following existing li structure and data-\* animation attributes; update data-thumb when swapping images.
 - Script load order (required):
@@ -919,7 +919,7 @@ Every successful technology initiative begins with clarity. Our strategy call is
 **Official Contact Details (Current):**
 
 - **Phone:** +254 758 238 617
-- **Email:** [jabrahamjohns@gmail.com](mailto:jabrahamjohns@gmail.com) _(temporary – corporate email to be added)_
+- **Email:** [hello&#64;ajnetworkskenya.it.com](mailto:hello@ajnetworkskenya.it.com) _(temporary – corporate email to be added)_
 
 **Working Hours:**
 
@@ -1510,7 +1510,7 @@ AI Instructions:
 - Display contact details:
 
   - Phone: +254 758 238 617
-  - Email: [jabrahamjohns@gmail.com](mailto:jabrahamjohns@gmail.com)
+  - Email: [hello&#64;ajnetworkskenya.it.com](mailto:hello@ajnetworkskenya.it.com)
 
 - Working hours:
 
