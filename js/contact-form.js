@@ -83,6 +83,12 @@
         isValid = false;
       }
 
+      var region = $('select[name="region"]').val();
+      if (!region) {
+        $("#err-region").show();
+        isValid = false;
+      }
+
       if (email === "") {
         $("#err-email").show();
         isValid = false;
@@ -113,24 +119,45 @@
 
       // AJAX Submission
       $.ajax({
-        url: $form.attr('action'),
-        method: 'POST',
+        url: $form.attr("action"),
+        method: "POST",
         data: $form.serialize(),
         dataType: "json",
         headers: {
-            'Accept': 'application/json'
+          Accept: "application/json",
         },
-        success: function() {
-           // Redirect to Thank You page
-           window.location.href = "thank-you.html";
+        success: function () {
+          // Redirect to Thank You page
+          window.location.href = "thank-you.html";
         },
-        error: function(xhr, status, error) {
-           console.error("Form submission failed:", status, error, xhr.responseText);
-           $errorContainer.text("There was an error sending your message. Please try again.").show();
-           $submitBtn.prop("disabled", false).text("Request Strategy Call");
-        }
+        error: function (xhr, status, error) {
+          console.error(
+            "Form submission failed:",
+            status,
+            error,
+            xhr.responseText,
+          );
+          var msg =
+            "There was an error sending your message. Please try again.";
+          try {
+            var response = JSON.parse(xhr.responseText);
+            if (response && response.message) {
+              msg = "Error: " + response.message;
+            }
+          } catch (e) {}
+
+          if (xhr.status === 404) {
+            msg =
+              "Backend API not found. Please ensure you are running the site via Vercel CLI (vercel dev).";
+          } else if (xhr.status === 500) {
+            msg += " (Server Error: Check your SMTP credentials in .env)";
+          }
+
+          $errorContainer.text(msg).show();
+          $submitBtn.prop("disabled", false).text("Request Strategy Call");
+        },
       });
-      
+
       // Prevent default form submission
       e.preventDefault();
       return false;
