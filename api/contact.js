@@ -48,6 +48,10 @@ module.exports = async function handler(req, res) {
       `,
     };
 
+    if (region === "Rwanda") {
+      mailOptions.cc = process.env.SMTP_USER_DEFAULT;
+    }
+
     await transporter.sendMail(mailOptions);
     return res
       .status(200)

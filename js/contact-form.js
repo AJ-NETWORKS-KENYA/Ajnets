@@ -127,8 +127,10 @@
           Accept: "application/json",
         },
         success: function () {
-          // Redirect to Thank You page
-          window.location.href = "thank-you.html";
+          // Show the modal
+          $("#successModal").fadeIn();
+          $form[0].reset();
+          $submitBtn.prop("disabled", false).text("Request Strategy Call");
         },
         error: function (xhr, status, error) {
           console.error(
@@ -167,6 +169,12 @@
     $form.find("input, textarea").on("input", function () {
       $(this).siblings(".error").hide();
       $errorContainer.hide();
+    });
+
+    // Close modal logic
+    $(".close-modal, .modal-overlay").on("click", function (e) {
+      if (e.target !== this) return;
+      $("#successModal").fadeOut();
     });
   });
 })(jQuery);
