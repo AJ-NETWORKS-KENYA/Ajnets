@@ -14852,6 +14852,7 @@ section {
 */
 .cta-col {
   flex: 0 0 auto !important;
+  width: auto !important;
 }
 .octf-btn-cta {
   display: flex !important;
