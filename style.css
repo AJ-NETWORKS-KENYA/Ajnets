@@ -14820,3 +14820,55 @@ section {
     color: #666;
     font-size: 16px;
 }
+
+
+
+
+
+/* --- HEADER CTA CLEAN LAYOUT ---
+   After removing cart + search + secondary phone,
+   ensure the remaining CTA button aligns cleanly
+   to the right with proper spacing.
+*/
+.octf-btn-cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    flex-wrap: nowrap !important;
+}
+.cta-col {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+}
+.btn-cta-header .octf-btn {
+    white-space: nowrap;
+    padding: 14px 24px;
+}
+
+
+/* --- CTA BUTTON VISIBILITY FIX ---
+   The .octf-btn-cta becomes zero-width in flex context after cart/search removal.
+   Force it and its column to size properly so the CTA button is always visible.
+*/
+.cta-col {
+  flex: 0 0 auto !important;
+}
+.octf-btn-cta {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  width: auto !important;
+  min-width: 0 !important;
+}
+.octf-btn-cta .octf-header-module {
+  display: block !important;
+  width: auto !important;
+}
+.btn-cta-header {
+  display: block !important;
+  margin-left: 0 !important;
+}
+.btn-cta-header .octf-btn-third {
+  display: inline-block !important;
+  white-space: nowrap !important;
+}

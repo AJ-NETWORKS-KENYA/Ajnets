@@ -419,84 +419,116 @@ css/trust-strip.css — Trust logos strip
 ## 10. File System Structure
 
 ```
-ajnets/                         ← project root
-├── index.html                  ← Homepage
-├── about-us.html               ← Company / Who We Are
-├── services.html               ← Services overview
-├── technology-strategy.html    ← Service page
-├── software-engineering.html   ← Service page
-├── cybersecurity.html          ← Service page
-├── networking.html             ← Service page
-├── performance-seo.html        ← Service page
-├── mobile-development.html     ← Service page
-├── web-development.html        ← Service page
-├── solutions.html              ← Solutions page
-├── client-success.html         ← Case studies / portfolio landing
-├── case-study-*.html           ← Individual case study pages (7 files)
-├── portfolio-details-*.html    ← Portfolio detail pages
-├── book-consultation.html      ← Lead capture / contact form
-├── insights.html               ← Blog / insights landing
-├── post.html                   ← Blog post template
-├── faq.html                    ← FAQ page
-├── elements.html               ← UI component reference / sandbox
-│
-├── style.css                   ← Master stylesheet
-│
-├── css/                        ← Vendor CSS
-│   ├── bootstrap.min.css
-│   ├── font-awesome.min.css
-│   ├── flaticon.css
-│   ├── owl.carousel.min.css
-│   ├── owl.theme.css
-│   ├── magnific-popup.css
-│   ├── animate.css
-│   ├── contact-form.css
-│   ├── cookie-consent.css
-│   ├── logo-ajnetworks.css
-│   ├── trust-strip.css
-│   ├── home15.css              ← Section-specific overrides
-│   ├── home16.css              ← Section-specific overrides
-│   ├── royal-preload.css
-│   └── woocommerce.css
-│
-├── js/                         ← JavaScript
-│   ├── cookie-consent.js       ← Cookie banner logic
-│   └── [vendor JS files]
-│
-├── plugins/                    ← jQuery / Owl / other plugins
-│
-├── fonts/                      ← Self-hosted icon fonts (Flaticon glyphs)
-│
-├── images/                     ← All image assets
-│   ├── logo.svg                ← Primary brand mark
-│   ├── logo-light.svg          ← Reversed logo
-│   ├── favicon.*               ← Favicon variants
-│   ├── slider/                 ← Hero background images
-│   │   └── slide1-home1.webp   ← Homepage hero (WebP, preloaded)
-│   ├── client-logos/           ← Client carousel logos
-│   ├── projects/               ← Portfolio/case study images
-│   ├── blog/                   ← Blog post imagery
-│   └── [section images]        ← Background textures, team photos, etc.
-│
-├── api/                        ← Vercel Serverless Functions
-│   └── contact.js              ← Contact form handler (region routing)
-│
-├── .agent/                     ← Agent skill definitions
-│   └── skills/                 ← Workspace-scoped Skills (3-layer architecture)
-│
-├── .tmp/                       ← Temporary processing artefacts (gitignored)
-│
-├── vercel.json                 ← Vercel deployment config (routes, headers)
-├── package.json                ← Node.js manifest
-├── robots.txt                  ← SEO crawl rules
-├── sitemap.xml                 ← XML sitemap
-├── .htaccess                   ← Apache redirect rules (legacy)
-├── Gemini.md                   ← AI agent operating instructions
-├── design.md                   ← ⭐ This document
-└── data.md                     ← Structured content/copy reference
+ajnets/                            <- project root (clean - HTML, CSS, configs only)
+|
+|-- [HTML Pages]
+|   |-- index.html                 <- Homepage
+|   |-- about-us.html              <- Company / Who We Are
+|   |-- services.html              <- Services overview
+|   |-- technology-strategy.html   <- Service: Technology & Digital Strategy
+|   |-- software-engineering.html  <- Service: Software Engineering
+|   |-- cybersecurity.html         <- Service: Cybersecurity & Assurance
+|   |-- networking.html            <- Service: Networking & Infrastructure
+|   |-- performance-seo.html       <- Service: Performance & SEO
+|   |-- mobile-development.html    <- Service: Mobile Development
+|   |-- web-development.html       <- Service: Web Development
+|   |-- solutions.html             <- Solutions overview
+|   |-- client-success.html        <- Case studies / portfolio landing
+|   |-- case-study-*.html          <- Individual case study pages (7 files)
+|   |-- portfolio-details-*.html   <- Portfolio detail pages
+|   |-- book-consultation.html     <- Lead capture / contact form
+|   |-- insights.html              <- Blog / insights landing
+|   |-- post.html                  <- Blog post template
+|   |-- faq.html                   <- FAQ page
+|   -- elements.html               <- UI component reference / sandbox
+|
+|-- style.css                      <- Master stylesheet (327 KB)
+|
+|-- css/                           <- Vendor & custom CSS
+|   |-- bootstrap.min.css          <- Grid system (Bootstrap 4)
+|   |-- font-awesome.min.css       <- Icon set
+|   |-- flaticon.css               <- Custom icon font
+|   |-- owl.carousel.min.css       <- Carousel core
+|   |-- owl.theme.css              <- Carousel theme
+|   |-- magnific-popup.css         <- Lightbox
+|   |-- animate.css                <- CSS animations
+|   |-- contact-form.css           <- Form styles
+|   |-- cookie-consent.css         <- Cookie banner
+|   |-- logo-ajnetworks.css        <- Logo-specific overrides
+|   |-- trust-strip.css            <- Trust logos strip
+|   |-- home15.css / home16.css    <- Section-specific overrides
+|   |-- royal-preload.css          <- Preloader
+|   -- woocommerce.css             <- WooCommerce base styles
+|
+|-- js/                            <- JavaScript
+|   |-- cookie-consent.js          <- Cookie banner logic (deferred)
+|   -- [vendor JS files]           <- jQuery, Owl, plugins
+|
+|-- plugins/                       <- jQuery & carousel plugin bundles
+|-- fonts/                         <- Self-hosted icon fonts (Flaticon glyphs)
+|
+|-- images/                        <- All image assets
+|   |-- logo.svg                   <- Primary brand mark
+|   |-- logo-light.svg             <- White/reversed logo (dark BG / footer)
+|   |-- logo-transparent.svg       <- Transparent background variant
+|   |-- favicon.*                  <- Favicon set (svg, png, ico, webmanifest)
+|   |-- slider/
+|   |   -- slide1-home1.webp       <- Homepage hero (WebP, LCP-preloaded)
+|   |-- client-logos/              <- Client carousel logos (4 active clients)
+|   |-- projects/                  <- Portfolio / case study project images
+|   |-- blog/                      <- Blog post imagery
+|   -- [section images]            <- BG textures, team photos, misc assets
+|
+|-- api/                           <- Vercel Serverless Functions (Layer 3)
+|   -- contact.js                  <- Contact form handler with region routing
+|
+|-- execution/                     <- LAYER 3: Deterministic maintenance scripts
+|   |-- run_audit.py               <- Runs the site audit
+|   |-- print_audit.py             <- Prints audit results
+|   |-- fix_audit_issues.py        <- Applies audit rule patches
+|   |-- fix_lints.py               <- Lint remediation pass 1
+|   |-- fix_lints2.py              <- Lint remediation pass 2
+|   |-- fix_lints3.py              <- Lint remediation pass 3
+|   |-- fix_navs.py                <- Navigation link fixer pass 1
+|   |-- fix_navs_2.py              <- Navigation link fixer pass 2
+|   |-- apply_p3_fixes.py          <- Priority-3 audit fixes
+|   |-- apply_priority_fixes.py    <- General audit fixes
+|   |-- refactor.py                <- General page refactor
+|   |-- update_index.py            <- Updates index.html
+|   |-- update_emails.py           <- Updates email addresses sitewide
+|   |-- optimize_hero.py           <- Hero image optimizer
+|   |-- append_modal_css.py        <- Appends modal CSS to pages
+|   |-- inject_case_studies.py     <- Injects case study cards
+|   |-- inject_crappo_card.py      <- Injects Crappo client card
+|   |-- inject_foodex.py           <- Injects Foodex content
+|   |-- inject_project_images.py   <- Injects project images
+|   |-- inject_service_links.py    <- Injects service links
+|   |-- create_case_studies.py     <- Generates case study page stubs
+|   |-- create_crappo.py           <- Crappo case study builder
+|   -- rebuild_case_studies.py     <- Full case study rebuild
+|
+|-- .agent/                        <- LAYER 2: Agent orchestration config
+|   -- skills/                     <- Workspace-scoped Skill packages
+|       -- [skill-name]/           <- Each: SKILL.md + scripts/ + references/
+|
+|-- .tmp/                          <- Intermediate files (gitignored, regeneratable)
+|   |-- _audit_results.json        <- Last audit run output
+|   -- services-backup.html        <- Archived backup page
+|
+|-- vercel.json                    <- Vercel deployment config (routes, headers)
+|-- package.json                   <- Node.js manifest
+|-- package-lock.json              <- Lockfile
+|-- robots.txt                     <- SEO crawl rules
+|-- sitemap.xml                    <- XML sitemap
+|-- .htaccess                      <- Apache redirect rules (legacy)
+|-- .env / .env.local              <- Environment variables & API keys (gitignored)
+|-- credentials.json / token.json  <- OAuth credentials (gitignored)
+|-- LICENSE                        <- Project licence
+|-- .renderignore                  <- Render.com deploy ignore rules
+|-- Gemini.md                      <- AI agent instructions (3-layer architecture)
+|-- design.md                      <- This document - design system reference
+-- data.md                         <- Structured content / copy reference
 ```
-
----
 
 ## 11. SEO & Meta Conventions
 
