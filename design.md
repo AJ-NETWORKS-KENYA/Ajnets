@@ -13,9 +13,9 @@
 | ------------- | ----------------------------------------------- |
 | **Full Name** | AJNETWORKS                                      |
 | **Tagline**   | Technology decisions that move business forward |
-| **Domain**    | ajnetworkskenya.it.com                          |
+| **Domain**    | ajnetworks.co                          |
 | **Region**    | East Africa (Kenya HQ · Rwanda operations)      |
-| **Contact**   | hello@ajnetworkskenya.it.com · +254 758 238 617 |
+| **Contact**   | hello@ajnetworks.co · +254 758 238 617 |
 | **Hours**     | Mon – Sat: 8:00 am – 7:00 pm                    |
 
 ### Logo Files
@@ -543,7 +543,7 @@ Every page must include:
 <title>Page Title — AJNETWORKS</title>
 
 <!-- Canonical -->
-<link rel="canonical" href="https://ajnetworkskenya.it.com/page.html" />
+<link rel="canonical" href="https://ajnetworks.co/page.html" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
@@ -552,7 +552,7 @@ Every page must include:
 <meta property="og:description" content="..." />
 <meta
   property="og:image"
-  content="https://ajnetworkskenya.it.com/images/og-home.jpg"
+  content="https://ajnetworks.co/images/og-home.jpg"
 />
 <meta property="og:site_name" content="AJNETWORKS" />
 
@@ -605,7 +605,7 @@ Three entities declared in `<script type="application/ld+json">`:
 | **Dev server** | `vercel dev` (local port 3000)   |
 | **Config**     | `vercel.json`                    |
 | **Functions**  | `api/contact.js` — email routing |
-| **Domain**     | ajnetworkskenya.it.com           |
+| **Domain**     | ajnetworks.co           |
 
 ---
 

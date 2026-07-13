@@ -1,207 +1,417 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta name="facebook-domain-verification" content="r5liwwbty07nhozk87d1uwkz4fyp70" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Case Study: Green Remedies Marketplace - AJ Networks" />
-  <title>Green Remedies Marketplace | Case Study — AJ Networks</title>
-  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { 'cyber-blue':'#00d4ff','cyber-green':'#00ff88','cyber-dark':'#0a0e1a','cyber-card':'#0f1628','cyber-border':'#1e2d4a' },
-          fontFamily: { sans:['Inter','system-ui','sans-serif'], mono:['JetBrains Mono','monospace'] },
-        },
-      },
-    };
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    body { background:#0a0e1a; color:#e2e8f0; font-family:'Inter',sans-serif; margin:0; }
-    .grid-bg { background-image: linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px); background-size:40px 40px; }
-    .gradient-text { background:linear-gradient(135deg,#00d4ff 0%,#00ff88 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-    .tech-badge { background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); color:#00d4ff; font-family:'JetBrains Mono',monospace; font-size:.75rem; padding:4px 12px; border-radius:4px; display:inline-flex; align-items:center; gap:4px; }
-    .reveal { opacity:0; transform:translateY(20px); transition:opacity .6s,transform .6s; }
-    .reveal.visible { opacity:1; transform:translateY(0); }
-    ::-webkit-scrollbar{width:6px} ::-webkit-scrollbar-track{background:#0a0e1a} ::-webkit-scrollbar-thumb{background:#1e2d4a;border-radius:3px}
-  </style>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied'});</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E6LLT0TT7"></script>
-  <script>gtag('js',new Date());gtag('config','G-2E6LLT0TT7');</script>
+<meta content="r5liwwbty07nhozk87d1uwkz4fyp70" name="facebook-domain-verification"/>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Open-source team project: Fully authenticated e-commerce application for herbal products with Kinde Auth, secure checkout, and real-time inventory management." name="description"/>
+<meta content="green remedies, herbal e-commerce, open source, Kinde Auth, team project" name="keywords"/>
+<meta content="AJNETWORKS" name="author"/>
+<title>Green Remedies | Case Study — AJNETWORKS</title>
+<link href="/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/images/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/images/favicon.ico" rel="shortcut icon"/>
+<link href="/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/images/site.webmanifest" rel="manifest"/>
+<link href="/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="/css/flaticon.css" rel="stylesheet"/>
+<link href="/css/owl.carousel.min.css" rel="stylesheet"/>
+<link href="/css/owl.theme.css" rel="stylesheet"/>
+<link href="/css/magnific-popup.css" rel="stylesheet"/>
+<link href="/style.css" rel="stylesheet"/>
+<link href="/css/logo-ajnetworks.css" rel="stylesheet"/>
+<link href="/css/cookie-consent.css" rel="stylesheet"/>
+<link href="/css/trust-strip.css" rel="stylesheet"/>
+<script defer="" src="/js/cookie-consent.js"></script>
+<!-- Google Consent Mode v2 -->
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      });
+    </script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2E6LLT0TT7"></script>
+<script>
+      gtag("js", new Date());
+      gtag("config", "G-2E6LLT0TT7");
+    </script>
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+      _linkedin_partner_id = "YOUR_LINKEDIN_PID";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+<script type="text/javascript">
+      (function (l) {
+        if (!l) {
+          window.lintrk = function (a, b) { window.lintrk.q.push([a, b]); };
+          window.lintrk.q = [];
+        }
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript"; b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);
+      })(window.lintrk);
+    </script>
+<noscript>
+<img alt="" height="1" loading="lazy" src="https://px.ads.linkedin.com/collect/?pid=YOUR_LINKEDIN_PID&amp;fmt=gif" style="display: none" width="1"/>
+</noscript>
+<!-- Canonical & Open Graph -->
+<link href="https://ajnetworks.co/portfolio/case-study-greenremedies" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="https://ajnetworks.co/portfolio/case-study-greenremedies" property="og:url"/>
+<meta content="Green Remedies | Case Study — AJNETWORKS" property="og:title"/>
+<meta content="Open-source team project: Fully authenticated e-commerce application for herbal products with Kinde Auth, secure checkout, and real-time inventory management." property="og:description"/>
+<meta content="https://ajnetworks.co/images/og-home.jpg" property="og:image"/>
+<meta content="AJNETWORKS" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Green Remedies | Case Study — AJNETWORKS" name="twitter:title"/>
+<meta content="Open-source team project: Fully authenticated e-commerce application for herbal products with Kinde Auth, secure checkout, and real-time inventory management." name="twitter:description"/>
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ajnetworks.co/" },
+        { "@type": "ListItem", "position": 2, "name": "Client Success", "item": "https://ajnetworks.co/portfolio/client-success" },
+        { "@type": "ListItem", "position": 3, "name": "Green Remedies", "item": "https://ajnetworks.co/portfolio/case-study-greenremedies" }
+      ]
+    }
+    </script>
+</head>
+<body>
+<!-- Skip to main content link for accessibility -->
+<a class="skip-link" href="#content">Skip to main content</a>
+<header class="site-header header-style-2 header-fullwidth sticky-header header-static" id="site-header">
+<div class="header-topbar">
+<div class="octf-area-wrap">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6">
+<ul class="topbar-info">
+<li><i class="fas fa-envelope"></i><a href="mailto:hello@ajnetworks.co">hello@ajnetworks.co</a></li>
+<li><i class="fas fa-clock"></i> Mon - Sat: 8.00 am - 7.00 pm</li>
+</ul>
+</div>
+<div class="col-md-6 text-right">
+<div class="topbar-right">
+<ul class="extra-text">
+<li>We are creative, ambitious and ready for challenges! <a href="/company/book-consultation.html">Book Advisory Session</a></li>
+</ul>
+<ul class="social-list">
+<li><a aria-label="Twitter" href="https://twitter.com/ajnetworks" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a></li>
+<li><a aria-label="Facebook" href="https://facebook.com/ajnetworks" rel="noopener" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+<li><a aria-label="LinkedIn" href="https://linkedin.com/company/ajnetworks" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a aria-label="Instagram" href="https://instagram.com/ajnetworks" rel="noopener" target="_blank"><i class="fab fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="octf-main-header">
+<div class="octf-area-wrap">
+<div class="container-fluid octf-mainbar-container">
+<div class="octf-mainbar">
+<div class="octf-mainbar-row octf-row">
+<div class="octf-col logo-col">
+<div class="site-logo" id="site-logo">
+<a href="/"><img alt="AJNETWORKS" src="/images/logo.svg"/></a>
+</div>
+</div>
+<div class="octf-col menu-col">
+<nav aria-label="Main Menu" class="main-navigation" id="site-navigation" role="navigation">
+<ul class="menu">
+<li><a href="/index.html">Home</a></li>
+<li class="menu-item-has-children">
+<a href="/services/services.html">Services</a>
+<ul class="sub-menu">
+<li><a href="/services/technology-strategy.html">Technology &amp; Digital Strategy</a></li>
+<li><a href="/services/software-engineering.html">Software Engineering</a></li>
+<li><a href="/services/cybersecurity.html">Cybersecurity &amp; Assurance</a></li>
+<li><a href="/services/networking.html">Infrastructure &amp; Networking</a></li>
+<li><a href="/services/performance-seo.html">Performance &amp; SEO</a></li>
+</ul>
+</li>
+<li><a href="/portfolio/client-success.html">Client Success</a></li>
+<li><a href="/insights/insights.html">Insights</a></li>
+<li><a href="/company/about-us.html">About</a></li>
+<li><a href="/company/book-consultation.html">Contact</a></li>
+<li><a href="/company/book-consultation.html">Book Consultation</a></li>
+</ul>
+</nav>
+</div>
+<div class="octf-col cta-col text-right">
+<div class="octf-btn-cta">
+<div class="octf-header-module">
+<div class="btn-cta-group btn-cta-header">
+<a class="octf-btn octf-btn-third" href="/company/book-consultation.html">Request Consultation</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header_mobile">
+<div class="container">
+<div class="mlogo_wrapper clearfix">
+<div class="mobile_logo">
+<a href="/"><img alt="AJNETWORKS" src="/images/logo.svg"/></a>
+</div>
+<div id="mmenu_toggle">
+<button aria-expanded="false" aria-label="Open navigation menu"></button>
+</div>
+</div>
+<div class="mmenu_wrapper">
+<div class="mobile_nav collapse">
+<ul class="mobile_mainmenu" id="menu-main-menu">
+<li><a href="/index.html">Home</a></li>
+<li class="menu-item-has-children">
+<a href="/services/services.html">Services</a>
+<ul class="sub-menu">
+<li><a href="/services/technology-strategy.html">Technology &amp; Digital Strategy</a></li>
+<li><a href="/services/software-engineering.html">Software Engineering</a></li>
+<li><a href="/services/cybersecurity.html">Cybersecurity &amp; Assurance</a></li>
+<li><a href="/services/networking.html">Infrastructure &amp; Networking</a></li>
+<li><a href="/services/performance-seo.html">Performance &amp; SEO</a></li>
+</ul>
+</li>
+<li><a href="/portfolio/client-success.html">Client Success</a></li>
+<li><a href="/insights/insights.html">Insights</a></li>
+<li><a href="/company/about-us.html">About</a></li>
+<li><a href="/company/book-consultation.html">Contact</a></li>
+<li><a href="/company/book-consultation.html">Book Consultation</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="page-wrap" id="content">
+<!-- Page Hero -->
+<div class="page-hero" style="background-image: url('/images/projects/project7-720x520.jpg');">
+<div class="container">
+<nav aria-label="Breadcrumb" class="breadcrumb-nav">
+<a href="/">Home</a>
+<span class="separator">/</span>
+<a href="/portfolio/client-success.html">Client Success</a>
+<span class="separator">/</span>
+<span class="current">Green Remedies</span>
+</nav>
+<h1>Green Remedies</h1>
+<p style="color: rgba(255,255,255,0.75); font-size: 17px; max-width: 600px; margin-top: 15px;">
+            Open-source team project — a fully authenticated e-commerce application for herbal products with Kinde Auth, secure checkout, and real-time inventory.
+          </p>
+<div class="mt-4">
+<span class="tech-badge">Next.js</span> <span class="tech-badge">Kinde Auth</span> <span class="tech-badge">Prisma</span> <span class="tech-badge">PostgreSQL</span> <span class="tech-badge">Open Source</span>
+</div>
+</div>
+</div>
+<!-- Case Study Content -->
+<section class="section-padd">
+<div class="container">
+<div class="row">
+<!-- Main Content Column -->
+<div class="col-lg-8">
+<!-- Business Challenge -->
+<div class="mb-5">
+<div class="ot-heading">
+<span>// the challenge</span>
+<h2 class="main-heading">Business Challenge</h2>
+</div>
+<p>This collaborative open-source project addressed the challenge of building a secure, fully authenticated e-commerce platform from the ground up — with particular emphasis on OAuth-based authentication, role-based access control, and real-time inventory synchronisation.</p>
+</div>
+<!-- Engineering Approach -->
+<div class="mb-5">
+<div class="ot-heading">
+<span>// our approach</span>
+<h2 class="main-heading">Engineering Approach</h2>
+</div>
+<p>Built with Next.js and Prisma ORM, the application uses Kinde Auth for passwordless authentication and social login. A PostgreSQL database with Prisma migrations manages product catalogue, inventory, and order state. Role-based middleware controls access to admin dashboards, order management, and inventory tools. Real-time inventory updates prevent overselling through optimistic locking patterns.</p>
+</div>
+<!-- Measurable Outcomes -->
+<div class="outcome-box">
+<h3>Business Results &amp; Metrics</h3>
+<ul class="outcome-list">
+<li>
+<strong>Secure Authentication</strong><br/>
+                    Passwordless and social login via Kinde Auth, with role-based access control for admin and customer user types.
+                  </li>
+<li>
+<strong>Real-Time Inventory</strong><br/>
+                    Optimistic locking prevents overselling, with inventory counts updating in real time across concurrent sessions.
+                  </li>
+<li>
+<strong>Open-Source Collaboration</strong><br/>
+                    Published as an open-source project with documented API contracts, enabling community contributions and code review.
+                  </li>
+</ul>
+</div>
+<!-- Case Study Navigation -->
 
-    <!-- Canonical & Open Graph -->
-    <link rel="canonical" href="https://ajnetworkskenya.it.com/case-study-greenremedies.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ajnetworkskenya.it.com/case-study-greenremedies.html" />
-    <meta property="og:title" content="Green Remedies Marketplace | Case Study — AJNETWORKS" />
-    <meta property="og:description" content="Authentication-first e-commerce engineering: How AJNETWORKS built a secure marketplace with Kinde Auth and React." />
-    <meta property="og:image" content="https://ajnetworkskenya.it.com/images/og-home.jpg" />
-    <meta property="og:site_name" content="AJNETWORKS" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Green Remedies Marketplace | Case Study — AJNETWORKS" />
-    <meta name="twitter:description" content="Authentication-first e-commerce engineering: How AJNETWORKS built a secure marketplace with Kinde Auth and React." />
-  </head>
-<body class="grid-bg">
+<div class="case-study-cta" style="background-color: #f8f9fa; padding: 40px; border-radius: 8px; margin-top: 50px; border-left: 4px solid #43D9AD;">
+<h3 style="font-size: 24px; margin-bottom: 15px;">Ready to transform your business?</h3>
+<p style="margin-bottom: 25px;">Partner with us to engineer a technology solution that drives measurable growth and resilience.</p>
+<a class="octf-btn octf-btn-primary" href="/company/book-consultation.html">Book Advisory Session</a>
+</div>
+<nav aria-label="Case study navigation" class="case-study-nav">
+<a class="case-study-nav-item prev" href="/portfolio/case-study-audiophile">
+<span class="case-nav-label"><i class="fas fa-arrow-left"></i> Previous</span>
+<span class="case-nav-title">Audiophile E-Commerce</span>
+</a>
+<a class="case-study-nav-item next" href="/portfolio/case-study-transitflow">
+<span class="case-nav-label">Next <i class="fas fa-arrow-right"></i></span>
+<span class="case-nav-title">Transit Flow Logistics</span>
+</a>
+</nav>
+</div>
+<!-- Sidebar -->
+<div class="col-lg-4">
+<div class="case-study-sidebar">
+<h4>Project Details</h4>
 
-  <nav class="fixed top-0 left-0 w-full z-50" style="background:rgba(10,14,26,0.9);backdrop-filter:blur(16px);border-bottom:1px solid #1e2d4a;">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="./" class="flex items-center gap-2">
-        <img src="/images/logo.svg" alt="AJ Networks" class="h-8" onerror="this.style.display='none'" />
-        <span class="font-mono text-sm font-bold gradient-text hidden sm:block">AJ<span class="text-slate-300">NETWORKS</span></span>
-      </a>
-      <div class="hidden md:flex items-center gap-6 text-sm">
-        <a href="./" class="text-slate-400 hover:text-cyber-blue transition">Home</a>
-        <a href="/company/about-us" class="text-slate-400 hover:text-cyber-blue transition">Who We Are</a>
-        <a href="/services/services" class="text-slate-400 hover:text-cyber-blue transition">Services</a>
-        <a href="/portfolio/client-success" class="text-cyber-blue font-semibold">Client Success</a>
-        <a href="/insights/insights" class="text-slate-400 hover:text-cyber-blue transition">Insights</a>
-      </div>
-      <a href="/company/book-consultation" class="px-5 py-2 text-sm font-semibold rounded-lg text-cyber-dark hidden md:block" style="background:linear-gradient(135deg,#00d4ff,#00ff88);">Book Consultation</a>
-    </div>
-  </nav>
+<ul class="sidebar-meta-list">
+<li class="sidebar-meta-item">
+<div class="sidebar-meta-label">Client</div>
+<div class="sidebar-meta-value">TBD</div>
+</li>
+<li class="sidebar-meta-item">
+<div class="sidebar-meta-label">Industry</div>
+<div class="sidebar-meta-value">E-Commerce / Health</div>
+</li>
+<li class="sidebar-meta-item">
+<div class="sidebar-meta-label">Technologies</div>
+<div class="sidebar-meta-value">Next.js, Kinde Auth, Prisma, PostgreSQL, Open Source</div>
+</li>
+<li class="sidebar-meta-item">
+<div class="sidebar-meta-label">Timeline</div>
+<div class="sidebar-meta-value">4 - 8 Weeks</div>
+</li>
+<li class="sidebar-meta-item">
+<div class="sidebar-meta-label">Related Services</div>
+<div class="sidebar-meta-value"><a href="/services/services.html" style="color: #43D9AD;">View Services</a></div>
+</li>
+</ul>
 
-  <section class="pt-36 pb-16" style="border-bottom:1px solid #1e2d4a;">
-    <div class="max-w-5xl mx-auto px-6">
-      <nav class="flex items-center gap-2 text-xs font-mono text-slate-500 mb-8">
-        <a href="./" class="hover:text-cyber-blue transition">~/home</a>
-        <span class="text-cyber-blue">/</span>
-        <a href="/portfolio/client-success" class="hover:text-cyber-blue transition">work</a>
-        <span class="text-cyber-blue">/</span>
-        <span class="text-cyber-blue">green-remedies</span>
-      </nav>
-      <div class="flex items-center gap-4 mb-5 flex-wrap"><span class="px-3 py-1 rounded-full text-xs font-mono font-semibold" style="background:rgba(0,255,136,0.1);color:#00ff88;">Health & Wellness</span><span class="px-3 py-1 rounded-full text-xs font-mono font-semibold" style="background:rgba(0,212,255,0.1);color:#00d4ff;">Internal Engineering Project</span></div>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Green Remedies Marketplace<br/><span class="gradient-text">E-Commerce with Auth</span></h1>
-      <p class="text-slate-400 text-lg max-w-2xl mb-8">An open-source authenticated e-commerce platform for herbal products, built collaboratively with a cross-functional product team including PMs, designers, and developers.</p>
-      <div class="flex flex-wrap gap-3">
-        <span class="tech-badge">React</span><span class="tech-badge">TailwindCSS</span><span class="tech-badge">Kinde Auth</span><span class="tech-badge">Figma</span>
-        <a title="External Link Alt" href="https://thegreenremedies.com" target="_blank" rel="noopener" class="flex items-center gap-2 px-4 py-1.5 rounded-lg text-sm font-semibold text-cyber-dark ml-2" style="background:linear-gradient(135deg,#00d4ff,#00ff88);"><i class="fas fa-external-link-alt"></i> View Live Site
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="pb-16" style="border-bottom:1px solid #1e2d4a; margin-top:-2rem;">
-    <div class="max-w-6xl mx-auto px-6 reveal">
-      <div class="rounded-xl overflow-hidden shadow-2xl project-hero-img" style="border: 1px solid #1e2d4a; background: #080c18;">
-        <img src="/images/projects/foodEX.png" alt="Project preview" class="w-full h-auto object-cover" loading="lazy" />
-      </div>
-    </div>
-  </section>
-  <section class="py-20 reveal">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="grid lg:grid-cols-3 gap-12">
-        <div class="lg:col-span-2 space-y-10">
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-              <span class="w-6 h-6 rounded flex items-center justify-center text-xs" style="background:#00d4ff;color:#000;font-weight:700;">01</span>
-              Business Challenge
-            </h2>
-            <p class="text-slate-400 leading-relaxed">Building a secure, role-based e-commerce platform in a team environment requires disciplined architecture and clean authentication boundaries. The challenge was integrating modern identity management without coupling auth logic to business components.</p>
-          </div>
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-              <span class="w-6 h-6 rounded flex items-center justify-center text-xs" style="background:#00ff88;color:#000;font-weight:700;">02</span>
-              Engineering Approach
-            </h2>
-            <p class="text-slate-400 leading-relaxed">We integrated Kinde Auth for enterprise-quality SSO and role-based access control, decoupling identity management from product business logic. The React codebase follows strict component separation with centralized auth context, ensuring protected routes and session management work reliably across all user states.</p>
-          </div>
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-5 flex items-center gap-3">
-              <span class="w-6 h-6 rounded flex items-center justify-center text-xs" style="background:#7c3aed;color:#fff;font-weight:700;">03</span>
-              Measurable Outcomes
-            </h2>
-            <div class="space-y-3">
-              <div class="flex items-start gap-3 p-4 rounded-xl" style="background:#0f1628;border:1px solid #1e2d4a;">
-                <i class="fas fa-check-circle text-cyber-green mt-0.5"></i>
-                <div>
-                  <div class="text-sm font-semibold text-white">Secure Authentication Layer</div>
-                  <div class="text-xs text-slate-500 mt-1">Kinde Auth integration delivers enterprise-grade identity management, SSO support, and role-based access.</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 p-4 rounded-xl" style="background:#0f1628;border:1px solid #1e2d4a;">
-                <i class="fas fa-check-circle text-cyber-green mt-0.5"></i>
-                <div>
-                  <div class="text-sm font-semibold text-white">Cross-Functional Collaboration</div>
-                  <div class="text-xs text-slate-500 mt-1">Successfully shipped with a distributed team of product managers, UX designers, and frontend engineers.</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 p-4 rounded-xl" style="background:#0f1628;border:1px solid #1e2d4a;">
-                <i class="fas fa-check-circle text-cyber-green mt-0.5"></i>
-                <div>
-                  <div class="text-sm font-semibold text-white">Production-Ready Security Architecture</div>
-                  <div class="text-xs text-slate-500 mt-1">Auth-aware routing, protected API calls, and secure session management implemented from day one.</div>
-                </div>
-              </div></div>
-          </div>
-        </div>
-        <div class="space-y-6">
-          <div class="p-6 rounded-xl" style="background:#0f1628;border:1px solid #1e2d4a;">
-            <h4 class="text-sm font-semibold text-slate-300 mb-4 font-mono uppercase tracking-wider">Project Details</h4>
-            <div class="space-y-4">
-              <div>
-                <div class="text-xs text-slate-500 font-mono mb-1">CLIENT</div>
-                <div class="text-sm text-white font-semibold">Green Remedies Marketplace</div>
-              </div>
-              <div>
-                <div class="text-xs text-slate-500 font-mono mb-1">INDUSTRY</div>
-                <div class="text-sm text-white">Health & Wellness</div>
-              </div>
-              <div>
-                <div class="text-xs text-slate-500 font-mono mb-1">TYPE</div>
-                <div class="text-sm font-semibold" style="color:#00d4ff;">Internal Engineering Project</div>
-              </div>
-              <div>
-                <div class="text-xs text-slate-500 font-mono mb-1">TECH STACK</div>
-                <div class="text-sm text-white">React, TailwindCSS, Kinde Auth, Figma</div>
-              </div>
-              <div>
-                <div class="text-xs text-slate-500 font-mono mb-1">STATUS</div>
-                <div class="flex items-center gap-2">
-                  <span class="w-2 h-2 rounded-full bg-cyber-green animate-pulse"></span>
-                  <span class="text-sm text-cyber-green font-mono">LIVE</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a title="External Link Alt" href="https://thegreenremedies.com" target="_blank" rel="noopener" class="block w-full py-3 text-sm font-semibold text-center rounded-lg text-cyber-dark" style="background:linear-gradient(135deg,#00d4ff,#00ff88);">View Live Site <i class="fas fa-external-link-alt ml-1"></i></a>
-          <a href="/portfolio/client-success" class="block w-full py-3 text-sm font-semibold text-center rounded-lg text-slate-300" style="border:1px solid #1e2d4a;background:rgba(255,255,255,0.03);">← All Case Studies</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 reveal" style="border-top:1px solid #1e2d4a;">
-    <div class="max-w-2xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-white mb-4">Ready to build your platform?</h2>
-      <p class="text-slate-400 mb-8">Let AJ Networks engineer your next business-critical digital system.</p>
-      <a href="/company/book-consultation" class="inline-block px-8 py-3 rounded-lg font-semibold text-cyber-dark" style="background:linear-gradient(135deg,#00d4ff,#00ff88);">Book Consultation</a>
-    </div>
-  </section>
-
-  <footer style="background:#080c18;border-top:1px solid #1e2d4a;" class="py-8">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-slate-500 font-mono">© 2026 AJNETWORKS. All Rights Reserved.</p>
-      <nav class="flex gap-6 text-sm">
-        <a href="./" class="text-slate-500 hover:text-cyber-blue transition">Home</a>
-        <a href="/services/services" class="text-slate-500 hover:text-cyber-blue transition">Services</a>
-        <a href="/portfolio/client-success" class="text-cyber-blue">Client Success</a>
-        <a href="/company/book-consultation" class="text-slate-500 hover:text-cyber-blue transition">Book Consultation</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script>
-    const reveals = document.querySelectorAll('.reveal');
-    reveals.forEach(el => {
-      new IntersectionObserver((entries) => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.1}).observe(el);
-    });
-  </script>
-  <link rel="stylesheet" href="/css/cookie-consent.css" />
-  <script src="/js/cookie-consent.js" defer></script>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="section-padd" style="background: var(--light-bg);">
+<div class="container">
+<div class="cta">
+<div class="row">
+<div class="col-md-8 text-md-left text-center mb-4 mb-md-0">
+<div class="ot-heading">
+<span>// your challenge, our expertise</span>
+<h2 class="main-heading">Your business challenge could be our next success story.</h2>
+</div>
+</div>
+<div class="col-md-4 text-md-right text-center align-self-end">
+<a class="octf-btn octf-btn-primary" href="/company/book-consultation.html">Book Advisory Session</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer class="site-footer bg-gradient" id="site-footer">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+<div class="widget-footer">
+<h5 class="text-white">Company</h5>
+<ul class="list-items">
+<li class="list-item"><a href="/company/about-us.html">About</a></li>
+<li class="list-item"><a href="/portfolio/client-success.html">Client Success</a></li>
+<li class="list-item"><a href="/insights/insights.html">Insights</a></li>
+<li class="list-item"><a href="/company/about-us.html">Careers</a></li>
+<li class="list-item"><a href="/company/book-consultation.html">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+<div class="widget-footer">
+<h5 class="text-white">Services</h5>
+<ul class="list-items">
+<li class="list-item"><a href="/services/technology-strategy.html">Technology Strategy</a></li>
+<li class="list-item"><a href="/services/software-engineering.html">Software Engineering</a></li>
+<li class="list-item"><a href="/services/cybersecurity.html">Cybersecurity</a></li>
+<li class="list-item"><a href="/services/networking.html">Infrastructure</a></li>
+<li class="list-item"><a href="/services/performance-seo.html">Performance</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+<div class="widget-footer">
+<h5 class="text-white">Resources</h5>
+<ul class="list-items">
+<li class="list-item"><a href="/company/faq.html">Privacy Policy</a></li>
+<li class="list-item"><a href="/company/faq.html">Terms</a></li>
+<li class="list-item"><a href="/company/faq.html">Responsible Disclosure</a></li>
+<li class="list-item"><a href="#">Status</a></li>
+<li class="list-item"><a href="#">Documentation</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+<div class="widget-footer">
+<h5 class="text-white">Get In Touch</h5>
+<div class="footer-contact-info">
+<p><i class="fas fa-envelope"></i><a href="mailto:hello@ajnetworks.co">hello@ajnetworks.co</a></p>
+<p><i class="fas fa-map-marker-alt"></i> HQ: Nairobi, Kenya</p>
+<p><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 7:00 PM</p>
+<a class="octf-btn octf-btn-primary mt-3" href="/company/book-consultation.html">Book Strategy Call</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-65">
+<div class="col-md-6 mb-4 mb-md-0">
+<img alt="AJNETWORKS Logo" src="/images/logo.svg"/>
+</div>
+<div class="col-md-6 text-left text-md-right align-self-center">
+<p class="copyright-text">Copyright © 2026 AJNETWORKS. All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="/js/jquery.min.js"></script>
+<script defer="" src="/js/jquery.magnific-popup.min.js"></script>
+<script defer="" src="/js/jquery.isotope.min.js"></script>
+<script defer="" src="/js/owl.carousel.min.js"></script>
+<script defer="" src="/js/easypiechart.min.js"></script>
+<script defer="" src="/js/jquery.countdown.min.js"></script>
+<script defer="" src="/js/scripts.js"></script>
+<script defer="" src="/js/header-mobile.js"></script>
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent-banner">
+<div class="cookie-content">
+<div class="cookie-text">
+<h3>We value your privacy</h3>
+<p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+</div>
+<div class="cookie-buttons">
+<button class="cookie-btn reject" id="btn-reject-cookies">Decline</button>
+<button class="cookie-btn accept" id="btn-accept-cookies">Accept</button>
+</div>
+</div>
+</div>
 </body>
 </html>

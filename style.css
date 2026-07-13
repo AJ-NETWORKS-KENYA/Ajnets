@@ -14873,3 +14873,674 @@ section {
   display: inline-block !important;
   white-space: nowrap !important;
 }
+
+/* ==========================================================================
+   AJNETWORKS UNIFIED ENTERPRISE REFIT CSS (Phase 2)
+   ========================================================================== */
+
+:root {
+  --primary-blue: #43baff;
+  --secondary-purple: #7141b1;
+  --dark-navy: #141d38;
+  --heading-dark: #1b1d21;
+  --body-text: #6d6d6d;
+  --muted-grey: #b5b5b5;
+  --white: #ffffff;
+  --light-bg: #f8f8f8;
+  --input-bg: #f6f6f6;
+  --border-grey: #eeeeee;
+}
+
+/* Accessibility & Focus States */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 12px 24px;
+  z-index: 10000;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: top 0.2s ease;
+  border-bottom-right-radius: 4px;
+}
+.skip-link:focus {
+  top: 0;
+  outline: none;
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus, .owl-dot:focus {
+  outline: 2px solid var(--primary-blue) !important;
+  outline-offset: 2px !important;
+}
+:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  color: var(--muted-grey);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.breadcrumb-nav a {
+  color: var(--muted-grey);
+  transition: color 0.3s;
+}
+.breadcrumb-nav a:hover {
+  color: var(--primary-blue);
+}
+.breadcrumb-nav .separator {
+  color: var(--muted-grey);
+}
+.breadcrumb-nav .current {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+/* Standard Subpage Hero */
+.page-hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 120px 0 80px;
+  color: var(--white);
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(20, 29, 56, 0.85); /* Dark Navy brand overlay */
+  z-index: 1;
+}
+.page-hero .container {
+  position: relative;
+  z-index: 2;
+}
+.page-hero h1 {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+/* Client Success & Case Studies Grid */
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+.case-study-card {
+  background: var(--white);
+  border: 1px solid var(--border-grey);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.case-study-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary-blue);
+}
+.case-study-card .card-image-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background-color: var(--dark-navy);
+}
+.case-study-card .card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.case-study-card:hover .card-image-wrap img {
+  transform: scale(1.05);
+}
+.case-study-card .card-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.case-study-card .card-tag {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 1.5px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.case-study-card .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--heading-dark);
+  margin-bottom: 15px;
+  line-height: 1.4;
+  font-family: "Montserrat", sans-serif;
+}
+.case-study-card .card-text {
+  font-size: 15px;
+  color: var(--body-text);
+  margin-bottom: 20px;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+.case-study-card .card-footer {
+  background: none;
+  border-top: 1px solid var(--border-grey);
+  padding: 15px 0 0;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.case-study-card .card-btn {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+}
+.case-study-card .card-btn:hover {
+  color: var(--secondary-purple);
+}
+
+/* Metric Badges for Cards */
+.case-study-card .metric-badge-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.case-study-card .metric-value {
+  font-size: 16px;
+  font-weight: 800;
+  color: #2ecc71;
+  font-family: "Montserrat", sans-serif;
+}
+.case-study-card .metric-desc {
+  font-size: 10px;
+  color: var(--muted-grey);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Aggregate Metrics Bar */
+.metrics-bar {
+  background: var(--dark-navy);
+  color: var(--white);
+  padding: 50px 0;
+  border-bottom: 4px solid var(--primary-blue);
+  margin-bottom: 60px;
+}
+.metric-item {
+  text-align: center;
+}
+.metric-number {
+  font-size: 46px;
+  font-weight: 900;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+}
+.metric-label {
+  font-size: 13px;
+  color: var(--muted-grey);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* Case Study Sidebar info */
+.case-study-sidebar {
+  background: var(--light-bg);
+  padding: 30px;
+  border-radius: 4px;
+  border-left: 4px solid var(--primary-blue);
+  position: sticky;
+  top: 100px;
+}
+.case-study-sidebar h4 {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--heading-dark);
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border-grey);
+  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.sidebar-meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-meta-item {
+  margin-bottom: 20px;
+}
+.sidebar-meta-item:last-child {
+  margin-bottom: 0;
+}
+.sidebar-meta-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.sidebar-meta-value {
+  font-size: 15px;
+  color: var(--heading-dark);
+  font-weight: 700;
+}
+.sidebar-meta-value a {
+  color: var(--primary-blue);
+  transition: color 0.3s;
+}
+.sidebar-meta-value a:hover {
+  color: var(--secondary-purple);
+}
+
+/* Case Study Content Layout */
+.outcome-box {
+  background: var(--light-bg);
+  border: 1px solid var(--border-grey);
+  padding: 30px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.outcome-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.outcome-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.outcome-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.outcome-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2ecc71;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Case Study Previous/Next Navigation */
+.case-study-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-top: 1px solid var(--border-grey);
+  border-bottom: 1px solid var(--border-grey);
+  margin-top: 60px;
+}
+.case-study-nav-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+}
+.case-study-nav-item.next {
+  align-items: flex-end;
+  text-align: right;
+}
+.case-nav-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+.case-nav-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--heading-dark);
+  transition: color 0.3s;
+}
+.case-study-nav-item:hover .case-nav-title {
+  color: var(--primary-blue);
+}
+
+/* WCAG AAA/AA accessibility compliance color contrast corrections */
+.topbar-info li a {
+  color: #ffffff;
+}
+.topbar-info li a:hover {
+  color: var(--primary-blue);
+}
+.extra-text li a {
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+.copyright-text {
+  color: #b5b5b5;
+}
+p.copyright-text a {
+  color: var(--white);
+}
+
+/* Service Detail Cards for services.html */
+.service-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+.service-card-unified {
+  background: var(--white);
+  border: 1px solid var(--border-grey);
+  padding: 40px 30px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.service-card-unified:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  border-color: var(--primary-blue);
+}
+.service-card-unified .service-icon {
+  font-size: 40px;
+  color: var(--primary-blue);
+  margin-bottom: 25px;
+  line-height: 1;
+}
+.service-card-unified h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.service-card-unified p {
+  font-size: 15px;
+  color: var(--body-text);
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+.service-card-unified .learn-more-btn {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  transition: color 0.3s;
+}
+.service-card-unified:hover .learn-more-btn {
+  color: var(--secondary-purple);
+}
+
+/* ============================================================
+   LAYOUT & UTILITY CLASSES (shared across sub-pages)
+   ============================================================ */
+
+/* Standard section padding */
+.section-padd {
+  padding: 80px 0;
+}
+
+/* Dark background utility */
+.bg-dark-primary {
+  background: var(--dark-navy);
+}
+.bg-dark-primary .case-study-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.bg-dark-primary .case-study-card:hover {
+  border-color: var(--primary-blue);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+.bg-dark-primary .case-study-card .card-tag {
+  color: var(--primary-blue);
+}
+.bg-dark-primary .case-study-card .card-title {
+  color: var(--white);
+}
+.bg-dark-primary .case-study-card .card-text {
+  color: rgba(255, 255, 255, 0.55);
+}
+.bg-dark-primary .case-study-card .card-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Text color utilities */
+.text-white {
+  color: var(--white) !important;
+}
+.text-primary-light {
+  color: var(--primary-blue) !important;
+}
+
+/* Page hero breadcrumb on dark bg */
+.page-hero .breadcrumb-nav {
+  color: rgba(255, 255, 255, 0.6);
+}
+.page-hero .breadcrumb-nav a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.page-hero .breadcrumb-nav a:hover {
+  color: var(--white);
+}
+.page-hero .breadcrumb-nav .separator {
+  color: rgba(255, 255, 255, 0.3);
+}
+.page-hero .breadcrumb-nav .current {
+  color: var(--primary-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .page-hero {
+    padding: 100px 0 60px;
+  }
+  .page-hero h1 {
+    font-size: 28px;
+  }
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-padd {
+    padding: 50px 0;
+  }
+  .metric-number {
+    font-size: 32px;
+  }
+  .metric-label {
+    font-size: 11px;
+  }
+  .case-study-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .case-study-nav-item,
+  .case-study-nav-item.next {
+    max-width: 100%;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+/* Tech Stack Badges (used in case study hero) */
+.tech-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  background: rgba(67, 186, 255, 0.1);
+  border: 1px solid rgba(67, 186, 255, 0.25);
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Primary CTA Button */
+.octf-btn-primary {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 40px;
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+.octf-btn-primary:hover {
+  background: var(--secondary-purple);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(113, 65, 177, 0.3);
+}
+
+
+/* ==========================================================================
+   AJNETWORKS VERSION 2.5 - ENTERPRISE DESIGN SYSTEM OVERRIDES
+   ========================================================================== */
+
+:root {
+    /* Brand Colors */
+    --ajn-navy: #1A1A2E;
+    --ajn-blue: #2B3B85;
+    --ajn-accent: #43D9AD;
+    --ajn-light: #E0E0E0;
+    --ajn-white: #FFFFFF;
+    
+    /* Spacing Scale (No arbitrary spacing) */
+    --spacing-16: 16px;
+    --spacing-24: 24px;
+    --spacing-32: 32px;
+    --spacing-48: 48px;
+    --spacing-64: 64px;
+    --spacing-96: 96px;
+    --spacing-128: 128px;
+    
+    /* Typography */
+    --font-display: 'Montserrat', sans-serif;
+    --font-body: 'Nunito Sans', sans-serif;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6, .main-heading {
+    font-family: var(--font-display) !important;
+}
+
+body, p, a, span, div {
+    font-family: var(--font-body);
+}
+
+/* Global Backgrounds & Colors */
+.bg-dark-primary {
+    background-color: var(--ajn-navy) !important;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, var(--ajn-navy) 0%, var(--ajn-blue) 100%) !important;
+}
+
+/* Standardized Padding */
+.section-padd {
+    padding: var(--spacing-96) 0 !important;
+}
+
+.padding-half {
+    padding: var(--spacing-48) 0 !important;
+}
+
+/* Hero Heights & Layouts */
+.page-hero {
+    padding: var(--spacing-128) 0 var(--spacing-96) 0 !important;
+    text-align: left;
+}
+
+/* Standardized Buttons */
+.octf-btn-primary, .octf-btn-third {
+    background-color: #4DB5FF !important; /* Bright sky blue from reference */
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-weight: 700 !important;
+    transition: all 0.3s ease !important;
+    text-transform: uppercase;
+}
+
+.octf-btn-primary:hover, .octf-btn-third:hover {
+    background-color: #3AA3F0 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(77, 181, 255, 0.4);
+}
+
+/* Standardized Cards */
+.icon-box-s2, .outcome-box, .case-study-cta, .widget-footer {
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.icon-box-s2:hover, .outcome-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Trust Signals / Technologies Bar */
+.tech-badge {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 8px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Ensure no neon / glassmorphism */
+.glass-effect, .neon-text {
+    display: none !important;
+}
