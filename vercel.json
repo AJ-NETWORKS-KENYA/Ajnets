@@ -1,6 +1,41 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/about-us", "destination": "/company/about-us" },
+    { "source": "/book-consultation", "destination": "/company/book-consultation" },
+    { "source": "/contact", "destination": "/company/book-consultation" },
+    { "source": "/faq", "destination": "/company/faq" },
+    { "source": "/services", "destination": "/services/services" },
+    { "source": "/technology-strategy", "destination": "/services/technology-strategy" },
+    { "source": "/software-engineering", "destination": "/services/software-engineering" },
+    { "source": "/cybersecurity", "destination": "/services/cybersecurity" },
+    { "source": "/networking", "destination": "/services/networking" },
+    { "source": "/performance-seo", "destination": "/services/performance-seo" },
+    { "source": "/client-success", "destination": "/portfolio/client-success" },
+    { "source": "/insights", "destination": "/insights/insights" },
+    { "source": "/blog", "destination": "/insights/insights" },
+    { "source": "/post", "destination": "/insights/post" },
+    { "source": "/case-study-bada", "destination": "/portfolio/case-study-bada" },
+    { "source": "/case-study-audiophile", "destination": "/portfolio/case-study-audiophile" },
+    { "source": "/case-study-crappo", "destination": "/portfolio/case-study-crappo" },
+    { "source": "/case-study-greenremedies", "destination": "/portfolio/case-study-greenremedies" },
+    { "source": "/case-study-racnyali", "destination": "/portfolio/case-study-racnyali" },
+    { "source": "/case-study-sgss", "destination": "/portfolio/case-study-sgss" },
+    { "source": "/case-study-transitflow", "destination": "/portfolio/case-study-transitflow" }
+  ],
+  "redirects": [
+    { "source": "/web-development", "destination": "/software-engineering", "permanent": true },
+    { "source": "/mobile-development", "destination": "/software-engineering", "permanent": true },
+    { "source": "/solutions", "destination": "/services", "permanent": true },
+    { "source": "/portfolio-details-1", "destination": "/client-success", "permanent": true },
+    { "source": "/portfolio-details-2", "destination": "/client-success", "permanent": true },
+    { "source": "/services/web-development", "destination": "/services/software-engineering", "permanent": true },
+    { "source": "/services/mobile-development", "destination": "/services/software-engineering", "permanent": true },
+    { "source": "/services/solutions", "destination": "/services/services", "permanent": true },
+    { "source": "/portfolio/portfolio-details-1", "destination": "/portfolio/client-success", "permanent": true },
+    { "source": "/portfolio/portfolio-details-2", "destination": "/portfolio/client-success", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
