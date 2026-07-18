@@ -637,3 +637,11 @@ Three entities declared in `<script type="application/ld+json">`:
 ---
 
 _This document is the authoritative design reference for all AJNETWORKS web properties. Update it whenever new patterns, pages, or components are introduced._
+
+
+## Social Media & Brand Links
+- **Website:** https://ajnetworks.co
+- **Facebook:** https://facebook.com/ajnetworks
+- **LinkedIn:** https://linkedin.com/company/ajnetworks
+- **YouTube:** https://www.youtube.com/@ajnets
+- **Pinterest:** https://pinterest.com/ajnetworks

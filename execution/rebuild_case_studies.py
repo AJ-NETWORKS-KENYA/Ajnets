@@ -80,12 +80,12 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
     </noscript>
 
     <!-- Canonical & Open Graph -->
-    <link rel="canonical" href="https://ajnetworkskenya.it.com/portfolio/{slug}" />
+    <link rel="canonical" href="https://ajnetworks.co/portfolio/{slug}" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://ajnetworkskenya.it.com/portfolio/{slug}" />
+    <meta property="og:url" content="https://ajnetworks.co/portfolio/{slug}" />
     <meta property="og:title" content="{title} | Case Study — AJNETWORKS" />
     <meta property="og:description" content="{meta_desc}" />
-    <meta property="og:image" content="https://ajnetworkskenya.it.com/images/og-home.jpg" />
+    <meta property="og:image" content="https://ajnetworks.co/images/og-home.jpg" />
     <meta property="og:site_name" content="AJNETWORKS" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{title} | Case Study — AJNETWORKS" />
@@ -97,9 +97,9 @@ HEAD_TEMPLATE = """<!DOCTYPE html>
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ajnetworkskenya.it.com/" }},
-        {{ "@type": "ListItem", "position": 2, "name": "Client Success", "item": "https://ajnetworkskenya.it.com/portfolio/client-success" }},
-        {{ "@type": "ListItem", "position": 3, "name": "{title}", "item": "https://ajnetworkskenya.it.com/portfolio/{slug}" }}
+        {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ajnetworks.co/" }},
+        {{ "@type": "ListItem", "position": 2, "name": "Client Success", "item": "https://ajnetworks.co/portfolio/client-success" }},
+        {{ "@type": "ListItem", "position": 3, "name": "{title}", "item": "https://ajnetworks.co/portfolio/{slug}" }}
       ]
     }}
     </script>
@@ -122,7 +122,7 @@ HEADER = """
             <div class="row">
               <div class="col-md-6">
                 <ul class="topbar-info">
-                  <li><i class="fas fa-envelope"></i><a href="mailto:hello@ajnetworkskenya.it.com">hello&#64;ajnetworkskenya.it.com</a></li>
+                  <li><i class="fas fa-envelope"></i><a href="mailto:hello@ajnetworks.co">hello@ajnetworks.co</a></li>
                   <li><i class="fas fa-clock"></i> Mon - Sat: 8.00 am - 7.00 pm</li>
                 </ul>
               </div>
@@ -267,7 +267,7 @@ FOOTER = """
             <div class="widget-footer">
               <h5 class="text-white">Get In Touch</h5>
               <div class="footer-contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:hello@ajnetworkskenya.it.com">hello&#64;ajnetworkskenya.it.com</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:hello@ajnetworks.co">hello@ajnetworks.co</a></p>
                 <p><i class="fas fa-phone-alt"></i> +254 758 238 617</p>
                 <p><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 7:00 PM</p>
                 <a href="/company/book-consultation" class="octf-btn octf-btn-primary mt-3">Book Strategy Call</a>
