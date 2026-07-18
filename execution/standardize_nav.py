@@ -16,7 +16,7 @@ HEADER_MARKUP = """      <!-- Skip to main content link for accessibility -->
                 <div class="col-md-6">
                   <ul class="topbar-info">
                     <li>
-                      <i class="fas fa-envelope"></i><a href="mailto:hello@ajnetworkskenya.it.com">hello&#64;ajnetworkskenya.it.com</a>
+                      <i class="fas fa-envelope"></i><a href="mailto:hello@ajnetworks.co">hello@ajnetworks.co</a>
                     </li>
                     <li>
                       <i class="fas fa-clock"></i> Mon - Sat: 8.00 am - 7.00 pm
@@ -226,7 +226,7 @@ FOOTER_MARKUP = """      <footer id="site-footer" class="site-footer footer-v1">
                 <div class="footer-contact-info">
                   <p>
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:hello@ajnetworkskenya.it.com">hello&#64;ajnetworkskenya.it.com</a>
+                    <a href="mailto:hello@ajnetworks.co">hello@ajnetworks.co</a>
                   </p>
                   <p><i class="fas fa-phone-alt"></i> +254 758 238 617</p>
                   <p>
@@ -305,7 +305,7 @@ def standardize_head(html_content, file_path):
     else:
         canonical_path = rel_path.replace(".html", "")
     
-    canonical_url = f"https://ajnetworkskenya.it.com/{canonical_path}"
+    canonical_url = f"https://ajnetworks.co/{canonical_path}"
 
     new_head = f"""    <meta name="facebook-domain-verification" content="r5liwwbty07nhozk87d1uwkz4fyp70" />
     <meta charset="utf-8" />
@@ -387,7 +387,7 @@ def standardize_head(html_content, file_path):
     <meta property="og:url" content="{canonical_url}" />
     <meta property="og:title" content="{title}" />
     <meta property="og:description" content="{description}" />
-    <meta property="og:image" content="https://ajnetworkskenya.it.com/images/og-home.jpg" />
+    <meta property="og:image" content="https://ajnetworks.co/images/og-home.jpg" />
     <meta property="og:site_name" content="AJNETWORKS" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{title}" />
