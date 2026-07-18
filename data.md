@@ -663,3 +663,14 @@ The website should continue evolving toward an enterprise consulting experience 
 - Cloudflare
 
 The objective is not to imitate their branding, but to match their standards for clarity, usability, consistency, and perceived quality while maintaining a distinct AJNETWORKS identity.
+
+
+---
+
+# 24. Official Online Presence & Social Links
+
+- **Official Website:** https://ajnetworks.co
+- **Facebook:** https://facebook.com/ajnetworks
+- **LinkedIn:** https://linkedin.com/company/ajnetworks
+- **YouTube:** https://www.youtube.com/@ajnets
+- **Pinterest:** https://pinterest.com/ajnetworks
