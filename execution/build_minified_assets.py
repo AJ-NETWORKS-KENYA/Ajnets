@@ -1,7 +1,7 @@
 import os
 import re
 
-ROOT_DIR = r"c:\My Web Sites\ajnets"
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CSS_FILE = os.path.join(ROOT_DIR, "style.css")
 MIN_CSS_FILE = os.path.join(ROOT_DIR, "style.min.css")
 
