@@ -12,11 +12,18 @@
 | Property      | Value                                           |
 | ------------- | ----------------------------------------------- |
 | **Full Name** | AJNETWORKS                                      |
-| **Tagline**   | Technology decisions that move business forward |
+| **Tagline**   | Engineering technology that accelerates business growth |
 | **Domain**    | ajnetworks.co                          |
 | **Region**    | East Africa (Kenya HQ · Rwanda operations)      |
 | **Contact**   | hello@ajnetworks.co · +254 758 238 617 |
 | **Hours**     | Mon – Sat: 8:00 am – 7:00 pm                    |
+
+### Logo Guidelines (Brand Book Specs)
+
+| Property | Standard | Rule |
+| --- | --- | --- |
+| **Logo Clear Space** | `50px` | Always maintain 50px padding around logo edges for legibility. |
+| **Minimum Width** | `128px` (`1.33"`) | Do not render smaller than 128px width to preserve detail. |
 
 ### Logo Files
 
@@ -33,28 +40,31 @@
 
 ---
 
-## 2. Color Palette
+## 2. Color Palette (Official Brand Book)
 
 ### Core Brand Colors
 
-| Token / Role         | Hex       | Usage                                                          |
-| -------------------- | --------- | -------------------------------------------------------------- |
-| **Primary Blue**     | `#43baff` | Primary buttons, links hover, accents, `.bg-primary`           |
-| **Secondary Purple** | `#7141b1` | Secondary buttons, blockquote marks, active dots, `.bg-second` |
-| **Dark Navy**        | `#141d38` | Top bar background, deep dark sections                         |
-| **Heading Dark**     | `#1b1d21` | All `h1`–`h6` headings, `.text-dark`                           |
-| **Body Text**        | `#6d6d6d` | Default `body` copy, form placeholder text                     |
-| **Muted Grey**       | `#b5b5b5` | Caption text, blockquote cite, subtle labels                   |
-| **White**            | `#ffffff` | Page background, light button, `.text-light`                   |
-| **Light BG**         | `#f8f8f8` | Alternating section backgrounds, `.bg-alt`                     |
-| **Input BG**         | `#f6f6f6` | Form field backgrounds                                         |
-| **Border Grey**      | `#eeeeee` | Table borders, dividers                                        |
+| Token / Color Name | Hex Code | RGB | HSL | Usage |
+| --- | --- | --- | --- | --- |
+| **Blackberry Purple** | `#1E2132` | `30, 33, 50` | `231, 25%, 16%` | Deep background, dark navy sections |
+| **Pure White** | `#FFFFFF` | `255, 255, 255` | `0, 0%, 100%` | Primary background, light buttons, text on dark |
+| **Maldives Teal** | `#43D9AD` | `67, 217, 173` | `162, 66%, 56%` | Success badges, teal accents, highlight elements |
+| **Capri Blue** | `#00A3FF` | `0, 163, 255` | `202, 100%, 50%` | Primary buttons, link hover states, active accents |
+| **Twilight Blue** | `#2B3B85` | `43, 59, 133` | `229, 51%, 35%` | Top bar background, secondary buttons, banners |
 
 ### Regional Banner Colors
 
 | Region | Background | Accent Text |
 | ------ | ---------- | ----------- |
-| Rwanda | `#2b3b85`  | `#ff9900`   |
+| Rwanda | `#2B3B85` (`Twilight Blue`) | `#FF9900` |
+
+---
+
+## 2.1 Brand Voice & Aesthetics
+
+* **Values:** Strategic Clarity, Engineering Excellence, Security-first Delivery, Business Impact, Intentionality
+* **Aesthetic:** Sleek, modern, corporate, strategic, data-driven, sophisticated
+* **Tone of Voice:** Professional, strategic, authoritative, ambitious, outcome-driven
 
 ---
 
