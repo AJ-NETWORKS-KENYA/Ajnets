@@ -1,4 +1,21 @@
 @charset "UTF-8";
+
+/* ==========================================================================
+   AJNETWORKS Official Brand Book Tokens (Pomelli / Google Labs)
+   ========================================================================== */
+:root {
+  --color-blackberry-purple: #1e2132;
+  --color-pure-white: #ffffff;
+  --color-maldives-teal: #43d9ad;
+  --color-capri-blue: #00a3ff;
+  --color-twilight-blue: #2b3b85;
+
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Nunito Sans", sans-serif;
+
+  --logo-clear-space: 50px;
+  --logo-min-width: 128px;
+}
 /*
 Template Name: Engitech
 Template URI: http://templates.thememodern.com/engitech/index.html
