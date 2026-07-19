@@ -2,7 +2,7 @@ import os
 import re
 import json
 
-ROOT_DIR = r"c:\My Web Sites\ajnets"
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 def run_eval():
     print("Evaluating SEO and Brand Alignment Metrics...")
