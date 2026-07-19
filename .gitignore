@@ -108,6 +108,7 @@ dist/
 build/
 *.min.js
 *.min.css
+!style.min.css
 
 # Logs
 logs/
