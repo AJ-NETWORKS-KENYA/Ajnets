@@ -20,7 +20,7 @@
 <link href="/css/owl.carousel.min.css" rel="stylesheet"/>
 <link href="/css/owl.theme.css" rel="stylesheet"/>
 <link href="/css/magnific-popup.css" rel="stylesheet"/>
-<link href="/style.css" rel="stylesheet"/>
+<link href="/style.min.css" rel="stylesheet"/>
 <link href="/css/logo-ajnetworks.css" rel="stylesheet"/>
 <link href="/css/cookie-consent.css" rel="stylesheet"/>
 <link href="/css/trust-strip.css" rel="stylesheet"/>
@@ -120,16 +120,26 @@
       <a href="/company/book-consultation.html" style="color: #ff9900; text-decoration: underline" title="Envelope">Contact our regional team today</a>.
     </div>
 <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("https://ipapi.co/json/")
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.country_code === "RW") {
-              var banner = document.getElementById("rwanda-banner");
-              if (banner) banner.style.display = "block";
-            }
-          })
-          .catch((error) => console.error("Geolocation failed:", error));
+      window.addEventListener("load", function () {
+        function checkLocation() {
+          const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+          const timeoutId = setTimeout(() => { if (controller) controller.abort(); }, 2500);
+          fetch("https://ipapi.co/json/", { signal: controller ? controller.signal : undefined })
+            .then((response) => response.json())
+            .then((data) => {
+              clearTimeout(timeoutId);
+              if (data && data.country_code === "RW") {
+                var banner = document.getElementById("rwanda-banner");
+                if (banner) banner.style.display = "block";
+              }
+            })
+            .catch(() => {});
+        }
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(checkLocation);
+        } else {
+          setTimeout(checkLocation, 1000);
+        }
       });
     </script>
 <div class="site" id="page">
@@ -257,12 +267,8 @@
 </div>
 </header>
 <div class="site-content" id="content">
-<div class="static-hero" style='
-            background: url("images/slider/slide1-home1.webp")
-              no-repeat center center/cover;
-            padding: 150px 0 100px;
-            position: relative;
-          '>
+<div class="static-hero position-relative overflow-hidden" style="padding: 150px 0 100px; min-height: 500px;">
+<img alt="AJNETWORKS Strategic Technology Consulting" decoding="async" fetchpriority="high" height="900" src="/images/slider/slide1-home1.webp" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;" width="1600"/>
 <div style="
               position: absolute;
               top: 0;
@@ -270,6 +276,7 @@
               right: 0;
               bottom: 0;
               background: rgba(0, 0, 0, 0.6);
+              z-index: 1;
             "></div>
 <div class="container" style="position: relative; z-index: 2">
 <div class="row">
@@ -319,35 +326,35 @@
 <div class="partners-slide">
 <a class="client-logo" href="https://rotaractnyali.org/" rel="noopener" target="_blank">
 <figure class="partners-slide-inner">
-<img alt="Rotaract Club of Nyali" class="partners-slide-image rotaract-logo" src="/images/client-logos/Rotaract Club of Nyali Logo(Cranberry)_EN21.png"/>
+<img alt="Rotaract Club of Nyali" class="partners-slide-image rotaract-logo" decoding="async" height="60" loading="lazy" src="/images/client-logos/Rotaract Club of Nyali Logo(Cranberry)_EN21.png" width="180"/>
 </figure>
 </a>
 </div>
 <div class="partners-slide">
 <a class="client-logo" href="https://www.badaglobal-bli.com/" rel="noopener" target="_blank">
 <figure class="partners-slide-inner">
-<img alt="Bada Language Institute" class="partners-slide-image" src="/images/client-logos/BLI logoo.png"/>
+<img alt="Bada Language Institute" class="partners-slide-image" decoding="async" height="60" loading="lazy" src="/images/client-logos/BLI logoo.png" width="180"/>
 </figure>
 </a>
 </div>
 <div class="partners-slide">
 <a class="client-logo" href="https://www.sgssmombasa.org/" rel="noopener" target="_blank">
 <figure class="partners-slide-inner">
-<img alt="Siri Guru Singh Sabha Mombasa" class="partners-slide-image" src="/images/client-logos/sgss-mombasa-logo.png"/>
+<img alt="Siri Guru Singh Sabha Mombasa" class="partners-slide-image" decoding="async" height="60" loading="lazy" src="/images/client-logos/sgss-mombasa-logo.png" width="180"/>
 </figure>
 </a>
 </div>
 <div class="partners-slide">
 <a class="client-logo" href="https://medical.sgssmombasa.org/" rel="noopener" target="_blank">
 <figure class="partners-slide-inner">
-<img alt="SGSS Medical Fund" class="partners-slide-image" src="/images/client-logos/sgss-medical-fund-logo.png"/>
+<img alt="SGSS Medical Fund" class="partners-slide-image" decoding="async" height="60" loading="lazy" src="/images/client-logos/sgss-medical-fund-logo.png" width="180"/>
 </figure>
 </a>
 </div>
 <div class="partners-slide">
 <a class="client-logo" href="/services/services.html">
 <figure class="partners-slide-inner">
-<img alt="" class="partners-slide-image" src="/images/client-logos/client3.svg"/>
+<img alt="AJNETWORKS Client Partner" class="partners-slide-image" decoding="async" height="60" loading="lazy" src="/images/client-logos/client3.svg" width="180"/>
 </figure>
 </a>
 </div>
