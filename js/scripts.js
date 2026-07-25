@@ -97,33 +97,7 @@
 
     /* Counter */
     $(window).on('scroll', function() {
-        $('.ot-counter').each(function() {
-            var pos_y   = $(this).offset().top - window.innerHeight;
-            var $this   = $(this).find('span.num'),
-                countTo = $this.attr('data-to'),
-                during  = parseInt( $this.attr('data-time') ),
-                topOfWindow = $(window).scrollTop();
-
-            if ( pos_y < topOfWindow ) {    
-                $({
-                    countNum: $this.text()
-                }).animate({
-                    countNum: countTo
-                },
-                {
-                    duration: during,
-                    easing: 'swing',
-                    step: function() {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function() {
-                        $this.text(this.countNum);
-                    }
-                });
-            }
-        });
-
-        $('.ot-counter2').each(function() {
+        $('.ot-counter, .ot-counter2').each(function() {
             var pos_y   = $(this).offset().top - window.innerHeight;
             var $this   = $(this).find('span.num'),
                 countTo = $this.attr('data-to'),
@@ -313,7 +287,7 @@
             second: second,
             seconds: seconds
         }, function () {
-            alert('Done!');
+            // Countdown done
         });
     });
 

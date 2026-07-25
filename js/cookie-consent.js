@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 'ad_personalization': status,
                 'analytics_storage': status
             });
-            console.log(`Consent updated to: ${status}`);
         }
 
         // Save to local storage
