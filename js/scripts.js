@@ -313,7 +313,7 @@
             second: second,
             seconds: seconds
         }, function () {
-            alert('Done!');
+            // Countdown done
         });
     });
 
