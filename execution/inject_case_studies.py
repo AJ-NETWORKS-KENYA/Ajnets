@@ -66,6 +66,15 @@ projects = {
 
 directory = r"c:\My Web Sites\ajnets"
 
+# Pre-compile regex patterns for performance
+title_pattern = re.compile(r'<title>.*?</title>', re.DOTALL)
+h1_pattern = re.compile(r'<h1 class="page-title">.*?</h1>', re.DOTALL)
+li_pattern = re.compile(r'<li class="active">.*?</li>', re.DOTALL)
+h2_pattern = re.compile(r'<h2>.*?</h2>', re.DOTALL)
+detail_blocks_pattern = re.compile(r'<div class="project-detail">.*?</div>', re.DOTALL)
+content_pattern = re.compile(r'<h3>How it Works</h3>.*?(?=<div class="blog-post projects-meta">)', re.DOTALL)
+comments_pattern = re.compile(r'<div id="comments".*?</form>\s*</div>', re.DOTALL)
+
 for filename, data in projects.items():
     filepath = os.path.join(directory, filename)
     if not os.path.exists(filepath):
@@ -75,18 +84,18 @@ for filename, data in projects.items():
         html = f.read()
 
     # 1. Page titles and breadcrumbs
-    html = re.sub(r'<title>.*?</title>', f'<title>{data["title"]} | AJNETWORKS Case Study</title>', html, flags=re.DOTALL)
-    html = re.sub(r'<h1 class="page-title">.*?</h1>', f'<h1 class="page-title">{data["title"]}</h1>', html, flags=re.DOTALL)
-    html = re.sub(r'<li class="active">.*?</li>', f'<li class="active">{data["title"]}</li>', html, flags=re.DOTALL)
+    html = title_pattern.sub(f'<title>{data["title"]} | AJNETWORKS Case Study</title>', html)
+    html = h1_pattern.sub(f'<h1 class="page-title">{data["title"]}</h1>', html)
+    html = li_pattern.sub(f'<li class="active">{data["title"]}</li>', html)
     
     # 2. Main Title
-    html = re.sub(r'<h2>.*?</h2>', f'<h2>{data["title"]}</h2>', html, flags=re.DOTALL, count=1)
+    html = h2_pattern.sub(f'<h2>{data["title"]}</h2>', html, count=1)
     
     # 3. Breadcrumb parent update
     html = html.replace('<li><a href="./">Home</a></li>', '<li><a href="./">Home</a></li>\n                <li><a href="client-success.html">Client Success</a></li>')
 
     # 4. Project Details Blocks
-    detail_blocks = re.findall(r'<div class="project-detail">.*?</div>', html, flags=re.DOTALL)
+    detail_blocks = detail_blocks_pattern.findall(html)
     if len(detail_blocks) >= 3:
         # Block 1: Type
         b1 = f'<div class="project-detail">\n                  <span>PROJECT TYPE:</span>\n                  <strong style="color: {"#0056b3" if "Internal" in data["type"] else "#28a745"}">{data["type"]}</strong>\n                </div>'
@@ -103,8 +112,6 @@ for filename, data in projects.items():
     # 5. Content Replacement
     # We will replace everything from <h3>How it Works</h3> down to <div class="blog-post projects-meta">
     # using a robust regex.
-    content_pattern = re.compile(r'<h3>How it Works</h3>.*?(?=<div class="blog-post projects-meta">)', re.DOTALL)
-    
     first_letter = data["desc"][0]
     rest_desc = data["desc"][1:]
     
@@ -121,10 +128,10 @@ for filename, data in projects.items():
                 <div class="space-40"></div>
                 """
     
-    html = re.sub(content_pattern, new_content, html)
+    html = content_pattern.sub(new_content, html)
     
     # 6. Remove Comments section completely (from <div id="comments"> to </form></div>)
-    html = re.sub(r'<div id="comments".*?</form>\s*</div>', '', html, flags=re.DOTALL)
+    html = comments_pattern.sub('', html)
     
     # Write back
     with open(filepath, "w", encoding="utf-8") as f:
