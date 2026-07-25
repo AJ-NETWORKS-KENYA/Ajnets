@@ -37,7 +37,6 @@ module.exports = async function handler(req, res) {
 
   // Fallback mode if SMTP credentials are not configured in local environment
   if (!smtpUser || !smtpPass) {
-    console.warn("SMTP credentials not configured. Contact lead recording skipped due to missing configuration.");
     return res.status(200).json({ success: true, message: "Consultation request recorded successfully." });
   }
 
