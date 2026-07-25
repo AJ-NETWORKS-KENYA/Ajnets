@@ -133,12 +133,6 @@
           $submitBtn.prop("disabled", false).text("Request Strategy Call");
         },
         error: function (xhr, status, error) {
-          console.error(
-            "Form submission failed:",
-            status,
-            error,
-            xhr.responseText,
-          );
           var msg =
             "There was an error sending your message. Please try again.";
           try {
