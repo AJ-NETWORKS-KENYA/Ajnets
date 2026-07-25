@@ -1,18 +1,18 @@
 import os
 import re
 
+# Patterns to match the Book Consultation LI
+# Desktop nav
+nav_pattern_1 = re.compile(
+    r'<li>\s*<a href="/company/book-consultation(?:\.html)?">Book Consultation</a>\s*</li>',
+    re.IGNORECASE
+)
+
 def fix_cards_and_nav():
     root_dir = r"c:\My Web Sites\ajnets"
     count_nav = 0
     count_cards = 0
 
-    # Patterns to match the Book Consultation LI
-    # Desktop nav
-    nav_pattern_1 = re.compile(
-        r'<li>\s*<a href="/company/book-consultation(?:\.html)?">Book Consultation</a>\s*</li>',
-        re.IGNORECASE
-    )
-    
     # We will just read all HTML files and apply fixes
     for dirpath, dirnames, filenames in os.walk(root_dir):
         dirnames[:] = [d for d in dirnames if d not in (".git", "node_modules", "execution", ".tmp")]
