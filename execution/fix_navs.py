@@ -41,6 +41,10 @@ mobile_nav_replacement = """<ul id="menu-main-menu" class="mobile_mainmenu">
                                         <li><a href="book-consultation.html">Book Consultation</a></li>
                                     </ul>"""
 
+# Pre-compile regex patterns outside the loop for performance
+pattern_desktop = re.compile(r'<nav id="site-navigation" class="main-navigation">.*?</nav>', re.DOTALL)
+pattern_mobile = re.compile(r'<ul id="menu-main-menu" class="mobile_mainmenu">.*?</ul>', re.DOTALL)
+
 for file_path in html_files:
     if file_path.endswith("index.html"):
         continue
@@ -49,12 +53,10 @@ for file_path in html_files:
         content = f.read()
 
     # Desktop Nav
-    pattern_desktop = re.compile(r'<nav id="site-navigation" class="main-navigation">.*?</nav>', re.DOTALL)
-    content = re.sub(pattern_desktop, desktop_nav_replacement, content)
+    content = pattern_desktop.sub(desktop_nav_replacement, content)
 
     # Mobile Nav
-    pattern_mobile = re.compile(r'<ul id="menu-main-menu" class="mobile_mainmenu">.*?</ul>', re.DOTALL)
-    content = re.sub(pattern_mobile, mobile_nav_replacement, content)
+    content = pattern_mobile.sub(mobile_nav_replacement, content)
 
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
