@@ -31,12 +31,13 @@ def fix_file(filepath):
 
     old_pattern = (
         r'(<div class="octf-btn-cta">)'
-        r'(\s*\r?\n\s*\r?\n?\s*\r?\n\s*<!-- Form Search on Header -->\s*\r?\n\s*\r?\n?\s*</div>)'
+        r'(\s*\r?\n\s*\r?\n?\s*\r?\n\s*<!-- Form Search on Header -->)'
+        r'(\s*\r?\n\s*\r?\n?\s*</div>)'
         r'(\s*\r?\n\s*\r?\n?\s*\r?\n\s*)'
         r'(<div class="octf-header-module">)'
     )
 
-    replacement = r'\1\3\4'
+    replacement = r'\1\2\4\5'
 
     new_content, count = re.subn(old_pattern, replacement, content, flags=re.MULTILINE)
 
