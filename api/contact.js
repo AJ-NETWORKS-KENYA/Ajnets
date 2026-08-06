@@ -1,5 +1,7 @@
 const nodemailer = require("nodemailer");
 
+const transporters = new Map();
+
 module.exports = async function handler(req, res) {
   // CORS Headers
   res.setHeader("Access-Control-Allow-Origin", "https://ajnetworks.co");
@@ -41,15 +43,19 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.zoho.com",
-      port: process.env.SMTP_PORT || 465,
-      secure: true,
-      auth: {
-        user: smtpUser,
-        pass: smtpPass,
-      },
-    });
+    let transporter = transporters.get(smtpUser);
+    if (!transporter) {
+      transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST || "smtp.zoho.com",
+        port: process.env.SMTP_PORT || 465,
+        secure: true,
+        auth: {
+          user: smtpUser,
+          pass: smtpPass,
+        },
+      });
+      transporters.set(smtpUser, transporter);
+    }
 
     const mailOptions = {
       from: smtpUser,
