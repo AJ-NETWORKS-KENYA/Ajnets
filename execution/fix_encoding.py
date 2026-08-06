@@ -5,12 +5,12 @@ Replaces inline-styled heroes with the page-hero component class.
 import os
 import re
 
-ROOT = r"c:\My Web Sites\ajnets"
+ROOT = "."
 
 # Fix encoding artifacts (replacement character)
 def fix_encoding(content):
     # Replace common encoding artifacts
-    content = content.replace("�", "—")
+    content = content.replace("\ufffd", "—")
     content = content.replace("\u00e2\u0080\u0094", "—")
     content = content.replace("\u00e2\u0080\u0093", "–")
     content = content.replace("\u00e2\u0080\u0099", "'")
