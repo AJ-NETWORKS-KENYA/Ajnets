@@ -2,28 +2,59 @@ const test = require('node:test');
 const assert = require('node:assert');
 const handler = require('./contact');
 
-test('Contact API - Missing Fields Validation', async (t) => {
-  // Mock simple res object to capture status and json
-  const createMockRes = () => {
-    const res = {
-      statusCode: null,
-      jsonData: null,
-      setHeader: () => {}, // Mock setHeader
-      status: function(code) {
-        this.statusCode = code;
-        return this; // For chaining .json()
-      },
-      json: function(data) {
-        this.jsonData = data;
-        return this;
-      },
-      end: function() {
-        return this;
-      }
-    };
-    return res;
+// Mock simple res object to capture status and json
+const createMockRes = () => {
+  const res = {
+    statusCode: null,
+    jsonData: null,
+    setHeader: () => {}, // Mock setHeader
+    status: function(code) {
+      this.statusCode = code;
+      return this; // For chaining .json()
+    },
+    json: function(data) {
+      this.jsonData = data;
+      return this;
+    },
+    end: function() {
+      return this;
+    }
   };
+  return res;
+};
 
+test('Contact API - Method Validation', async (t) => {
+  await t.test('Returns 405 when method is GET', async () => {
+    const req = { method: 'GET' };
+    const res = createMockRes();
+
+    await handler(req, res);
+
+    assert.strictEqual(res.statusCode, 405);
+    assert.deepStrictEqual(res.jsonData, { message: "Method not allowed" });
+  });
+
+  await t.test('Returns 405 when method is PUT', async () => {
+    const req = { method: 'PUT' };
+    const res = createMockRes();
+
+    await handler(req, res);
+
+    assert.strictEqual(res.statusCode, 405);
+    assert.deepStrictEqual(res.jsonData, { message: "Method not allowed" });
+  });
+
+  await t.test('Returns 200 when method is OPTIONS', async () => {
+    const req = { method: 'OPTIONS' };
+    const res = createMockRes();
+
+    await handler(req, res);
+
+    assert.strictEqual(res.statusCode, 200);
+  });
+});
+
+test('Contact API - Missing Fields Validation', async (t) => {
   await t.test('Returns 400 when missing all required fields', async () => {
     const req = { method: 'POST', body: {} };
     const res = createMockRes();
