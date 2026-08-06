@@ -73,4 +73,14 @@ test('Contact API - Missing Fields Validation', async (t) => {
     assert.strictEqual(res.statusCode, 400);
     assert.deepStrictEqual(res.jsonData, { message: "Missing required fields (name, email, region, message)" });
   });
+
+  await t.test('Returns 400 when email format is invalid', async () => {
+    const req = { method: 'POST', body: { name: 'John Doe', email: 'invalid-email', region: 'US', message: 'Hi' } };
+    const res = createMockRes();
+
+    await handler(req, res);
+
+    assert.strictEqual(res.statusCode, 400);
+    assert.deepStrictEqual(res.jsonData, { message: "Invalid email format" });
+  });
 });
