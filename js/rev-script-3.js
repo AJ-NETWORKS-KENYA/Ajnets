@@ -1,8 +1,8 @@
 (function ($) {
 	
     'use strict';	
-			var tpj=jQuery;
-			var revapi26;
+			const tpj=jQuery;
+			let revapi26;
 			tpj(document).ready(function() {
 				if(tpj("#rev_slider_three").revolution == undefined){
 					revslider_showDoubleJqueryError("#rev_slider_three");
