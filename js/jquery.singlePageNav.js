@@ -18,7 +18,7 @@ if (typeof Object.create !== 'function') {
 (function($, window, document, undefined) {
     "use strict";
     
-    var SinglePageNav = {
+    const SinglePageNav = {
         
         init: function(options, container) {
             
@@ -43,7 +43,7 @@ if (typeof Object.create !== 'function') {
         },
 
         handleClick: function(e) {
-            var self  = this,
+            const self  = this,
                 link  = e.currentTarget,
                 $elem = $(link.hash);
 
@@ -78,9 +78,9 @@ if (typeof Object.create !== 'function') {
         },
         
         scrollTo: function($elem, callback) {
-            var self = this;
-            var target = self.getCoords($elem).top;
-            var called = false;
+            const self = this;
+            const target = self.getCoords($elem).top;
+            let called = false;
 
             self.$htmlbody.stop().animate(
                 {scrollTop: target}, 
@@ -98,7 +98,7 @@ if (typeof Object.create !== 'function') {
         },
         
         setTimer: function() {
-            var self = this;
+            const self = this;
             
             self.$window.on('scroll.singlePageNav', function() {
                 self.didScroll = true;
@@ -120,8 +120,8 @@ if (typeof Object.create !== 'function') {
         
         // Check the scroll position and set the active section
         checkPosition: function() {
-            var scrollPos = this.$window.scrollTop();
-            var currentSection = this.getCurrentSection(scrollPos);
+            const scrollPos = this.$window.scrollTop();
+            const currentSection = this.getCurrentSection(scrollPos);
             if(currentSection!==null) {
                 this.setActiveLink(currentSection);
             }
@@ -134,7 +134,7 @@ if (typeof Object.create !== 'function') {
         },
         
         setActiveLink: function(href) {
-            var $activeLink = this.$container.find("a[href$='" + href + "']");
+            const $activeLink = this.$container.find("a[href$='" + href + "']");
                             
             if (!$activeLink.hasClass(this.options.currentClass)) {
                 this.$links.removeClass(this.options.currentClass);
@@ -143,7 +143,7 @@ if (typeof Object.create !== 'function') {
         },        
         
         getCurrentSection: function(scrollPos) {
-            var i, hash, coords, section;
+            let i, hash, coords, section;
             
             for (i = 0; i < this.$links.length; i++) {
                 hash = this.$links[i].hash;
@@ -164,7 +164,7 @@ if (typeof Object.create !== 'function') {
     
     $.fn.singlePageNav = function(options) {
         return this.each(function() {
-            var singlePageNav = Object.create(SinglePageNav);
+            const singlePageNav = Object.create(SinglePageNav);
             singlePageNav.init(options, this);
         });
     };
