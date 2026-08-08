@@ -8,15 +8,15 @@
 
   // Form validation
   $(document).ready(function () {
-    var $form = $("#ajax-form");
-    var $submitBtn = $("#send");
-    var $errorContainer = $("#err-form");
+    const $form = $("#ajax-form");
+    const $submitBtn = $("#send");
+    const $errorContainer = $("#err-form");
 
     // Hide all error messages initially
     $(".error").hide();
 
     // Email validation regex
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Real-time validation
     $('input[name="name"]').on("blur", function () {
@@ -36,7 +36,7 @@
     });
 
     $('input[name="email"]').on("blur", function () {
-      var email = $(this).val().trim();
+      const email = $(this).val().trim();
       if (email === "") {
         $("#err-email").show();
         $("#err-emailvld").hide();
@@ -64,14 +64,14 @@
       $errorContainer.hide();
 
       // Get form values
-      var name = $('input[name="name"]').val().trim();
-      var organization = $('input[name="organization"]').val().trim();
-      var email = $('input[name="email"]').val().trim();
-      var phone = $('input[name="phone"]').val().trim();
-      var message = $('textarea[name="message"]').val().trim();
+      const name = $('input[name="name"]').val().trim();
+      const organization = $('input[name="organization"]').val().trim();
+      const email = $('input[name="email"]').val().trim();
+      const phone = $('input[name="phone"]').val().trim();
+      const message = $('textarea[name="message"]').val().trim();
 
       // Validation
-      var isValid = true;
+      let isValid = true;
 
       if (name === "") {
         $("#err-name").show();
@@ -83,7 +83,7 @@
         isValid = false;
       }
 
-      var region = $('select[name="region"]').val();
+      const region = $('select[name="region"]').val();
       if (!region) {
         $("#err-region").show();
         isValid = false;
@@ -133,10 +133,10 @@
           $submitBtn.prop("disabled", false).text("Request Strategy Call");
         },
         error: function (xhr, status, error) {
-          var msg =
+          let msg =
             "There was an error sending your message. Please try again.";
           try {
-            var response = JSON.parse(xhr.responseText);
+            const response = JSON.parse(xhr.responseText);
             if (response && response.message) {
               msg = "Error: " + response.message;
             }
