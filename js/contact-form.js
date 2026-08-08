@@ -6,33 +6,20 @@
 (function ($) {
   "use strict";
 
-  // Form validation
-  $(document).ready(function () {
-    var $form = $("#ajax-form");
-    var $submitBtn = $("#send");
-    var $errorContainer = $("#err-form");
+  var $form, $submitBtn, $errorContainer;
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Hide all error messages initially
-    $(".error").hide();
+  function setupRealTimeValidation() {
+    var simpleFields = ['name', 'organization', 'phone'];
 
-    // Email validation regex
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    // Real-time validation
-    $('input[name="name"]').on("blur", function () {
-      if ($(this).val().trim() === "") {
-        $("#err-name").show();
-      } else {
-        $("#err-name").hide();
-      }
-    });
-
-    $('input[name="organization"]').on("blur", function () {
-      if ($(this).val().trim() === "") {
-        $("#err-organization").show();
-      } else {
-        $("#err-organization").hide();
-      }
+    $.each(simpleFields, function (i, field) {
+      $('input[name="' + field + '"]').on("blur", function () {
+        if ($(this).val().trim() === "") {
+          $("#err-" + field).show();
+        } else {
+          $("#err-" + field).hide();
+        }
+      });
     });
 
     $('input[name="email"]').on("blur", function () {
@@ -48,127 +35,136 @@
         $("#err-emailvld").hide();
       }
     });
+  }
 
-    $('input[name="phone"]').on("blur", function () {
-      if ($(this).val().trim() === "") {
-        $("#err-phone").show();
-      } else {
-        $("#err-phone").hide();
+  function validateForm() {
+    var isValid = true;
+    var name = $('input[name="name"]').val().trim();
+    var organization = $('input[name="organization"]').val().trim();
+    var email = $('input[name="email"]').val().trim();
+    var phone = $('input[name="phone"]').val().trim();
+    var message = $('textarea[name="message"]').val().trim();
+    var region = $('select[name="region"]').val();
+
+    if (name === "") {
+      $("#err-name").show();
+      isValid = false;
+    }
+
+    if (organization === "") {
+      $("#err-organization").show();
+      isValid = false;
+    }
+
+    if (!region) {
+      $("#err-region").show();
+      isValid = false;
+    }
+
+    if (email === "") {
+      $("#err-email").show();
+      isValid = false;
+    } else if (!emailRegex.test(email)) {
+      $("#err-emailvld").show();
+      isValid = false;
+    }
+
+    if (phone === "") {
+      $("#err-phone").show();
+      isValid = false;
+    }
+
+    if (message === "" || message.length < 10) {
+      $errorContainer
+        .text("Please provide a detailed message (at least 10 characters)")
+        .show();
+      isValid = false;
+    }
+
+    return isValid;
+  }
+
+  function handleAjaxSuccess() {
+    $("#successModal").fadeIn();
+    $form[0].reset();
+    $submitBtn.prop("disabled", false).text("Request Strategy Call");
+  }
+
+  function handleAjaxError(xhr, status, error) {
+    var msg = "There was an error sending your message. Please try again.";
+    try {
+      var response = JSON.parse(xhr.responseText);
+      if (response && response.message) {
+        msg = "Error: " + response.message;
       }
-    });
+    } catch (e) {}
 
-    // Form submission validation
+    if (xhr.status === 404) {
+      msg = "Backend API not found. Please ensure you are running the site via Vercel CLI (vercel dev).";
+    } else if (xhr.status === 500) {
+      msg += " (Server Error: Check your SMTP credentials in .env)";
+    }
+
+    $errorContainer.text(msg).show();
+    $submitBtn.prop("disabled", false).text("Request Strategy Call");
+  }
+
+  function submitFormAjax() {
+    $.ajax({
+      url: $form.attr("action"),
+      method: "POST",
+      data: $form.serialize(),
+      dataType: "json",
+      headers: {
+        Accept: "application/json",
+      },
+      success: handleAjaxSuccess,
+      error: handleAjaxError,
+    });
+  }
+
+  function setupFormSubmission() {
     $form.on("submit", function (e) {
-      // Hide previous messages
       $(".error").hide();
       $errorContainer.hide();
 
-      // Get form values
-      var name = $('input[name="name"]').val().trim();
-      var organization = $('input[name="organization"]').val().trim();
-      var email = $('input[name="email"]').val().trim();
-      var phone = $('input[name="phone"]').val().trim();
-      var message = $('textarea[name="message"]').val().trim();
-
-      // Validation
-      var isValid = true;
-
-      if (name === "") {
-        $("#err-name").show();
-        isValid = false;
-      }
-
-      if (organization === "") {
-        $("#err-organization").show();
-        isValid = false;
-      }
-
-      var region = $('select[name="region"]').val();
-      if (!region) {
-        $("#err-region").show();
-        isValid = false;
-      }
-
-      if (email === "") {
-        $("#err-email").show();
-        isValid = false;
-      } else if (!emailRegex.test(email)) {
-        $("#err-emailvld").show();
-        isValid = false;
-      }
-
-      if (phone === "") {
-        $("#err-phone").show();
-        isValid = false;
-      }
-
-      if (message === "" || message.length < 10) {
-        $errorContainer
-          .text("Please provide a detailed message (at least 10 characters)")
-          .show();
-        isValid = false;
-      }
-
-      if (!isValid) {
+      if (!validateForm()) {
         e.preventDefault();
         return false;
       }
 
-      // Disable submit button and show loading
       $submitBtn.prop("disabled", true).text("Sending...");
+      submitFormAjax();
 
-      // AJAX Submission
-      $.ajax({
-        url: $form.attr("action"),
-        method: "POST",
-        data: $form.serialize(),
-        dataType: "json",
-        headers: {
-          Accept: "application/json",
-        },
-        success: function () {
-          // Show the modal
-          $("#successModal").fadeIn();
-          $form[0].reset();
-          $submitBtn.prop("disabled", false).text("Request Strategy Call");
-        },
-        error: function (xhr, status, error) {
-          var msg =
-            "There was an error sending your message. Please try again.";
-          try {
-            var response = JSON.parse(xhr.responseText);
-            if (response && response.message) {
-              msg = "Error: " + response.message;
-            }
-          } catch (e) {}
-
-          if (xhr.status === 404) {
-            msg =
-              "Backend API not found. Please ensure you are running the site via Vercel CLI (vercel dev).";
-          } else if (xhr.status === 500) {
-            msg += " (Server Error: Check your SMTP credentials in .env)";
-          }
-
-          $errorContainer.text(msg).show();
-          $submitBtn.prop("disabled", false).text("Request Strategy Call");
-        },
-      });
-
-      // Prevent default form submission
       e.preventDefault();
       return false;
     });
+  }
 
-    // Clear error messages on input
+  function setupMiscEvents() {
     $form.find("input, textarea").on("input", function () {
       $(this).siblings(".error").hide();
       $errorContainer.hide();
     });
 
-    // Close modal logic
     $(".close-modal, .modal-overlay").on("click", function (e) {
       if (e.target !== this) return;
       $("#successModal").fadeOut();
     });
-  });
+  }
+
+  function initContactForm() {
+    $form = $("#ajax-form");
+    $submitBtn = $("#send");
+    $errorContainer = $("#err-form");
+
+    $(".error").hide();
+
+    setupRealTimeValidation();
+    setupFormSubmission();
+    setupMiscEvents();
+  }
+
+  // Form validation entry point
+  $(document).ready(initContactForm);
 })(jQuery);
