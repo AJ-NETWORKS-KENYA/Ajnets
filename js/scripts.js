@@ -14,7 +14,7 @@
 	========================================== */
 	$(window).on("scroll", function(){
 		if ( $( '#site-header' ).hasClass( "sticky-header" ) ) {
-			var site_header = $('#site-header').outerHeight() + 30;	
+			const site_header = $('#site-header').outerHeight() + 30;
 			
 		    if ($(window).scrollTop() >= site_header) {	    	
 		        $('.sticky-header .octf-main-header, .mobile-header-sticky .header_mobile').addClass('is-stuck');	        
@@ -57,7 +57,7 @@
         }
     });
     
-    var navInneer = $(".one-nav");
+    const navInneer = $(".one-nav");
     if( navInneer.length > 0 ){
         navInneer.singlePageNav({
             
@@ -74,9 +74,9 @@
     Back To Top
     ========================================== */
     if ($('#back-to-top').length) {
-        var scrollTrigger = 500, // px
+        const scrollTrigger = 500, // px
             backToTop = function () {
-                var scrollTop = $(window).scrollTop();
+                const scrollTop = $(window).scrollTop();
                 if (scrollTop > scrollTrigger) {
                     $('#back-to-top').addClass('show');
                 } else {
@@ -98,8 +98,8 @@
     /* Counter */
     $(window).on('scroll', function() {
         $('.ot-counter, .ot-counter2').each(function() {
-            var pos_y   = $(this).offset().top - window.innerHeight;
-            var $this   = $(this).find('span.num'),
+            const pos_y   = $(this).offset().top - window.innerHeight;
+            const $this   = $(this).find('span.num'),
                 countTo = $this.attr('data-to'),
                 during  = parseInt( $this.attr('data-time') ),
                 topOfWindow = $(window).scrollTop();
@@ -124,9 +124,9 @@
         });
         
         $('.ot-progress').each(function() {
-            var pos_y = $(this).offset().top;
-            var value = $(this).find(".progress-bar").data('percent');
-            var topOfWindow = $(window).scrollTop();
+            const pos_y = $(this).offset().top;
+            const value = $(this).find(".progress-bar").data('percent');
+            const topOfWindow = $(window).scrollTop();
             if (pos_y < topOfWindow + 900) {
                 $(this).find(".progress-bar").css({
                     'width': value
@@ -135,11 +135,11 @@
         });
 
         $('.circle-progress').each(function() {
-            var bar_color = $(this).data('color');
-            var bar_hei   = $(this).data('height');
-            var bar_size  = $(this).data('size');
-            var pos_y = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
+            const bar_color = $(this).data('color');
+            const bar_hei   = $(this).data('height');
+            const bar_size  = $(this).data('size');
+            const pos_y = $(this).offset().top;
+            const topOfWindow = $(window).scrollTop();
             if (pos_y < topOfWindow + 900) {
                 $(this).find('.inner-bar').easyPieChart({
                     barColor: bar_color,
@@ -160,13 +160,13 @@
         });
 
         $('.ot-chart-bar:not([data-processed])').each(function() {
-            var bar = $(this),
+            const bar = $(this),
                 chart = bar.find('.col-chart'),
                 innerBar = bar.find('.inner-bar'),
                 heightChart = bar.data('height'),
                 progressEnd = bar.data('percent'),
                 percentText = bar.find('.percent');
-            var scrollTop = $(document).scrollTop() + $(window).height();
+            const scrollTop = $(document).scrollTop() + $(window).height();
 
             if ( scrollTop > bar.offset().top +  bar.height() ) {
                 bar.attr("data-processed", "true");
@@ -174,10 +174,10 @@
                 innerBar.css({ "height": heightChart + "px"});
 
                 if( progressEnd ){
-                    for (var i = 0; i <= 50; i++) {
+                    for (let i = 0; i <= 50; i++) {
                         (function (count) {
                             setTimeout(function () {
-                                var num = ((progressEnd / 50) * count) + Number.EPSILON;
+                                const num = ((progressEnd / 50) * count) + Number.EPSILON;
                                 percentText.html(Math.round(num * 100) / 100 + "%");
                             }, 30 * count);
                         })(i);
@@ -190,10 +190,10 @@
 
 
     $('.ot-accordions').each( function () {
-        var allPanels = $(this).find('.acc-content');
+        const allPanels = $(this).find('.acc-content');
         $(this).find('.acc-toggle').on( 'click', function(){
 
-            var $this = $(this),
+            const $this = $(this),
                 $target = $this.next();
 
             if(!$target.hasClass('active')){
@@ -209,7 +209,7 @@
     });
 
     $('.ot-acc--with-icon').each( function () {
-        var selector = $(this),
+        const selector = $(this),
             content  = selector.find('.ot-acc-item__content'),
             trigger  = selector.find('.ot-acc-item__trigger');
 
@@ -224,7 +224,7 @@
 
         trigger.on('click', function(e){
             e.preventDefault();
-            var $this = $(this);
+            const $this = $(this);
             $this.next().toggleClass('active').slideToggle(300);
             $this.parent().toggleClass('current');
             content.not($this.next()).slideUp(300);
@@ -239,7 +239,7 @@
     });
 
     $('.tabs-heading li').on( 'click', function(){
-        var tab_id = $(this).attr('data-tab');
+        const tab_id = $(this).attr('data-tab');
         $(this).siblings().removeClass('current');
         $(this).parents('.ot-tabs').find('.tab-content').removeClass('current');
         $(this).addClass('current');
@@ -265,7 +265,7 @@
     });
 
     $('.ot-countdown').each( function() {
-        var date   = $(this).data('date'),
+        const date   = $(this).data('date'),
             zone   = $(this).data('zone'),
             day    = $(this).data('day'),
             days   = $(this).data('days'),
@@ -293,7 +293,7 @@
 
 
     /*Popup Video*/
-    var $video_play = $('.btn-play');
+    const $video_play = $('.btn-play');
     if ($video_play.length > 0 ) {
         $video_play.magnificPopup({
             type: 'iframe',
@@ -319,26 +319,26 @@
     /*Portfolio Filter*/
     $(window).load( function () {
         if( $('#projects_grid').length > 0 ){
-            var $container = $('#projects_grid'); 
+            const $container = $('#projects_grid');
             $container.isotope({ 
                 itemSelector : '.project-item', 
                 layoutMode : 'masonry'
             });
 
-            var $optionSets = $('.project_filters'),
+            const $optionSets = $('.project_filters'),
                 $optionLinks = $optionSets.find('a');
 
             $optionLinks.click(function(){
-                var $this = $(this);
+                const $this = $(this);
 
                 if ( $this.hasClass('selected') ) {
                     return false;
                 }
-                var $optionSet = $this.parents('.project_filters');
+                const $optionSet = $this.parents('.project_filters');
                     $optionSets.find('.selected').removeClass('selected');
                     $this.addClass('selected');
 
-                var selector = $(this).attr('data-filter');
+                const selector = $(this).attr('data-filter');
                     $container.isotope({ 
                         filter: selector 
                     });
@@ -712,26 +712,26 @@
      
     $(window).load(function(){
     $('.projects-grid').each( function(){
-        var $container = $(this); 
+        const $container = $(this);
         $container.isotope({ 
             itemSelector : '.project-item', 
             animationEngine : 'css',
         });
 
-        var $optionSets = $('.project_filters'),
+        const $optionSets = $('.project_filters'),
             $optionLinks = $optionSets.find('a');
 
         $optionLinks.on('click', function(){
-            var $this = $(this);
+            const $this = $(this);
 
             if ( $this.hasClass('selected') ) {
                 return false;
             }
-            var $optionSet = $this.parents('.project_filters');
+            const $optionSet = $this.parents('.project_filters');
                 $optionSets.find('.selected').removeClass('selected');
                 $this.addClass('selected');
 
-            var selector = $(this).attr('data-filter');
+            const selector = $(this).attr('data-filter');
                 $container.isotope({ 
                     filter: selector 
                 });
