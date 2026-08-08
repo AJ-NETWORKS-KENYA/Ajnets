@@ -74,3 +74,79 @@ test('Contact API - Missing Fields Validation', async (t) => {
     assert.deepStrictEqual(res.jsonData, { message: "Missing required fields (name, email, region, message)" });
   });
 });
+
+test('Contact API - Region-specific SMTP configuration', async (t) => {
+  const nodemailer = require('nodemailer');
+
+  // Store original env vars to restore them later
+  const originalEnv = { ...process.env };
+
+  t.afterEach(() => {
+    process.env = { ...originalEnv };
+  });
+
+  const createMockRes = () => {
+    const res = {
+      statusCode: null,
+      jsonData: null,
+      setHeader: () => {},
+      status: function(code) {
+        this.statusCode = code;
+        return this;
+      },
+      json: function(data) {
+        this.jsonData = data;
+        return this;
+      },
+      end: function() {
+        return this;
+      }
+    };
+    return res;
+  };
+
+  await t.test('Uses Rwanda-specific SMTP credentials and adds CC when region is Rwanda', async (t) => {
+    let createdTransportOptions = null;
+    let sentMailOptions = null;
+
+    t.mock.method(nodemailer, 'createTransport', (options) => {
+      createdTransportOptions = options;
+      return {
+        sendMail: async (mailOptions) => {
+          sentMailOptions = mailOptions;
+          return { messageId: 'mock-id' };
+        }
+      };
+    });
+
+    process.env.SMTP_USER_DEFAULT = 'default_user@example.com';
+    process.env.SMTP_PASS_DEFAULT = 'default_pass';
+    process.env.SMTP_USER_RWANDA = 'rwanda_user@example.com';
+    process.env.SMTP_PASS_RWANDA = 'rwanda_pass';
+
+    const req = {
+      method: 'POST',
+      body: {
+        name: 'John Doe',
+        email: 'john@example.com',
+        region: 'Rwanda',
+        message: 'Hello'
+      }
+    };
+
+    const res = createMockRes();
+
+    await handler(req, res);
+
+    assert.strictEqual(res.statusCode, 200);
+    assert.deepStrictEqual(res.jsonData, { success: true, message: "Message sent successfully." });
+
+    assert.ok(createdTransportOptions, 'createTransport should have been called');
+    assert.strictEqual(createdTransportOptions.auth.user, 'rwanda_user@example.com');
+    assert.strictEqual(createdTransportOptions.auth.pass, 'rwanda_pass');
+
+    assert.ok(sentMailOptions, 'sendMail should have been called');
+    assert.strictEqual(sentMailOptions.cc, 'default_user@example.com');
+    assert.strictEqual(sentMailOptions.from, 'rwanda_user@example.com');
+  });
+});
