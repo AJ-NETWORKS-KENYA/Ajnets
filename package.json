@@ -20,5 +20,9 @@
   "homepage": "https://github.com/AJ-NETWORKS-KENYA/Ajnets#readme",
   "dependencies": {
     "nodemailer": "^8.0.7"
+  },
+  "devDependencies": {
+    "jquery": "^4.0.0",
+    "jsdom": "^24.0.0"
   }
 }
