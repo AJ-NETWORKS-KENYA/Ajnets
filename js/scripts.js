@@ -95,8 +95,7 @@
         }); 
     }
 
-    /* Counter */
-    $(window).on('scroll', function() {
+    function handleCounters() {
         $('.ot-counter, .ot-counter2').each(function() {
             var pos_y   = $(this).offset().top - window.innerHeight;
             var $this   = $(this).find('span.num'),
@@ -122,7 +121,9 @@
                 });
             }
         });
-        
+    }
+
+    function handleProgressBars() {
         $('.ot-progress').each(function() {
             var pos_y = $(this).offset().top;
             var value = $(this).find(".progress-bar").data('percent');
@@ -133,7 +134,9 @@
                 }, "slow");
             }
         });
+    }
 
+    function handleCircleProgress() {
         $('.circle-progress').each(function() {
             var bar_color = $(this).data('color');
             var bar_hei   = $(this).data('height');
@@ -158,7 +161,9 @@
                 });
             }
         });
+    }
 
+    function handleChartBars() {
         $('.ot-chart-bar:not([data-processed])').each(function() {
             var bar = $(this),
                 chart = bar.find('.col-chart'),
@@ -186,6 +191,14 @@
                 
             }
         });
+    }
+
+    /* Counter */
+    $(window).on('scroll', function() {
+        handleCounters();
+        handleProgressBars();
+        handleCircleProgress();
+        handleChartBars();
     });
 
 
