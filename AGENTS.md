@@ -546,3 +546,7 @@ Merged engineering philosophies from multiple AI agent specifications into a uni
 - Documentation standards
 - Completion protocol
 - Engineering philosophy 
+### UI/UX Consistency Standards
+
+1. **Form Element Harmony**: Always ensure that select, 	extarea, and input fields share consistent styling (background color, borders, text color, and padding). Special attention must be paid to select elements to ensure their default browser styling does not clash with custom backgrounds (e.g., gradient backgrounds). Options within selects should be styled to remain readable.
+2. **Card Component Aesthetics**: All card-like components (e.g., .service-box, .serv-box, .contact-info.box-style1) must have a consistent premium feel. Apply uniform border radii (e.g., order-radius: 12px), consistent padding, and smooth hover state transitions (e.g., 	ransform: translateY(-5px) and subtle box-shadows).

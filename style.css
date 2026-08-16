@@ -3783,7 +3783,8 @@ object {
 .service-box {
   overflow: hidden;
   position: relative;
-  padding: 33px 35px 28px;
+  padding: 40px;
+  border-radius: 12px;
   background: #fff;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -3840,6 +3841,7 @@ object {
   color: #f2f2f2;
 }
 .service-box:hover {
+  transform: translateY(-5px);
   box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
@@ -3855,7 +3857,8 @@ object {
 .serv-box {
   overflow: hidden;
   position: relative;
-  padding: 40px 40px 35px;
+  padding: 40px;
+  border-radius: 12px;
   background: #fff;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -3952,6 +3955,7 @@ object {
   margin-bottom: 0;
 }
 .serv-box:hover {
+  transform: translateY(-5px);
   box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
@@ -3965,7 +3969,8 @@ object {
 .serv-box-2 {
   overflow: hidden;
   position: relative;
-  padding: 43px 30px 65px;
+  padding: 40px 30px 65px;
+  border-radius: 12px;
   background: #262051;
   color: #aeaacb;
   transition: all 0.3s linear;
@@ -4038,6 +4043,7 @@ object {
   margin-top: 30px;
 }
 .serv-box-2:hover {
+  transform: translateY(-5px);
   background: #fff;
   color: #6d6d6d;
   box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
@@ -4616,9 +4622,13 @@ object {
   font-weight: 500;
 }
 .contact-info.box-style1 {
-  padding: 30px 30px 25px;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 .contact-info.box-style1:hover {
+  transform: translateY(-5px);
   box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
@@ -5715,10 +5725,15 @@ object {
   margin-bottom: 30px;
 }
 .wpcf7 .main-form input,
+.wpcf7 .main-form select,
 .wpcf7 .main-form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.3);
   color: #fff;
+}
+.wpcf7 .main-form select option {
+  background: #fff;
+  color: #333;
 }
 .wpcf7 .main-form input::placeholder,
 .wpcf7 .main-form textarea::placeholder {
