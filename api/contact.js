@@ -1,5 +1,23 @@
 const nodemailer = require("nodemailer");
 
+// Simple in-memory IP rate limiter for serverless instance
+const ipRateLimit = new Map();
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 minutes
+const MAX_REQUESTS_PER_WINDOW = 5;
+
+function isRateLimited(ip) {
+  if (!ip || ip === "unknown" || ip === "127.0.0.1") return false;
+  const now = Date.now();
+  const records = ipRateLimit.get(ip) || [];
+  const recent = records.filter(timestamp => now - timestamp < RATE_LIMIT_WINDOW_MS);
+  if (recent.length >= MAX_REQUESTS_PER_WINDOW) {
+    return true;
+  }
+  recent.push(now);
+  ipRateLimit.set(ip, recent);
+  return false;
+}
+
 module.exports = async function handler(req, res) {
   // CORS Headers
   res.setHeader("Access-Control-Allow-Origin", "https://ajnetworks.co");
@@ -14,7 +32,18 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ message: "Method not allowed" });
   }
 
-  const { name, organization, region, email, phone, message } = req.body || {};
+  const { name, organization, region, email, phone, message, bot_field } = req.body || {};
+
+  // Honeypot bot protection: if bot_field is populated, return silent success
+  if (bot_field && typeof bot_field === "string" && bot_field.trim() !== "") {
+    return res.status(200).json({ success: true, message: "Consultation request recorded successfully." });
+  }
+
+  // Rate limiting by client IP
+  const clientIp = req.headers ? (req.headers["x-forwarded-for"] || (req.socket && req.socket.remoteAddress) || "unknown") : "unknown";
+  if (isRateLimited(clientIp)) {
+    return res.status(429).json({ message: "Too many requests. Please try again later." });
+  }
 
   // Validate basic required fields
   if (!name || !email || !region || !message) {

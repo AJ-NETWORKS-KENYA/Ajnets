@@ -3,16 +3,7 @@
 <html lang="en">
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
- <meta content="r5liwwbty07nhozk87d1uwkz4fyp70" name="facebook-domain-verification"/>
+<meta content="r5liwwbty07nhozk87d1uwkz4fyp70" name="facebook-domain-verification"/>
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -58,28 +49,25 @@
 <!-- LinkedIn Insight Tag -->
 <script type="text/javascript">
       _linkedin_partner_id = "YOUR_LINKEDIN_PID";
-      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+      if (_linkedin_partner_id && _linkedin_partner_id !== "YOUR_LINKEDIN_PID") {
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+        (function (l) {
+          if (!l) {
+            window.lintrk = function (a, b) {
+              window.lintrk.q.push([a, b]);
+            };
+            window.lintrk.q = [];
+          }
+          var s = document.getElementsByTagName("script")[0];
+          var b = document.createElement("script");
+          b.type = "text/javascript";
+          b.async = true;
+          b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+          s.parentNode.insertBefore(b, s);
+        })(window.lintrk);
+      }
     </script>
-<script type="text/javascript">
-      (function (l) {
-        if (!l) {
-          window.lintrk = function (a, b) {
-            window.lintrk.q.push([a, b]);
-          };
-          window.lintrk.q = [];
-        }
-        var s = document.getElementsByTagName("script")[0];
-        var b = document.createElement("script");
-        b.type = "text/javascript";
-        b.async = true;
-        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-        s.parentNode.insertBefore(b, s);
-      })(window.lintrk);
-    </script>
-<noscript>
-<img alt="LinkedIn Tracking Pixel" height="1" loading="lazy" src="https://px.ads.linkedin.com/collect/?pid=YOUR_LINKEDIN_PID&amp;fmt=gif" style="display: none" width="1"/>
-</noscript>
 <!-- Canonical & Open Graph -->
 <link href="https://ajnetworks.co/insights/insights" rel="canonical"/>
 <meta content="website" property="og:type"/>
@@ -415,8 +403,6 @@
 <script defer="" src="/js/jquery.magnific-popup.min.js"></script>
 <script defer="" src="/js/jquery.isotope.min.js"></script>
 <script defer="" src="/js/owl.carousel.min.js"></script>
-<script defer="" src="/js/easypiechart.min.js"></script>
-<script defer="" src="/js/jquery.countdown.min.js"></script>
 <script defer="" src="/js/scripts.js"></script>
 <script defer="" src="/js/header-mobile.js"></script>
 <!-- Cookie Consent Banner -->
