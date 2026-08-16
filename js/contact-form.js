@@ -156,7 +156,7 @@
             if (response && response.message) {
               msg = "Error: " + response.message;
             }
-          } catch (e) {}
+          } catch (e) { console.error("Error parsing JSON response:", e); }
 
           if (xhr.status === 404) {
             msg =
