@@ -145,6 +145,7 @@ A vague or bloated context produces vague or bloated output — every time. When
 Every task follows the same lifecycle, in order:
  
 1. **Understand** — what does done look like?
+1b. **Verify Before Modifying** — Inspect source, dependencies, configuration, and compare Source -> Build -> Deployment -> Production to ensure accurate root cause analysis.
 2. **Search** — does this already exist in the codebase?
 3. **Activate** — is there a Skill for this?
 4. **Design** — what is the approach before writing any code?
@@ -153,7 +154,8 @@ Every task follows the same lifecycle, in order:
 7. **Document** — update all affected docs
 8. **Commit** — Conventional Commits format, correct branch
 9. **Merge** — PR through the branch flow
-10. **Deploy** — report restart requirements
+10. **Release Validation** — Execute comprehensive functional, SEO, performance (LCP/CLS/INP), accessibility, security, and cross-browser QA prior to production traffic.
+11. **Deploy & Observability** — Report restart requirements, monitor uptime, API failures, error rates, and broken links post-deploy.
 A task is not complete until every step is done. Skipping documentation or tests is not "saving time" — it is creating debt that blocks future work.
  
 ---
@@ -183,6 +185,7 @@ Two test lanes, different budgets:
 ### 4. Tech Choice — Vanilla by Default
  
 - Simplest vanilla tech wins. No framework-of-the-month. No clever abstractions for hypothetical reuse.
+- Do not migrate from the current static architecture unless a documented business or engineering requirement demonstrates that the existing architecture cannot meet the requirement (e.g., authenticated client portals, interactive dashboards, real-time interfaces).
 - Do not recreate what already exists. Before writing a utility, harness, or library, check for an existing one that solves it.
 - For cross-cutting concerns (eval harness, observability, schema validation, etc.), search GitHub for top candidates. Rank by stars, recency of last commit, issue responsiveness, and real user feedback. Return the **best option with reasoning** — not a list.
 - If two options are equally viable, name the trade-off explicitly and ask AJ. Confusion Protocol applies.
@@ -218,6 +221,14 @@ Before writing any code for a new project, the following documents must exist an
 - Backend Schema (tables, relationships, RLS, roles)
 - Implementation Plan (ordered phases with done criteria)
 No scaffolding, no migrations, no components until all 6 are present. If a document is missing, stop and create it — or flag NEEDS_CONTEXT.
+
+### 9. Security Verification (OWASP ASVS)
+
+All technical security controls and secure-development requirements must be evaluated against the OWASP Application Security Verification Standard (ASVS) 5.0 baseline. Do not invent bespoke security standards.
+
+### 10. Accessibility Standard (WCAG 2.2 AA)
+
+All UI/UX implementations and remediations must pass WCAG 2.2 AA accessibility standards. Validation must include: keyboard navigation, focus states, screen reader semantics, heading hierarchy, contrast, target size, and zoom/reflow across viewports.
  
 ---
  

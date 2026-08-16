@@ -36,3 +36,33 @@ Verify and update (or create) the `robots.txt` and `sitemap.xml` to ensure they 
 - [ ] The `browser` subagent is invoked to navigate to the local contact page and confirms that validation error messages are hidden on initial load.
 - [ ] The `browser` subagent confirms the region dropdown has selectable options.
 - [ ] The `regression-audit` skill is executed, running `lighthouse` or equivalent performance tools on the local dev server to capture performance, SEO, and Core Web Vitals, confirming no regressions.
+
+## Follow-up — 2026-08-16T13:02:04Z
+
+# Teamwork Project Prompt — Draft
+
+> Status: Step 1 — Eliciting project idea
+> Goal: Craft prompt → get user approval → delegate to teamwork_preview
+> Requested team: Full standard team
+
+Comprehensive internal audit of AJNETWORKS' digital presence, covering business, technical, UX, UI, security, performance, SEO, credibility, and strategic positioning.
+
+Working directory: C:/My Web Sites/ajnets/teamwork_audit
+
+## Requirements
+
+### R1. Perform a full crawl and inspection of https://ajnetworks.co/, documenting technical, content, and UX attributes per the provided audit rubric.
+
+### R2. Produce a structured report with findings categorized, prioritized, and actionable, adhering to the specified format.
+
+## Acceptance Criteria
+
+### Acceptance Criteria
+- [ ] All pages are crawled and data extracted without errors.
+- [ ] Report contains at least 30 distinct findings with proper evidence and classifications.
+- [ ] Findings are organized into the required sections and include priority matrix.
+- [ ] The report meets the executive summary length constraints.
+
+---
+
+*Next: when approved → delegate via invoke_subagent (see Delegation Protocol)*

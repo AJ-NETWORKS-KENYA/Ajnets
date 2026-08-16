@@ -25,6 +25,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ajnetworks.co/privacy</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ajnetworks.co/terms</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ajnetworks.co/responsible-disclosure</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://ajnetworks.co/services</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>

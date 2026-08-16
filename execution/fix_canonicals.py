@@ -1,71 +1,49 @@
-"""
-Phase 6: Fix broken canonical URLs and duplicate skip-links across all HTML pages.
-The standardization script erroneously used Windows file paths in canonical/OG URLs.
-"""
 import os
 import re
 
-ROOT = r"c:\My Web Sites\ajnets"
-DOMAIN = "https://ajnetworkskenya.it.com"
+# The folders that are internal routing implementation details
+INTERNAL_FOLDERS = ['company/', 'services/', 'portfolio/', 'insights/', 'elements/']
 
-# Build map of file paths to correct URL paths
-def get_url_path(filepath):
-    """Convert a file path to a URL path relative to site root."""
-    rel = os.path.relpath(filepath, ROOT).replace("\\", "/")
-    # Remove .html extension for clean URLs
-    if rel.endswith(".html"):
-        rel = rel[:-5]
-    # index becomes /
-    if rel == "index":
-        return "/"
-    return "/" + rel
-
-
-def fix_file(filepath):
-    with open(filepath, "r", encoding="utf-8") as f:
+def fix_html_file(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    original = content
-    url_path = get_url_path(filepath)
+    new_content = content
+    
+    # We want to replace things like:
+    # <link href="https://ajnetworks.co/company/about-us" rel="canonical"/>
+    # with:
+    # <link href="https://ajnetworks.co/about-us" rel="canonical"/>
+    
+    for folder in INTERNAL_FOLDERS:
+        # Fix canonical
+        new_content = re.sub(
+            f'href="https://ajnetworks.co/{folder}',
+            'href="https://ajnetworks.co/',
+            new_content
+        )
+        # Fix og:url
+        new_content = re.sub(
+            f'content="https://ajnetworks.co/{folder}',
+            'content="https://ajnetworks.co/',
+            new_content
+        )
 
-    # 1. Fix broken canonical URLs containing Windows paths
-    # Pattern: https://ajnetworkskenya.it.com/c:/My Web Sites/ajnets/some/path
-    content = re.sub(
-        r'(https://ajnetworkskenya\.it\.com/)c:/My Web Sites/ajnets/([^"\']+)',
-        lambda m: DOMAIN + "/" + m.group(2),
-        content
-    )
-
-    # 2. Remove duplicate skip-links (keep only the first one)
-    skip_pattern = r'(\s*<!-- Skip to main content link for accessibility -->\s*<a href="#content" class="skip-link">Skip to main content</a>\s*)'
-    matches = list(re.finditer(skip_pattern, content))
-    if len(matches) > 1:
-        # Remove all but the first occurrence
-        for match in reversed(matches[1:]):
-            content = content[:match.start()] + "\n" + content[match.end():]
-
-    if content != original:
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(content)
-        return True
-    return False
-
+    if new_content != content:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print(f"Fixed: {filepath}")
+    else:
+        print(f"No changes needed: {filepath}")
 
 def main():
-    fixed = 0
-    for dirpath, dirnames, filenames in os.walk(ROOT):
-        # Skip execution and node_modules
-        dirnames[:] = [d for d in dirnames if d not in ("execution", "node_modules", ".git", ".tmp")]
-        for fname in filenames:
-            if fname.endswith(".html"):
-                fpath = os.path.join(dirpath, fname)
-                if fix_file(fpath):
-                    print(f"  [FIXED] {os.path.relpath(fpath, ROOT)}")
-                    fixed += 1
-
-    print(f"\nDone - {fixed} files fixed.")
-
+    root_dir = r"c:\My Web Sites\ajnets"
+    for root, dirs, files in os.walk(root_dir):
+        if "node_modules" in root or ".git" in root or ".vercel" in root:
+            continue
+        for file in files:
+            if file.endswith('.html'):
+                fix_html_file(os.path.join(root, file))
 
 if __name__ == "__main__":
-    print("Phase 6: Fixing canonical URLs and duplicate skip-links...")
     main()

@@ -62,6 +62,9 @@ module.exports = async function handler(req, res) {
   if (region === "Rwanda") {
     smtpUser = process.env.SMTP_USER_RWANDA || smtpUser;
     smtpPass = process.env.SMTP_PASS_RWANDA || smtpPass;
+  } else if (region === "Uganda") {
+    smtpUser = process.env.SMTP_USER_UGANDA || smtpUser;
+    smtpPass = process.env.SMTP_PASS_UGANDA || smtpPass;
   }
 
   // Fallback mode if SMTP credentials are not configured in local environment
@@ -97,7 +100,7 @@ module.exports = async function handler(req, res) {
       `,
     };
 
-    if (region === "Rwanda" && process.env.SMTP_USER_DEFAULT) {
+    if ((region === "Rwanda" || region === "Uganda") && process.env.SMTP_USER_DEFAULT) {
       mailOptions.cc = process.env.SMTP_USER_DEFAULT;
     }
 
