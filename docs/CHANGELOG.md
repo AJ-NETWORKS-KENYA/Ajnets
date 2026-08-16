@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.0] - 2026-08-16
+
+### Added
+- Created Sanity Headless CMS content architecture in `services/cms/` with schemas for `post`, `caseStudy`, `service`, `teamMember`, and `siteSettings`.
+- Created comprehensive non-technical editorial and operations guide in `services/cms/README.md`.
+- Added honeypot bot trap (`bot_field`) and in-memory IP rate limiting to `/api/contact.js` and `company/book-consultation.html`.
+- Added automated audit and verification script `execution/optimize_scripts_and_tracking.py`.
+- Added new Contact API test suite covering Honeypot bot mitigation and invalid email validation in `api/contact.test.js`.
+
+### Changed
+- Fixed `package.json` dev script recursion issue by providing direct static serving and test/audit commands.
+- Removed duplicate placeholder `G-XXXXXXXXXX` tracking tag across all 21 HTML pages, ensuring clean Google Consent Mode v2 execution.
+- Guarded LinkedIn Insight tag against invalid placeholder partner ID executions.
+- Pruned unreferenced legacy JavaScript plugins (`easypiechart.min.js`, `jquery.countdown.min.js`, `jquery.singlePageNav.js`, `rev-script-2.js`, `rev-script-3.js`, `Drift.min.js`, `royal_preloader.min.js`).
+
 ## [1.1.0] - 2026-07-19
 
 ### Added

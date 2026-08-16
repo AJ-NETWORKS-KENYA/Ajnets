@@ -7,8 +7,9 @@
 
 ## 1. Tech Stack
 - **Frontend Core:** HTML5, Modern Vanilla CSS (Tokens & Variables), Modular JavaScript (ES6+).
-- **Hosting & Edge Delivery:** Vercel (Primary) & Render / Apache (.htaccess fallback).
-- **API Runtime:** Vercel Serverless Functions (`/api/*`).
+- **Headless CMS:** Sanity.io (`services/cms/`) for structured publishing (Insights, Case Studies, Services).
+- **Hosting & Edge Delivery:** Vercel Edge Network (Primary) with automated deploy hooks.
+- **API Runtime:** Vercel Serverless Functions (`/api/*`) with honeypot bot trap & IP rate limiting.
 - **Language / Automation:** Python 3.11+ for gate testing, SEO evals, build minification, and tooling.
 
 ## 2. Environment Variables & Credentials

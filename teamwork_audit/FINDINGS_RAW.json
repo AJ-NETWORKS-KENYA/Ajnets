@@ -1,0 +1,356 @@
+[
+  {
+    "category": "SEO",
+    "severity": "P3",
+    "page": "company/about-us.html",
+    "issue": "Meta description exceeds SERP snippet limit (192 chars): 'Learn about AJNETWORKS  -  a technology consulting partner combining strategic insight with hands-on software engineering, cybersecurity, and cloud infrastructure across Kenya and East Africa.'"
+  },
+  {
+    "category": "SEO",
+    "severity": "P3",
+    "page": "company/faq.html",
+    "issue": "Meta description exceeds SERP snippet limit (169 chars): 'Find answers to frequently asked questions about AJNETWORKS technology consulting services, software development, cybersecurity assurance, pricing, and project delivery.'"
+  },
+  {
+    "category": "SEO",
+    "severity": "P3",
+    "page": "index.html",
+    "issue": "Meta description exceeds SERP snippet limit (198 chars): 'AJNETWORKS is an enterprise technology consultancy in Nairobi, Kenya delivering strategic advisory, custom software engineering, cybersecurity, and cloud infrastructure solutions across East Africa.'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "company/about-us.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "company/about-us.html",
+    "issue": "10 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "company/book-consultation.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "company/book-consultation.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "company/faq.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "company/faq.html",
+    "issue": "6 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "elements/elements.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "elements/elements.html",
+    "issue": "10 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "index.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "index.html",
+    "issue": "6 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "insights/insights.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "insights/insights.html",
+    "issue": "6 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "insights/post.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "insights/post.html",
+    "issue": "22 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-audiophile.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-audiophile.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-bada.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-bada.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-crappo.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-crappo.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-greenremedies.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-greenremedies.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-racnyali.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-racnyali.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-sgss.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-sgss.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-transitflow.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/case-study-transitflow.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/client-success.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "portfolio/client-success.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/cybersecurity.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/cybersecurity.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/networking.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/networking.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/performance-seo.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/performance-seo.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/services.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/services.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/software-engineering.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/software-engineering.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/technology-strategy.html",
+    "issue": "2 images missing loading='lazy'"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "services/technology-strategy.html",
+    "issue": "3 images missing explicit width/height dimensions (CLS risk)"
+  },
+  {
+    "category": "Performance",
+    "severity": "P2",
+    "page": "images/",
+    "issue": "34 unoptimized image assets exceed 200KB (e.g. [('images\\\\favicon.svg', 278.8), ('images\\\\home-about.jpg', 250.5), ('images\\\\image1-home3.png', 207.8)])"
+  },
+  {
+    "category": "Performance",
+    "severity": "P3",
+    "page": "images/",
+    "issue": "419 raster images in legacy PNG/JPG format without modern next-gen AVIF/WebP equivalents"
+  },
+  {
+    "category": "Technical",
+    "severity": "P3",
+    "page": "css/woocommerce.css",
+    "issue": "Dead code / unused stylesheet: 'woocommerce.css' exists in codebase for a non-e-commerce consultancy website"
+  },
+  {
+    "category": "Security",
+    "severity": "P1",
+    "page": "api/contact.js",
+    "issue": "In-memory rate limiter (ipRateLimit Map) fails to persist across serverless lambdas in Vercel, allowing bypass across horizontal instances"
+  },
+  {
+    "category": "Security",
+    "severity": "P2",
+    "page": "api/contact.js",
+    "issue": "Lack of cryptographic bot protection (e.g. Cloudflare Turnstile or reCAPTCHA v3); reliance solely on naive hidden bot_field honeypot"
+  },
+  {
+    "category": "Security",
+    "severity": "P2",
+    "page": "vercel.json",
+    "issue": "CSP uses 'unsafe-inline' for script-src and style-src without cryptographic hashes or nonces, weakening XSS mitigation"
+  },
+  {
+    "category": "Security",
+    "severity": "P3",
+    "page": "vercel.json",
+    "issue": "X-Frame-Options is set to 'SAMEORIGIN' while Content-Security-Policy defines frame-ancestors 'none'; modern browsers prioritize CSP frame-ancestors but header mismatch exists"
+  },
+  {
+    "category": "Security",
+    "severity": "P2",
+    "page": "Root directory",
+    "issue": "Local secret/credential stub files (.env, .env.local, credentials.json, token.json) present in workspace; risk of accidental git exposure if .gitignore is modified"
+  },
+  {
+    "category": "Security & Compliance",
+    "severity": "P2",
+    "page": "Global / Tracking Scripts",
+    "issue": "LinkedIn Insight Tag and Google Tag Manager load prior to explicit user opt-in consent, violating strict GDPR and Kenya Data Protection Act 2019 consent requirements"
+  },
+  {
+    "category": "Credibility & Compliance",
+    "severity": "P1",
+    "page": "Site Architecture",
+    "issue": "Missing dedicated legal/trust pages: privacy-policy, terms-of-service, responsible-disclosure (mandated in data.md sections 7, 18 & 19)"
+  },
+  {
+    "category": "Strategic Positioning",
+    "severity": "P2",
+    "page": "company/faq.html",
+    "issue": "Banned buzzwords detected in violation of data.md tone guidelines: {'innovative': 1}"
+  },
+  {
+    "category": "Strategic Positioning",
+    "severity": "P2",
+    "page": "insights/post.html",
+    "issue": "Banned buzzwords detected in violation of data.md tone guidelines: {'cutting-edge': 1}"
+  },
+  {
+    "category": "UX & Architecture",
+    "severity": "P2",
+    "page": "elements/elements.html",
+    "issue": "Orphan UI component catalog (elements/elements.html) is publicly accessible in root and indexed without noindex directive or authentication gate"
+  },
+  {
+    "category": "Credibility",
+    "severity": "P2",
+    "page": "company/about-us.html",
+    "issue": "Generic or malformed LinkedIn company link: 'https://linkedin.com/in/jabrahamjohns'"
+  }
+]

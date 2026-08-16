@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --test"
+    "dev": "serve . -l 3000",
+    "start": "serve . -l 3000",
+    "test": "node --test",
+    "audit": "python execution/comprehensive_audit.py"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,8 @@
   "homepage": "https://github.com/AJ-NETWORKS-KENYA/Ajnets#readme",
   "dependencies": {
     "nodemailer": "^8.0.7"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
