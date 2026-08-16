@@ -11,6 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             banner.classList.add('show');
         }, 1000);
+    } else if (consentChoice === 'granted') {
+        loadGoogleAnalytics();
+    }
+
+    function loadGoogleAnalytics() {
+        if (document.getElementById('gtag-script')) return;
+        const script = document.createElement('script');
+        script.id = 'gtag-script';
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-2E6LLT0TT7';
+        document.head.appendChild(script);
     }
 
     function updateConsent(granted) {
@@ -24,6 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 'ad_personalization': status,
                 'analytics_storage': status
             });
+        }
+
+        if (granted) {
+            loadGoogleAnalytics();
         }
 
         // Save to local storage

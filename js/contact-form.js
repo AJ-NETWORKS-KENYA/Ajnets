@@ -69,6 +69,21 @@
       var email = $('input[name="email"]').val().trim();
       var phone = $('input[name="phone"]').val().trim();
       var message = $('textarea[name="message"]').val().trim();
+      // Honeypot check
+      var botField = $('input[name="bot_field"]').val();
+      if (botField && botField.trim() !== "") {
+        console.warn("Bot detected.");
+        return false;
+      }
+
+      // Basic Rate Limiting (Frontend)
+      var lastSubmit = localStorage.getItem("lastContactSubmit");
+      var now = new Date().getTime();
+      if (lastSubmit && now - parseInt(lastSubmit) < 60000) { // 60 seconds
+        $errorContainer.text("Please wait a minute before submitting another request.").show();
+        e.preventDefault();
+        return false;
+      }
 
       // Validation
       var isValid = true;
@@ -131,6 +146,7 @@
           $("#successModal").fadeIn();
           $form[0].reset();
           $submitBtn.prop("disabled", false).text("Request Strategy Call");
+          localStorage.setItem("lastContactSubmit", new Date().getTime().toString());
         },
         error: function (xhr, status, error) {
           var msg =

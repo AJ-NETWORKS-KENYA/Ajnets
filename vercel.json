@@ -6,6 +6,9 @@
     { "source": "/book-consultation", "destination": "/company/book-consultation" },
     { "source": "/contact", "destination": "/company/book-consultation" },
     { "source": "/faq", "destination": "/company/faq" },
+    { "source": "/privacy", "destination": "/company/privacy" },
+    { "source": "/terms", "destination": "/company/terms" },
+    { "source": "/responsible-disclosure", "destination": "/company/responsible-disclosure" },
     { "source": "/services", "destination": "/services/services" },
     { "source": "/technology-strategy", "destination": "/services/technology-strategy" },
     { "source": "/software-engineering", "destination": "/services/software-engineering" },
@@ -66,7 +69,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://www.googletagmanager.com https://www.google-analytics.com https://snap.licdn.com https://px.ads.linkedin.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; frame-ancestors 'none';"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://snap.licdn.com https://px.ads.linkedin.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; frame-ancestors 'none';"
         }
       ]
     }
