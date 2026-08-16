@@ -174,14 +174,22 @@
                 innerBar.css({ "height": heightChart + "px"});
 
                 if( progressEnd ){
-                    for (var i = 0; i <= 50; i++) {
-                        (function (count) {
-                            setTimeout(function () {
-                                var num = ((progressEnd / 50) * count) + Number.EPSILON;
-                                percentText.html(Math.round(num * 100) / 100 + "%");
-                            }, 30 * count);
-                        })(i);
+                    var start = null;
+                    var duration = 1500;
+
+                    function step(timestamp) {
+                        if (!start) start = timestamp;
+                        var progress = timestamp - start;
+                        var percentage = Math.min(progress / duration, 1);
+                        var num = (progressEnd * percentage) + Number.EPSILON;
+                        percentText.html(Math.round(num * 100) / 100 + "%");
+
+                        if (progress < duration) {
+                            window.requestAnimationFrame(step);
+                        }
                     }
+
+                    window.requestAnimationFrame(step);
                 }
                 
             }
