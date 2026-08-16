@@ -11,6 +11,10 @@ Specifically looks for:
 import os
 import re
 
+STYLE_CSS_RE = re.compile(r'href="(style(?:\.min)?\.css)')
+IMAGES_SRC_RE = re.compile(r'src="images/')
+LOGO_IMAGES_RE = re.compile(r'logo:\s*"images/')
+
 def fix_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -18,11 +22,11 @@ def fix_file(filepath):
     original = content
 
     # 1. Fix style.css mapping
-    content = content.replace('href="style.css', 'href="/style.css')
+    content = STYLE_CSS_RE.sub(r'href="/\1', content)
     
     # 2. Fix images prefix (and make sure we don't duplicate slashes)
-    content = re.sub(r'src="images/', 'src="/images/', content)
-    content = re.sub(r'logo:\s*"images/', 'logo: "/images/', content)
+    content = IMAGES_SRC_RE.sub('src="/images/', content)
+    content = LOGO_IMAGES_RE.sub('logo: "/images/', content)
     
     # fix edge case: src="//images"
     content = content.replace('src="//images', 'src="/images')
