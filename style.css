@@ -14765,12 +14765,14 @@ section {
   margin-bottom: 0;
 }
 .error {
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  line-height:30px;
-  letter-spacing:1px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 13px;
+  color: #dc3545;
+  line-height: 20px;
   display: none;
-  text-align:center;
+  text-align: left;
+  margin-top: 4px;
+  font-weight: 600;
 }
 #ajaxsuccess {
   color:#000;

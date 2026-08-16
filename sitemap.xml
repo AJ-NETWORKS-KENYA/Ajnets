@@ -2,151 +2,121 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ajnetworks.co/</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/company/about-us</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/about-us</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/company/book-consultation</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/book-consultation</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/company/faq</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/faq</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/services/services</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/services/technology-strategy</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/services/software-engineering</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/services/cybersecurity</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/services/networking</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/services/performance-seo</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/services/web-development</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/services/mobile-development</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/services/solutions</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/portfolio/client-success</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/services</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/portfolio/portfolio-details-1</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/portfolio/portfolio-details-2</loc>
-    <lastmod>2026-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ajnetworks.co/portfolio/case-study-audiophile</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/technology-strategy</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/portfolio/case-study-bada</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/software-engineering</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/portfolio/case-study-crappo</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/cybersecurity</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/portfolio/case-study-greenremedies</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/networking</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/portfolio/case-study-racnyali</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/performance-seo</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/portfolio/case-study-sgss</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/client-success</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ajnetworks.co/case-study-audiophile</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/portfolio/case-study-transitflow</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/case-study-bada</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/insights/insights</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/case-study-crappo</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ajnetworks.co/insights/post</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://ajnetworks.co/case-study-greenremedies</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ajnetworks.co/case-study-racnyali</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ajnetworks.co/case-study-sgss</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ajnetworks.co/case-study-transitflow</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ajnetworks.co/insights</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ajnetworks.co/post</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
