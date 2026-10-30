@@ -260,3 +260,9 @@ credentials.json
 !.gitignore
 .vercel
 .env*.local
+
+# Astro build cache
+.astro/
+!public/**/*.min.css
+!public/**/*.min.js
+__pycache__/
