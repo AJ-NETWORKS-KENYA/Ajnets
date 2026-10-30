@@ -1,0 +1,19 @@
+{
+  "slug": "performance-seo",
+  "title": "Performance Engineering & Technical SEO | AJNETWORKS",
+  "description": "Performance optimization and technical SEO in Kenya. Core Web Vitals optimization, search visibility, and speed engineering by AJNETWORKS.",
+  "canonicalUrl": "https://ajnetworks.co/performance-seo",
+  "ogType": "website",
+  "ogImage": "https://ajnetworks.co/images/og-home.webp",
+  "extraJsonLd": [
+    "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Service\",\n  \"name\": \"AJNETWORKS Consulting Service\",\n  \"provider\": {\n    \"@type\": \"Organization\",\n    \"name\": \"AJNETWORKS\"\n  }\n}"
+  ],
+  "extraHeadStyles": [],
+  "extraFooterScripts": [],
+  "showRwandaBanner": false,
+  "wrapInSiteDiv": true,
+  "bodyHtml": "<!-- Page Hero -->\n<div class=\"page-hero bg-dark-primary\">\n<div class=\"container\">\n<nav aria-label=\"Breadcrumb\" class=\"breadcrumb-nav\">\n<a href=\"/\">Home</a>\n<span class=\"separator\">/</span>\n<a href=\"/services\">Services</a>\n<span class=\"separator\">/</span>\n<span class=\"current\">Performance &amp; SEO</span>\n</nav>\n<h1 class=\"text-white mt-3\">Performance &amp; SEO</h1>\n<p style=\"color: rgba(255,255,255,0.75); font-size: 17px; max-width: 600px; margin-top: 15px;\">\n                Maximizing digital reach through technical excellence.\n            </p>\n</div>\n</div>\n<!-- Main Service Content -->\n<section class=\"section-padd\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-8 offset-lg-2\">\n<div class=\"mb-5\">\n<div class=\"ot-heading\">\n<span>// the challenge</span>\n<h2 class=\"main-heading\">What problem exists?</h2>\n</div>\n<p style=\"font-size: 18px; line-height: 1.8; color: #4b5563;\">Slow, inaccessible, or poorly optimized digital platforms lose potential clients and damage brand credibility before a conversation even begins.</p>\n</div>\n<div class=\"mb-5\">\n<div class=\"ot-heading\">\n<span>// our approach</span>\n<h2 class=\"main-heading\">How AJNETWORKS solves it</h2>\n</div>\n<p style=\"font-size: 18px; line-height: 1.8; color: #4b5563;\">We execute rigorous technical SEO, optimize Core Web Vitals, and ensure full WCAG 2.2 AA accessibility compliance to maximize your platform's reach and usability.</p>\n</div>\n<div class=\"mb-5\">\n<div class=\"ot-heading\">\n<span>// the difference</span>\n<h2 class=\"main-heading\">Why clients trust us</h2>\n</div>\n<p style=\"font-size: 18px; line-height: 1.8; color: #4b5563;\">We focus entirely on technical excellence, structural integrity, and measurable performance data rather than superficial vanity metrics.</p>\n</div>\n<div class=\"outcome-box\" style=\"background-color: #f8f9fa; padding: 40px; border-radius: 8px; border-left: 4px solid #43D9AD; margin-bottom: 50px;\">\n<h3 style=\"font-size: 24px; margin-bottom: 15px; color: #1A1A2E;\">Measurable Outcomes</h3>\n<p style=\"font-size: 18px; line-height: 1.8; color: #4b5563; margin-bottom: 0;\"><strong>What to expect:</strong> Lightning-fast load times, significantly higher organic search visibility, and a barrier-free, inclusive experience for all users.</p>\n</div>\n<div class=\"text-center mt-5\">\n<a class=\"octf-btn octf-btn-primary btn-large\" href=\"/book-consultation\">Book Advisory Session</a>\n</div>\n</div>\n</div>\n</div>\n</section>\n<!-- Page Hero -->\n<!-- Growth Through Technology -->\n<!-- Core Services -->\n<!-- Optimization Approach Section -->\n<!-- Deliverables Section -->\n<!-- CTA Section -->",
+  "keywords": "SEO services Kenya, website performance optimization, search engine optimization Nairobi, Google Analytics, growth enablement East Africa",
+  "heroTitle": "Performance & SEO",
+  "heroSubtitle": "Maximizing digital reach through technical excellence."
+}

@@ -3,17 +3,19 @@ import re
 import json
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+DIST_DIR = os.path.join(ROOT_DIR, "dist")
+SCAN_DIR = DIST_DIR if os.path.isdir(DIST_DIR) else ROOT_DIR
 
 def run_eval():
-    print("Evaluating SEO and Brand Alignment Metrics...")
+    print(f"Evaluating SEO and Brand Alignment Metrics (target: {os.path.relpath(SCAN_DIR, ROOT_DIR)})...")
     total_pages = 0
     passed_pages = 0
     json_ld_count = 0
     canonical_match_count = 0
     og_match_count = 0
 
-    for dirpath, _, filenames in os.walk(ROOT_DIR):
-        if "node_modules" in dirpath or ".git" in dirpath or ".tmp" in dirpath:
+    for dirpath, _, filenames in os.walk(SCAN_DIR):
+        if any(x in dirpath for x in ("node_modules", ".git", ".tmp", ".astro", ".agent", ".agents")):
             continue
         for f in filenames:
             if f.endswith(".html"):
@@ -23,7 +25,7 @@ def run_eval():
                     content = file.read()
 
                 # Check JSON-LD
-                if '<script type="application/ld+json">' in content:
+                if 'type="application/ld+json"' in content:
                     json_ld_count += 1
 
                 # Check Canonical
@@ -40,7 +42,7 @@ def run_eval():
                     "https://linkedin.com/company/ajnetworks",
                     "https://www.youtube.com/@ajnets",
                     "https://pinterest.com/ajnetworks"
-                ]) and '<script type="application/ld+json">' in content):
+                ]) and 'type="application/ld+json"' in content):
                     passed_pages += 1
 
     score = (passed_pages / total_pages * 100) if total_pages > 0 else 0

@@ -1,0 +1,19 @@
+{
+  "slug": "networking",
+  "title": "Networking & IT Infrastructure Solutions | AJNETWORKS",
+  "description": "Enterprise networking and IT infrastructure services in Kenya. Network design, server management, VPNs, and infrastructure monitoring from AJNETWORKS.",
+  "canonicalUrl": "https://ajnetworks.co/networking",
+  "ogType": "website",
+  "ogImage": "https://ajnetworks.co/images/og-home.webp",
+  "extraJsonLd": [
+    "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Service\",\n  \"name\": \"AJNETWORKS Consulting Service\",\n  \"provider\": {\n    \"@type\": \"Organization\",\n    \"name\": \"AJNETWORKS\"\n  }\n}"
+  ],
+  "extraHeadStyles": [],
+  "extraFooterScripts": [],
+  "showRwandaBanner": false,
+  "wrapInSiteDiv": true,
+  "bodyHtml": "<!-- Page Hero -->\n<div class=\"page-hero bg-dark-primary\">\n<div class=\"container\">\n<nav aria-label=\"Breadcrumb\" class=\"breadcrumb-nav\">\n<a href=\"/\">Home</a>\n<span class=\"separator\">/</span>\n<a href=\"/services\">Services</a>\n<span class=\"separator\">/</span>\n<span class=\"current\">Networking &amp; IT Infrastructure</span>\n</nav>\n<h1 class=\"text-white mt-3\">Networking &amp; IT Infrastructure</h1>\n<p style=\"color: rgba(255,255,255,0.75); font-size: 17px; max-width: 600px; margin-top: 15px;\">\n                Building reliable foundations for your digital operations.\n            </p>\n</div>\n</div>\n<!-- Main Service Content -->\n<section class=\"section-padd\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-8 offset-lg-2\">\n<div class=\"mb-5\">\n<div class=\"ot-heading\">\n<span>// the challenge</span>\n<h2 class=\"main-heading\">What problem exists?</h2>\n</div>\n<p style=\"font-size: 18px; line-height: 1.8; color: #4b5563;\">Fragile, outdated, or poorly configured IT infrastructure creates operational bottlenecks, unexpected downtime, and severe communication breakdowns across teams.</p>\n</div>\n<div class=\"mb-5\">\n<div class=\"ot-heading\">\n<span>// our approach</span>\n<h2 class=\"main-heading\">How AJNETWORKS solves it</h2>\n</div>\n<p style=\"font-size: 18px; line-height: 1.8; color: #4b5563;\">We design, deploy, and manage robust network architectures, cloud environments, and modern workspace solutions including Microsoft 365, Google Workspace, and Zoho Workplace.</p>\n</div>\n<div class=\"mb-5\">\n<div class=\"ot-heading\">\n<span>// the difference</span>\n<h2 class=\"main-heading\">Why clients trust us</h2>\n</div>\n<p style=\"font-size: 18px; line-height: 1.8; color: #4b5563;\">We build for high availability and zero friction. We ensure your underlying infrastructure is robust and invisible to your team - because it simply works.</p>\n</div>\n<div class=\"outcome-box\" style=\"background-color: #f8f9fa; padding: 40px; border-radius: 8px; border-left: 4px solid #43D9AD; margin-bottom: 50px;\">\n<h3 style=\"font-size: 24px; margin-bottom: 15px; color: #1A1A2E;\">Measurable Outcomes</h3>\n<p style=\"font-size: 18px; line-height: 1.8; color: #4b5563; margin-bottom: 0;\"><strong>What to expect:</strong> Consistent high availability, seamless team collaboration, and a scalable infrastructure foundation capable of supporting your long-term growth.</p>\n</div>\n<div class=\"text-center mt-5\">\n<a class=\"octf-btn octf-btn-primary btn-large\" href=\"/book-consultation\">Book Advisory Session</a>\n</div>\n</div>\n</div>\n</div>\n</section>\n<!-- Page Hero -->\n<!-- Infrastructure as Foundation -->\n<!-- Core Networking Services -->\n<!-- Infrastructure Approach Section -->\n<!-- Deliverables Section -->\n<!-- CTA Section -->",
+  "keywords": "networking services Kenya, IT infrastructure Nairobi, network design, server management, VPN setup East Africa, infrastructure monitoring",
+  "heroTitle": "Networking & IT Infrastructure",
+  "heroSubtitle": "Building reliable foundations for your digital operations."
+}

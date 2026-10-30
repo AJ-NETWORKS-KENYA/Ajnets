@@ -1,0 +1,48 @@
+<div
+  id="rwanda-banner"
+  style="
+    display: none;
+    background-color: #2b3b85;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    z-index: 1000;
+    position: relative;
+  "
+>
+  🇷🇼 Karibu! We now have local operations established in Rwanda.
+  <a
+    href="/book-consultation"
+    style="color: #ff9900; text-decoration: underline"
+    title="Envelope">Contact our regional team today</a
+  >.
+</div>
+<script is:inline>
+  window.addEventListener("load", function () {
+    function checkLocation() {
+      const controller =
+        typeof AbortController !== "undefined" ? new AbortController() : null;
+      const timeoutId = setTimeout(() => {
+        if (controller) controller.abort();
+      }, 2500);
+      fetch("https://ipapi.co/json/", {
+        signal: controller ? controller.signal : undefined,
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          clearTimeout(timeoutId);
+          if (data && data.country_code === "RW") {
+            var banner = document.getElementById("rwanda-banner");
+            if (banner) banner.style.display = "block";
+          }
+        })
+        .catch(() => {});
+    }
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(checkLocation);
+    } else {
+      setTimeout(checkLocation, 1000);
+    }
+  });
+</script>
