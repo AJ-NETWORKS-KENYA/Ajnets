@@ -81,9 +81,6 @@ const organizationSchema = JSON.stringify(
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/css/flaticon.css" rel="stylesheet" />
-    <link href="/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="/css/owl.theme.css" rel="stylesheet" />
-    <link href="/css/magnific-popup.css" rel="stylesheet" />
     <link href="/style.min.css" rel="stylesheet" />
     <link href="/css/logo-ajnetworks.css" rel="stylesheet" />
     <link href="/css/cookie-consent.css" rel="stylesheet" />
@@ -157,15 +154,10 @@ const organizationSchema = JSON.stringify(
         <Header />
         <slot />
         <Footer />
-        <script is:inline src="/js/jquery.min.js"></script>
-        <script is:inline defer src="/js/jquery.magnific-popup.min.js"></script>
-        <script is:inline defer src="/js/jquery.isotope.min.js"></script>
-        <script is:inline defer src="/js/owl.carousel.min.js"></script>
-        <script is:inline defer src="/js/scripts.js"></script>
+        <script is:inline defer src="/js/site-ui.js"></script>
         {extraFooterScripts.map((src) => (
           <script is:inline defer src={src}></script>
         ))}
-        <script is:inline defer src="/js/header-mobile.js"></script>
         <CookieConsent />
       </div>
     ) : (
@@ -173,15 +165,10 @@ const organizationSchema = JSON.stringify(
         <Header />
         <slot />
         <Footer />
-        <script is:inline src="/js/jquery.min.js"></script>
-        <script is:inline defer src="/js/jquery.magnific-popup.min.js"></script>
-        <script is:inline defer src="/js/jquery.isotope.min.js"></script>
-        <script is:inline defer src="/js/owl.carousel.min.js"></script>
-        <script is:inline defer src="/js/scripts.js"></script>
+        <script is:inline defer src="/js/site-ui.js"></script>
         {extraFooterScripts.map((src) => (
           <script is:inline defer src={src}></script>
         ))}
-        <script is:inline defer src="/js/header-mobile.js"></script>
         <CookieConsent />
       </>
     )}

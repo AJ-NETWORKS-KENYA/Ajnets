@@ -13,9 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Migrated frontend build architecture to **Astro** (`output: 'static'`, `build.format: 'file'`) shipping 0 KB of client framework JavaScript.
 - Created `src/layouts/BaseLayout.astro` and reusable components (`Header.astro`, `Footer.astro`, `CookieConsent.astro`, `RwandaBanner.astro`), consolidating 25 duplicated HTML shells into a single source of truth.
 - Implemented Zod-validated Astro Content Collections (`src/content.config.ts`) across `caseStudies`, `services`, `company`, `insights`, and `system` collections (`src/content/`).
+- Replaced 309 KB of legacy jQuery plugins (`jquery.min.js`, `owl.carousel.min.js`, `jquery.isotope.min.js`, `jquery.magnific-popup.min.js`, `scripts.js`, `header-mobile.js`) with a lightweight, dependency-free Vanilla ES6+ controller (`public/js/site-ui.js`) and Vanilla ES6+ `public/js/contact-form.js`.
+- Authored dedicated, regulatory-compliant content for `/404`, `/privacy` (Kenya DPA 2019, Rwanda Law No. 058/2021, GDPR), `/terms`, and `/responsible-disclosure`.
 - Added local Vite middleware in `astro.config.mjs` mirroring `vercel.json` clean-URL rewrites and redirects during `astro dev` and `astro preview`.
-- Added deterministic extraction script `execution/migrate_to_astro.py` and Node gate test suite `tests/astro-build.test.js`.
-- Completed the 6-Document Gate with `docs/BACKEND_SCHEMA.md`, `docs/IMPLEMENTATION_PLAN.md`, `docs/DECISIONS.md` (ADR-001), and root `README.md`.
+- Added deterministic migration and modernization scripts (`execution/migrate_to_astro.py`, `execution/modernize_astro_site.py`) and Node gate test suite `tests/astro-build.test.js`.
+- Completed the 6-Document Gate with `docs/BACKEND_SCHEMA.md`, `docs/IMPLEMENTATION_PLAN.md`, `docs/DECISIONS.md` (ADR-001 & ADR-002), and root `README.md`.
 
 ### Changed
 - Updated `execution/test_brand_links.py`, `execution/eval_brand_seo.py`, and `execution/comprehensive_audit.py` to evaluate the compiled `dist/` directory.

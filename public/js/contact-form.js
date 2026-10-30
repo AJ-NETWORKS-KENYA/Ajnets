@@ -1,190 +1,199 @@
 /**
- * AJNETWORKS Contact Form Handler
- * Simple validation for Formspree integration
+ * AJNETWORKS — Vanilla ES6+ Contact Form Handler (Zero-jQuery)
+ * Validates consultation requests and dispatches JSON payloads to /api/contact.
  */
-
-(function ($) {
+(function () {
   "use strict";
 
-  // Form validation
-  $(document).ready(function () {
-    var $form = $("#ajax-form");
-    var $submitBtn = $("#send");
-    var $errorContainer = $("#err-form");
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("ajax-form");
+    if (!form) return;
 
-    // Hide all error messages initially
-    $(".error").hide();
+    const submitBtn = document.getElementById("send");
+    const errorContainer = document.getElementById("err-form");
+    const successModal = document.getElementById("successModal");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Email validation regex
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    function setVisible(idOrEl, visible) {
+      const el =
+        typeof idOrEl === "string" ? document.getElementById(idOrEl) : idOrEl;
+      if (el) el.style.display = visible ? "block" : "none";
+    }
 
-    // Real-time validation
-    $('input[name="name"]').on("blur", function () {
-      if ($(this).val().trim() === "") {
-        $("#err-name").show();
-      } else {
-        $("#err-name").hide();
-      }
-    });
+    form.querySelectorAll(".error").forEach((el) => setVisible(el, false));
 
-    $('input[name="organization"]').on("blur", function () {
-      if ($(this).val().trim() === "") {
-        $("#err-organization").show();
-      } else {
-        $("#err-organization").hide();
-      }
-    });
+    const nameInput = form.querySelector('input[name="name"]');
+    const orgInput = form.querySelector('input[name="organization"]');
+    const regionSelect = form.querySelector('select[name="region"]');
+    const emailInput = form.querySelector('input[name="email"]');
+    const phoneInput = form.querySelector('input[name="phone"]');
+    const messageInput = form.querySelector('textarea[name="message"]');
+    const botInput = form.querySelector('input[name="bot_field"]');
 
-    $('input[name="email"]').on("blur", function () {
-      var email = $(this).val().trim();
-      if (email === "") {
-        $("#err-email").show();
-        $("#err-emailvld").hide();
-      } else if (!emailRegex.test(email)) {
-        $("#err-email").hide();
-        $("#err-emailvld").show();
-      } else {
-        $("#err-email").hide();
-        $("#err-emailvld").hide();
-      }
-    });
-
-    $('input[name="phone"]').on("blur", function () {
-      if ($(this).val().trim() === "") {
-        $("#err-phone").show();
-      } else {
-        $("#err-phone").hide();
-      }
-    });
-
-    // Form submission validation
-    $form.on("submit", function (e) {
-      // Hide previous messages
-      $(".error").hide();
-      $errorContainer.hide();
-
-      // Get form values
-      var name = $('input[name="name"]').val().trim();
-      var organization = $('input[name="organization"]').val().trim();
-      var email = $('input[name="email"]').val().trim();
-      var phone = $('input[name="phone"]').val().trim();
-      var message = $('textarea[name="message"]').val().trim();
-      // Honeypot check
-      var botField = $('input[name="bot_field"]').val();
-      if (botField && botField.trim() !== "") {
-        console.warn("Bot detected.");
-        return false;
-      }
-
-      // Basic Rate Limiting (Frontend)
-      var lastSubmit = localStorage.getItem("lastContactSubmit");
-      var now = new Date().getTime();
-      if (lastSubmit && now - parseInt(lastSubmit) < 60000) { // 60 seconds
-        $errorContainer.text("Please wait a minute before submitting another request.").show();
-        e.preventDefault();
-        return false;
-      }
-
-      // Validation
-      var isValid = true;
-
-      if (name === "") {
-        $("#err-name").show();
-        isValid = false;
-      }
-
-      if (organization === "") {
-        $("#err-organization").show();
-        isValid = false;
-      }
-
-      var region = $('select[name="region"]').val();
-      if (!region) {
-        $("#err-region").show();
-        isValid = false;
-      }
-
-      if (email === "") {
-        $("#err-email").show();
-        isValid = false;
-      } else if (!emailRegex.test(email)) {
-        $("#err-emailvld").show();
-        isValid = false;
-      }
-
-      if (phone === "") {
-        $("#err-phone").show();
-        isValid = false;
-      }
-
-      if (message === "" || message.length < 10) {
-        $errorContainer
-          .text("Please provide a detailed message (at least 10 characters)")
-          .show();
-        isValid = false;
-      }
-
-      if (!isValid) {
-        e.preventDefault();
-        return false;
-      }
-
-      // Disable submit button and show loading
-      $submitBtn.prop("disabled", true).text("Sending...");
-
-      // AJAX Submission
-      $.ajax({
-        url: $form.attr("action"),
-        method: "POST",
-        data: $form.serialize(),
-        dataType: "json",
-        headers: {
-          Accept: "application/json",
-        },
-        success: function () {
-          // Show the modal
-          $("#successModal").fadeIn();
-          $form[0].reset();
-          $submitBtn.prop("disabled", false).text("Request Strategy Call");
-          localStorage.setItem("lastContactSubmit", new Date().getTime().toString());
-        },
-        error: function (xhr, status, error) {
-          var msg =
-            "There was an error sending your message. Please try again.";
-          try {
-            var response = JSON.parse(xhr.responseText);
-            if (response && response.message) {
-              msg = "Error: " + response.message;
-            }
-          } catch (e) {}
-
-          if (xhr.status === 404) {
-            msg =
-              "Backend API not found. Please ensure you are running the site via Vercel CLI (vercel dev).";
-          } else if (xhr.status === 500) {
-            msg += " (Server Error: Check your SMTP credentials in .env)";
-          }
-
-          $errorContainer.text(msg).show();
-          $submitBtn.prop("disabled", false).text("Request Strategy Call");
-        },
+    if (nameInput) {
+      nameInput.addEventListener("blur", () =>
+        setVisible("err-name", nameInput.value.trim() === "")
+      );
+    }
+    if (orgInput) {
+      orgInput.addEventListener("blur", () =>
+        setVisible("err-organization", orgInput.value.trim() === "")
+      );
+    }
+    if (emailInput) {
+      emailInput.addEventListener("blur", () => {
+        const val = emailInput.value.trim();
+        if (!val) {
+          setVisible("err-email", true);
+          setVisible("err-emailvld", false);
+        } else if (!emailRegex.test(val)) {
+          setVisible("err-email", false);
+          setVisible("err-emailvld", true);
+        } else {
+          setVisible("err-email", false);
+          setVisible("err-emailvld", false);
+        }
       });
+    }
+    if (phoneInput) {
+      phoneInput.addEventListener("blur", () =>
+        setVisible("err-phone", phoneInput.value.trim() === "")
+      );
+    }
 
-      // Prevent default form submission
+    form.querySelectorAll("input, textarea, select").forEach((field) => {
+      field.addEventListener("input", () => {
+        const parent = field.parentElement;
+        if (parent) {
+          parent
+            .querySelectorAll(".error")
+            .forEach((err) => setVisible(err, false));
+        }
+        setVisible(errorContainer, false);
+      });
+    });
+
+    form.addEventListener("submit", async function (e) {
       e.preventDefault();
-      return false;
+      form.querySelectorAll(".error").forEach((el) => setVisible(el, false));
+      setVisible(errorContainer, false);
+
+      const name = nameInput ? nameInput.value.trim() : "";
+      const organization = orgInput ? orgInput.value.trim() : "";
+      const region = regionSelect ? regionSelect.value : "";
+      const email = emailInput ? emailInput.value.trim() : "";
+      const phone = phoneInput ? phoneInput.value.trim() : "";
+      const message = messageInput ? messageInput.value.trim() : "";
+      const bot_field = botInput ? botInput.value : "";
+
+      if (bot_field && bot_field.trim() !== "") {
+        return;
+      }
+
+      const lastSubmit = localStorage.getItem("lastContactSubmit");
+      const now = Date.now();
+      if (lastSubmit && now - parseInt(lastSubmit, 10) < 60000) {
+        if (errorContainer) {
+          errorContainer.textContent =
+            "Please wait a minute before submitting another request.";
+          setVisible(errorContainer, true);
+        }
+        return;
+      }
+
+      let isValid = true;
+      if (!name) {
+        setVisible("err-name", true);
+        isValid = false;
+      }
+      if (!organization) {
+        setVisible("err-organization", true);
+        isValid = false;
+      }
+      if (!region) {
+        setVisible("err-region", true);
+        isValid = false;
+      }
+      if (!email) {
+        setVisible("err-email", true);
+        isValid = false;
+      } else if (!emailRegex.test(email)) {
+        setVisible("err-emailvld", true);
+        isValid = false;
+      }
+      if (!phone) {
+        setVisible("err-phone", true);
+        isValid = false;
+      }
+      if (!message || message.length < 10) {
+        if (errorContainer) {
+          errorContainer.textContent =
+            "Please provide a detailed message (at least 10 characters)";
+          setVisible(errorContainer, true);
+        }
+        isValid = false;
+      }
+
+      if (!isValid) return;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+      }
+
+      try {
+        const res = await fetch(form.getAttribute("action") || "/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            organization,
+            region,
+            email,
+            phone,
+            message,
+            bot_field,
+          }),
+        });
+
+        const data = await res.json().catch(() => ({}));
+        if (res.ok) {
+          setVisible(successModal, true);
+          form.reset();
+          localStorage.setItem("lastContactSubmit", String(Date.now()));
+        } else {
+          const msg =
+            data && data.message
+              ? `Error: ${data.message}`
+              : "There was an error sending your message. Please try again.";
+          if (errorContainer) {
+            errorContainer.textContent = msg;
+            setVisible(errorContainer, true);
+          }
+        }
+      } catch (_err) {
+        if (errorContainer) {
+          errorContainer.textContent =
+            "Network error while submitting your request. Please try again.";
+          setVisible(errorContainer, true);
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Request Strategy Call";
+        }
+      }
     });
 
-    // Clear error messages on input
-    $form.find("input, textarea").on("input", function () {
-      $(this).siblings(".error").hide();
-      $errorContainer.hide();
-    });
-
-    // Close modal logic
-    $(".close-modal, .modal-overlay").on("click", function (e) {
-      if (e.target !== this) return;
-      $("#successModal").fadeOut();
+    document.querySelectorAll(".close-modal, .modal-overlay").forEach((el) => {
+      el.addEventListener("click", function (e) {
+        if (e.target === el || el.classList.contains("close-modal")) {
+          setVisible(successModal, false);
+        }
+      });
     });
   });
-})(jQuery);
+})();

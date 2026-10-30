@@ -92,3 +92,4 @@ Represents thought leadership articles and the insights hub rendered at `/insigh
 - **Rate Limiting:** Max 5 requests per 60 seconds per client IP (`429 Too Many Requests`).
 - **Required Fields:** `name`, `email` (RFC-compliant regex), `region`, `message` (`400 Bad Request` on missing/invalid fields).
 - **Regional SMTP Routing:** Routes to `RWANDA_*` SMTP credentials when `region === "Rwanda"`, defaulting to primary `SMTP_*` credentials otherwise.
+

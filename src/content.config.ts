@@ -59,3 +59,4 @@ export const collections = {
   insights,
   system,
 };
+
