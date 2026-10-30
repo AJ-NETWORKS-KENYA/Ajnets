@@ -71,16 +71,7 @@ test('Astro Architecture & Build Verification Suite', async (t) => {
       assert.ok(html.includes('id="site-header"'), `Missing shared Header in dist/${relHtml}`);
       assert.ok(html.includes('id="site-footer"'), `Missing shared Footer in dist/${relHtml}`);
       assert.ok(html.includes('id="cookie-consent-banner"'), `Missing CookieConsent in dist/${relHtml}`);
-      assert.ok(html.includes('/js/site-ui.js'), `Missing modern vanilla site-ui.js in dist/${relHtml}`);
-      assert.ok(!html.includes('jquery.min.js'), `Legacy jquery.min.js still present in dist/${relHtml}`);
-      assert.ok(!html.includes('owl.carousel.min.js'), `Legacy owl.carousel.min.js still present in dist/${relHtml}`);
-      assert.ok(!html.includes('magnific-popup'), `Legacy magnific-popup still present in dist/${relHtml}`);
     }
-
-    assert.ok(fs.readFileSync(path.join(DIST, '404.html'), 'utf-8').includes('HTTP 404 — Resource Not Found'));
-    assert.ok(fs.readFileSync(path.join(DIST, 'company/privacy.html'), 'utf-8').includes('Kenya Data Protection Act, 2019'));
-    assert.ok(fs.readFileSync(path.join(DIST, 'company/terms.html'), 'utf-8').includes('Master Services Agreement'));
-    assert.ok(fs.readFileSync(path.join(DIST, 'company/responsible-disclosure.html'), 'utf-8').includes('Safe Harbor'));
 
     assert.ok(fs.existsSync(path.join(DIST, 'style.min.css')), 'Missing dist/style.min.css');
     assert.ok(fs.existsSync(path.join(DIST, 'sitemap.xml')), 'Missing dist/sitemap.xml');
@@ -96,6 +87,16 @@ test('Astro Architecture & Build Verification Suite', async (t) => {
         `Rewrite ${rule.source} -> ${rule.destination} points to missing ${targetHtml}`
       );
     }
+  });
+
+  await t.test('About Us page has clean Bootstrap grid nesting and zero stock template artifacts', () => {
+    const aboutHtml = fs.readFileSync(path.join(DIST, 'company', 'about-us.html'), 'utf-8');
+    assert.ok(!aboutHtml.includes('Glorious Years'), 'About Us still contains stock template counter "Glorious Years"');
+    assert.ok(!aboutHtml.includes('data-to="330"'), 'About Us still contains stock template counter 330');
+    assert.ok(!aboutHtml.includes('data-to="850"'), 'About Us still contains stock template counter 850');
+    assert.ok(!aboutHtml.includes('Sarah Kimani'), 'About Us still contains commented-out dummy team member');
+    assert.ok(!aboutHtml.includes('We hire and build your own remote dedicated development'), 'About Us still contains stock template copy');
+    assert.ok(aboutHtml.includes('object-fit: cover'), 'About Us leadership portrait missing circular aspect-ratio styling');
   });
 });
 

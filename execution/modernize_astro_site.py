@@ -328,3 +328,4 @@ if __name__ == "__main__":
     ensure_image_dimensions()
     prune_legacy_jquery_and_unused_assets()
     print("Done!")
+

@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Completed the 6-Document Gate with `docs/BACKEND_SCHEMA.md`, `docs/IMPLEMENTATION_PLAN.md`, `docs/DECISIONS.md` (ADR-001 & ADR-002), and root `README.md`.
 
 ### Changed
+- Fixed broken Bootstrap `.col-lg-6` grid nesting on `/about-us` (`src/content/company/about-us.json`), replaced legacy stock template counters (`330+ active Clients`, `850+ projects done`, `10+ Glorious Years`) and progress bars with authentic AJNETWORKS delivery metrics (`20+ Production Systems`, `5 Core Practice Pillars`, `2 East African Hubs`, `100% Security-First Delivery`), removed commented-out dummy team members, and corrected founder portrait aspect ratio and link styling.
 - Updated `execution/test_brand_links.py`, `execution/eval_brand_seo.py`, and `execution/comprehensive_audit.py` to evaluate the compiled `dist/` directory.
 - Updated `.github/workflows/ci.yml` to build the Astro site and run both Node and Python gate test and eval suites in CI.
 
