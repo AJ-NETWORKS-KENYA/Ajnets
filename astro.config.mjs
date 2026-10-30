@@ -22,6 +22,13 @@ function attachVercelRouting(middlewares, isPreview = false) {
       ? pathname.slice(0, -1)
       : pathname;
 
+    if (cleanPath === '/firebase-messaging-sw.js') {
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/javascript');
+      res.end('// No-op service worker stub for localhost');
+      return;
+    }
+
     if (redirectMap.has(cleanPath)) {
       const rule = redirectMap.get(cleanPath);
       res.statusCode = rule.permanent ? 308 : 307;
