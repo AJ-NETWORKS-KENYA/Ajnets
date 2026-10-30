@@ -14,12 +14,26 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
-    - name: Run Gate Tests
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build Astro Static Site
+      run: npm run build
+
+    - name: Run Node Gate Tests
+      run: npm test
+
+    - name: Run Brand & Link Gate Tests
       run: python execution/test_brand_links.py
 
     - name: Run Brand & SEO Evals

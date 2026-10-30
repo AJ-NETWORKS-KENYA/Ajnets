@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('company');
+  return entries.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+---
+
+<BaseLayout
+  title={data.title}
+  description={data.description}
+  keywords={data.keywords}
+  canonicalUrl={data.canonicalUrl}
+  ogType={data.ogType}
+  ogImage={data.ogImage}
+  preloadImage={data.preloadImage}
+  extraJsonLd={data.extraJsonLd}
+  extraHeadStyles={data.extraHeadStyles}
+  extraFooterScripts={data.extraFooterScripts}
+  showRwandaBanner={data.showRwandaBanner}
+  wrapInSiteDiv={data.wrapInSiteDiv}
+>
+  <Fragment set:html={data.bodyHtml} />
+</BaseLayout>
+

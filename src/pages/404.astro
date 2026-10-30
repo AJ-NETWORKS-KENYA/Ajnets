@@ -1,0 +1,28 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const entry = await getEntry('system', '404');
+if (!entry) {
+  throw new Error('Missing system/404 content entry');
+}
+const { data } = entry;
+---
+
+<BaseLayout
+  title={data.title}
+  description={data.description}
+  keywords={data.keywords}
+  canonicalUrl={data.canonicalUrl}
+  ogType={data.ogType}
+  ogImage={data.ogImage}
+  preloadImage={data.preloadImage}
+  extraJsonLd={data.extraJsonLd}
+  extraHeadStyles={data.extraHeadStyles}
+  extraFooterScripts={data.extraFooterScripts}
+  showRwandaBanner={data.showRwandaBanner}
+  wrapInSiteDiv={data.wrapInSiteDiv}
+>
+  <Fragment set:html={data.bodyHtml} />
+</BaseLayout>
+

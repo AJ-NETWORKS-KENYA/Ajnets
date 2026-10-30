@@ -2,16 +2,19 @@ import os, re
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-root = Path(r"C:\My Web Sites\ajnets")
-html_files = [f for f in root.rglob("*.html") if not any(p in f.parts for p in ["node_modules", ".tmp", ".agent", ".agents"])]
+root = Path(__file__).resolve().parent.parent
+dist = root / "dist"
+scan_root = dist if dist.is_dir() else root
 
-print(f"Total HTML files found: {len(html_files)}")
+html_files = [f for f in scan_root.rglob("*.html") if not any(p in f.parts for p in ["node_modules", ".tmp", ".astro", ".agent", ".agents"])]
+
+print(f"Total HTML files found in {scan_root.relative_to(root) if scan_root != root else '.'}: {len(html_files)}")
 
 all_titles = {}
 all_descriptions = {}
 
 for hf in sorted(html_files):
-    rel = str(hf.relative_to(root)).replace("\\", "/")
+    rel = str(hf.relative_to(scan_root)).replace("\\", "/")
     with open(hf, "r", encoding="utf-8", errors="ignore") as f:
         content = f.read()
     
