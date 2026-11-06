@@ -1,6 +1,15 @@
 import os
 import re
 
+
+RE_WORD_CHAR = re.compile(r'>>(\s*[A-Za-z])')
+RE_CAPITAL_LETTER = re.compile(r'>>([A-Z])')
+RE_HELLO = re.compile(r'>>\s*hello')
+RE_TRIPLE_RANGLE = re.compile(r'>>>')
+RE_BEFORE_LT = re.compile(r'>>\s*(?=<)')
+RE_BEFORE_NEWLINE = re.compile(r'>>\n')
+RE_CLASS_EDGE = re.compile(r'"\s*>>')
+
 def fix_rogue_tags(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -9,28 +18,28 @@ def fix_rogue_tags(filepath):
 
     # Fix case:  >>Request a Strategy Call
     # If we have >> followed by word char or space
-    content = re.sub(r'>>\s*([A-Za-z])', r'>\1', content)
+    content = RE_WORD_CHAR.sub(r'>\1', content)
     
     # Fix case: >>Contact Us
-    content = re.sub(r'>>([A-Z])', r'>\1', content)
+    content = RE_CAPITAL_LETTER.sub(r'>\1', content)
     
     # Fix case: >>hello (specifically the book-consultation mailto issue)
-    content = re.sub(r'>>\s*hello', r'>hello', content)
+    content = RE_HELLO.sub(r'>hello', content)
     
     # Fix case: >View Live Site
     # e.g., <a ... >>View Live Site => <a ... >View Live Site
     # Wait, the previous regex covers this because V is [A-Z]
     
     # Fix case: <a ... >>>
-    content = re.sub(r'>>>', r'>', content)
+    content = RE_TRIPLE_RANGLE.sub(r'>', content)
     
     # Fix case empty links: " ... ">>
     # If the tag simply ends in >> before a newline or <
-    content = re.sub(r'>>\s*(?=<)', r'>', content)
-    content = re.sub(r'>>\n', r'>\n', content)
+    content = RE_BEFORE_LT.sub(r'>', content)
+    content = RE_BEFORE_NEWLINE.sub(r'>\n', content)
     
     # Extreme edge case: class="foo">>
-    content = re.sub(r'"\s*>>', r'">', content)
+    content = RE_CLASS_EDGE.sub(r'">', content)
 
     # Specific fixes seen in the logs
     content = content.replace('>>', '>') # Wait, this might break valid JS `>> 1` if we have inline scripts. 
