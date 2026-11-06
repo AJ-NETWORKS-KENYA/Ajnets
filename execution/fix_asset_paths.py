@@ -11,6 +11,9 @@ Specifically looks for:
 import os
 import re
 
+SRC_IMAGES_RE = re.compile(r'src="/*images/')
+LOGO_IMAGES_RE = re.compile(r'logo:\s*"/*images/')
+
 def fix_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -21,11 +24,8 @@ def fix_file(filepath):
     content = content.replace('href="style.css', 'href="/style.css')
     
     # 2. Fix images prefix (and make sure we don't duplicate slashes)
-    content = re.sub(r'src="images/', 'src="/images/', content)
-    content = re.sub(r'logo:\s*"images/', 'logo: "/images/', content)
-    
-    # fix edge case: src="//images"
-    content = content.replace('src="//images', 'src="/images')
+    content = SRC_IMAGES_RE.sub('src="/images/', content)
+    content = LOGO_IMAGES_RE.sub('logo: "/images/', content)
 
     # 3. Fix fonts / typography if linked relatively 
     content = content.replace('href="fonts/', 'href="/fonts/')
