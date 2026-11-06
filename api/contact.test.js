@@ -104,3 +104,49 @@ test('Contact API - Validation, Honeypot & Security', async (t) => {
     assert.strictEqual(res.statusCode, 405);
   });
 });
+
+const nodemailer = require('nodemailer');
+
+test('Contact API - Email Dispatch', async (t) => {
+  const createMockRes = () => {
+    const res = {
+      statusCode: null,
+      jsonData: null,
+      setHeader: () => {},
+      status: function(code) {
+        this.statusCode = code;
+        return this;
+      },
+      json: function(data) {
+        this.jsonData = data;
+        return this;
+      },
+      end: function() {
+        return this;
+      }
+    };
+    return res;
+  };
+
+  await t.test('Returns 500 when email dispatch fails', async () => {
+    const req = { method: 'POST', body: { name: 'John Doe', email: 'test@example.com', region: 'US', message: 'Hi' } };
+    const res = createMockRes();
+
+    process.env.SMTP_USER_DEFAULT = 'test_user';
+    process.env.SMTP_PASS_DEFAULT = 'test_pass';
+
+    t.mock.method(nodemailer, 'createTransport', () => {
+      return {
+        sendMail: async () => { throw new Error('Mock Dispatch Error'); }
+      };
+    });
+
+    await handler(req, res);
+
+    assert.strictEqual(res.statusCode, 500);
+    assert.deepStrictEqual(res.jsonData, { success: false, message: "Error dispatching email message." });
+
+    delete process.env.SMTP_USER_DEFAULT;
+    delete process.env.SMTP_PASS_DEFAULT;
+  });
+});
