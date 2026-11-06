@@ -24,8 +24,8 @@ def fix_file(filepath):
     content = re.sub(r'src="images/', 'src="/images/', content)
     content = re.sub(r'logo:\s*"images/', 'logo: "/images/', content)
     
-    # fix edge case: src="//images"
-    content = content.replace('src="//images', 'src="/images')
+    # fix edge case: src="//images/"
+    content = content.replace('src="//images/', 'src="/images/')
 
     # 3. Fix fonts / typography if linked relatively 
     content = content.replace('href="fonts/', 'href="/fonts/')
